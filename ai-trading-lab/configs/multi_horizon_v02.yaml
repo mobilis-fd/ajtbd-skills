@@ -1,0 +1,95 @@
+# AI Trading Lab — Multi-Horizon Research v0.2 (PRE-REGISTERED; see SPEC_MULTI_HORIZON_V02.md)
+# Independent of MVP v0.1 (configs/mvp.yaml is frozen). Do NOT edit to improve results:
+# any change after results are seen => new version id + DECISIONS_V02/EXPERIMENT_LOG_V02 entry.
+
+experiment_id: MH-v0.2
+mode: research_replay
+dry_run: true
+
+data:
+  base_url: https://data.binance.vision/data/spot
+  interval: 1m
+  traded: [BTCUSDT, ETHUSDT, SOLUSDT]                 # fixed priority order for ties / simultaneous signals
+  info_assets: [BTCUSDT, ETHUSDT, SOLUSDT, BNBUSDT, XRPUSDT, ADAUSDT, DOGEUSDT, LINKUSDT, LTCUSDT]
+  first_month: "2020-08"        # SOLUSDT first archive month (listing 2020-08); warm-up/training only
+  raw_dir: data/v02/raw
+  processed_dir: data/v02/processed
+  manifest: data/v02/manifest.json
+  bar_sizes_min: [30, 60, 240, 1440]
+
+splits:                          # [start, end) UTC
+  development: {start: "2021-01-01T00:00:00Z", end: "2023-01-01T00:00:00Z"}
+  validation:  {start: "2023-01-01T00:00:00Z", end: "2025-01-01T00:00:00Z"}
+  test:        {start: "2025-01-01T00:00:00Z", end: "2025-11-01T00:00:00Z", locked: true}
+  forbidden:   {start: "2025-11-01T00:00:00Z", end: "2026-11-01T00:00:00Z"}   # MVP v0.1 period, never used
+
+fitting:
+  train_window_days: 365
+  schedule: monthly_utc_first_day_0000
+  # first fit = first month start F with complete history for ALL 9 assets back to F - 365d - 28d
+  # (28d = longest feature lookback, H03). Computed from coverage QA before modelling and frozen here:
+  first_fit: "2021-10-01T00:00:00Z"
+  min_events_conditional: 100
+  label_maturity: exit_time <= fit_time
+  ridge_alpha: 10.0
+  scaling: train_only_standard
+
+execution:
+  entry_delay_min: 1             # entry at 1m open starting at T + 60 s
+  stress_delay_min: 5            # stress: T + 5 min
+  stake_usdt: 50.0
+  initial_equity: 100.0
+  risk_matched_budget: 0.50      # notional = min(50, cash, 0.50 / (sigma_1h * sqrt(H_hours)))
+  sigma_lookback_days: 30
+  filters:                       # ASSUMED; historical exchangeInfo not available (see DECISIONS_V02)
+    BTCUSDT: {tick_size: 0.01, step_size: 0.00001, min_notional: 10.0}
+    ETHUSDT: {tick_size: 0.01, step_size: 0.0001, min_notional: 10.0}
+    SOLUSDT: {tick_size: 0.01, step_size: 0.001, min_notional: 10.0}
+
+costs:                           # per side, bps
+  main:  {fee_bps: 10.0, slip_bps: 2.5}    # c = 0.0025 round trip
+  rt0:   {fee_bps: 0.0,  slip_bps: 0.0}
+  rt10:  {fee_bps: 5.0,  slip_bps: 0.0}
+  rt40:  {fee_bps: 15.0, slip_bps: 5.0}
+  hurdle_c: 0.0025
+
+risk:                            # constrained replay overlay (virtual, not approved for real accounts)
+  daily_loss_limit: 1.5
+  total_loss_limit: 10.0
+
+families:
+  G01:
+    grid_min: 30
+    horizons_min: [60, 30, 240]          # primary first
+    primary_horizon_min: 60
+    return_lookbacks_min: [30, 60, 240]
+    vol_window_bars: 48                  # trailing 24h stdev of closed 30m log returns (ddof=0)
+    rv_window_bars: 48
+    models: [B0, B1, X]
+    thresholds: [0.0, c, 2c]
+  H01:
+    grid_min: 60
+    signal: "r1h(T) <= q20 of r1h over [fit-365d, fit), fixed at the current monthly fit"
+    quantile: 0.20
+    horizons_min: [120, 60, 240]
+  H02:
+    grid_min: 240
+    signal: "r4h > 0 and r24h > 0"
+    horizons_min: [720, 240, 1440]
+  H03:
+    grid_min: 1440
+    signal: "at 00:00 UTC: r7d > 0 and r28d > 0"
+    horizons_min: [4320, 1440, 10080]
+
+regimes:
+  trend: sign of trailing 30d log return of the target (causal)
+  vol: trailing 30d stdev of closed hourly log returns vs median of the same statistic in the fit's train window
+
+controls:
+  random_seeds: [0, 99]          # inclusive range
+  bh_btc_stake: 50.0
+  ew_stake_total: 50.0
+
+statistics:
+  bootstrap: {blocks_days: [14, 7, 28], primary_block_days: 14, n_boot: 2000, seed: 42, min_blocks: 5}
+  holm_alpha: 0.05

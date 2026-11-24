@@ -22,3 +22,5 @@ reports/runs/**/*.parquet
 *private*.json
 config_live*.json
 approvals/
+# v0.2 large run artefacts (csv/json/md summaries are committed)
+reports/v02/runs/**/*.parquet

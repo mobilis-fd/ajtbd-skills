@@ -1,0 +1,11 @@
+# Market Data Recorder v0.1 (read-only, public data, no keys). Runs only after explicit owner authorization.
+kline_symbols: [BTCUSDT, ETHUSDT, SOLUSDT, BNBUSDT, XRPUSDT, ADAUSDT, DOGEUSDT, LINKUSDT, LTCUSDT]
+book_symbols: [BTCUSDT, ETHUSDT, SOLUSDT]
+futures_symbols: [BTCUSDT, ETHUSDT, SOLUSDT]
+oi_poll_s: 300
+stale: {kline_s: 90, bookTicker_s: 5, futures_minute_s: 120, oi_s: 600}
+funding_publication_lag_min: {primary: 5, sensitivity: 15}
+disk_quota_gb: 2
+clock_skew_alert_ms: 500
+liquidations: false        # optional, separate experimental record only
+l2_depth: false            # optional C2; not implemented in v0.1
