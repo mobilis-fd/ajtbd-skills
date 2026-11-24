@@ -1,0 +1,1176 @@
+{
+  "development": {
+    "clustering": {
+      "G01": {
+        "corr_of_labels_across_targets_same_T": 0.7979,
+        "rows": 65637,
+        "rows_pred_X_gt0": 29452,
+        "share_decisions_all_3_targets_gt0": 0.4375
+      },
+      "H01": {
+        "days_with_signal": 450,
+        "decision_times_with_signal": 2650,
+        "hold_min": 120,
+        "lag1_autocorr_daily_mean_label": -0.0582,
+        "max_signals_per_day": 42,
+        "mean_assets_per_signal_time": 1.972,
+        "mean_later_same_asset_signals_inside_hold": 0.214,
+        "n_signals": 5225,
+        "naive_n_over_unique_days": 11.61,
+        "share_decisions_with_>=2_assets": 0.6128
+      },
+      "H02": {
+        "days_with_signal": 388,
+        "decision_times_with_signal": 1173,
+        "hold_min": 720,
+        "lag1_autocorr_daily_mean_label": 0.0885,
+        "max_signals_per_day": 15,
+        "mean_assets_per_signal_time": 2.03,
+        "mean_later_same_asset_signals_inside_hold": 0.824,
+        "n_signals": 2381,
+        "naive_n_over_unique_days": 6.14,
+        "share_decisions_with_>=2_assets": 0.6607
+      },
+      "H03": {
+        "days_with_signal": 152,
+        "decision_times_with_signal": 152,
+        "hold_min": 4320,
+        "lag1_autocorr_daily_mean_label": 0.5992,
+        "max_signals_per_day": 3,
+        "mean_assets_per_signal_time": 2.053,
+        "mean_later_same_asset_signals_inside_hold": 1.462,
+        "n_signals": 312,
+        "naive_n_over_unique_days": 2.05,
+        "share_decisions_with_>=2_assets": 0.7039
+      }
+    },
+    "cost_decomposition": {
+      "G01-B1-H60-thr0|constrained_main": {
+        "adverse_execution": 2.343454,
+        "entry_raw_off_tick": 0,
+        "fees": 9.373823,
+        "fees_recomputed": 9.373823,
+        "gross": 1.751365,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 94,
+        "net": -10.120358,
+        "rounding_residual": 0.15444498
+      },
+      "G01-B1-H60-thr0|diag_delay5": {
+        "adverse_execution": 21.37595,
+        "entry_raw_off_tick": 0,
+        "fees": 85.503809,
+        "fees_recomputed": 85.503809,
+        "gross": 17.91676,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 1115,
+        "net": -89.991065,
+        "rounding_residual": 1.02806605
+      },
+      "G01-B1-H60-thr0|diag_main": {
+        "adverse_execution": 21.564686,
+        "entry_raw_off_tick": 0,
+        "fees": 86.258747,
+        "fees_recomputed": 86.258747,
+        "gross": 18.849263,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 1119,
+        "net": -89.99187,
+        "rounding_residual": 1.01770079
+      },
+      "G01-B1-H60-thr0|diag_risk_matched": {
+        "adverse_execution": 18.3825,
+        "entry_raw_off_tick": 0,
+        "fees": 73.529986,
+        "fees_recomputed": 73.529986,
+        "gross": 3.041562,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 1119,
+        "net": -90.002991,
+        "rounding_residual": 1.13206765
+      },
+      "G01-B1-H60-thr0|diag_rt0": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 0.0,
+        "fees_recomputed": 0.0,
+        "gross": -30.792334,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 5666,
+        "net": -30.792334,
+        "rounding_residual": 0.0
+      },
+      "G01-B1-H60-thr0|diag_rt10": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 97.73094,
+        "fees_recomputed": 97.73094,
+        "gross": 7.717719,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 2641,
+        "net": -90.01322,
+        "rounding_residual": 0.0
+      },
+      "G01-B1-H60-thr0|diag_rt40": {
+        "adverse_execution": 27.179998,
+        "entry_raw_off_tick": 0,
+        "fees": 81.539994,
+        "fees_recomputed": 81.539994,
+        "gross": 19.362342,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 772,
+        "net": -90.033606,
+        "rounding_residual": 0.67595697
+      },
+      "G01-X-H60-thr0|constrained_main": {
+        "adverse_execution": 1.545385,
+        "entry_raw_off_tick": 0,
+        "fees": 6.181545,
+        "fees_recomputed": 6.181545,
+        "gross": -2.236326,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 62,
+        "net": -10.101579,
+        "rounding_residual": 0.13832291
+      },
+      "G01-X-H60-thr0|diag_delay5": {
+        "adverse_execution": 20.119358,
+        "entry_raw_off_tick": 0,
+        "fees": 80.477433,
+        "fees_recomputed": 80.477433,
+        "gross": 11.69189,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 1102,
+        "net": -90.077813,
+        "rounding_residual": 1.1729123
+      },
+      "G01-X-H60-thr0|diag_main": {
+        "adverse_execution": 20.937256,
+        "entry_raw_off_tick": 0,
+        "fees": 83.749024,
+        "fees_recomputed": 83.749024,
+        "gross": 15.802917,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 1195,
+        "net": -90.095449,
+        "rounding_residual": 1.21208561
+      },
+      "G01-X-H60-thr0|diag_risk_matched": {
+        "adverse_execution": 18.887727,
+        "entry_raw_off_tick": 0,
+        "fees": 75.550908,
+        "fees_recomputed": 75.550908,
+        "gross": 5.803264,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 1121,
+        "net": -90.00102,
+        "rounding_residual": 1.3656488
+      },
+      "G01-X-H60-thr0|diag_rt0": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 0.0,
+        "fees_recomputed": 0.0,
+        "gross": -45.232234,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 5686,
+        "net": -45.232233,
+        "rounding_residual": 0.0
+      },
+      "G01-X-H60-thr0|diag_rt10": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 99.878211,
+        "fees_recomputed": 99.878211,
+        "gross": 9.878458,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 2734,
+        "net": -89.999752,
+        "rounding_residual": 0.0
+      },
+      "G01-X-H60-thr0|diag_rt40": {
+        "adverse_execution": 25.124685,
+        "entry_raw_off_tick": 0,
+        "fees": 75.374061,
+        "fees_recomputed": 75.374061,
+        "gross": 11.282387,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 705,
+        "net": -89.99939,
+        "rounding_residual": 0.78303149
+      },
+      "H01-H120-none|constrained_main": {
+        "adverse_execution": 1.915969,
+        "entry_raw_off_tick": 0,
+        "fees": 7.663876,
+        "fees_recomputed": 7.663876,
+        "gross": -0.501134,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 77,
+        "net": -10.107652,
+        "rounding_residual": 0.02667311
+      },
+      "H01-H120-none|diag_delay5": {
+        "adverse_execution": 21.911325,
+        "entry_raw_off_tick": 0,
+        "fees": 87.645281,
+        "fees_recomputed": 87.645281,
+        "gross": 20.059636,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 1126,
+        "net": -90.090566,
+        "rounding_residual": 0.59359656
+      },
+      "H01-H120-none|diag_main": {
+        "adverse_execution": 18.895689,
+        "entry_raw_off_tick": 0,
+        "fees": 75.582747,
+        "fees_recomputed": 75.582747,
+        "gross": 4.879884,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 966,
+        "net": -90.069888,
+        "rounding_residual": 0.47133566
+      },
+      "H01-H120-none|diag_risk_matched": {
+        "adverse_execution": 16.998861,
+        "entry_raw_off_tick": 0,
+        "fees": 67.995432,
+        "fees_recomputed": 67.995432,
+        "gross": -4.700063,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 1005,
+        "net": -90.157524,
+        "rounding_residual": 0.46316803
+      },
+      "H01-H120-none|diag_rt0": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 0.0,
+        "fees_recomputed": 0.0,
+        "gross": -25.224274,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 1701,
+        "net": -25.224274,
+        "rounding_residual": 0.0
+      },
+      "H01-H120-none|diag_rt10": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 69.771698,
+        "fees_recomputed": 69.771698,
+        "gross": -16.496534,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 1701,
+        "net": -86.268232,
+        "rounding_residual": 0.0
+      },
+      "H01-H120-none|diag_rt40": {
+        "adverse_execution": 25.116055,
+        "entry_raw_off_tick": 0,
+        "fees": 75.34816,
+        "fees_recomputed": 75.34816,
+        "gross": 10.680042,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 750,
+        "net": -90.024146,
+        "rounding_residual": 0.23997216
+      },
+      "H02-H720-none|constrained_main": {
+        "adverse_execution": 1.917154,
+        "entry_raw_off_tick": 0,
+        "fees": 7.66862,
+        "fees_recomputed": 7.66862,
+        "gross": -0.449689,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 77,
+        "net": -10.077475,
+        "rounding_residual": 0.04201172
+      },
+      "H02-H720-none|diag_delay5": {
+        "adverse_execution": 9.204305,
+        "entry_raw_off_tick": 0,
+        "fees": 36.817243,
+        "fees_recomputed": 36.817243,
+        "gross": -35.772191,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 456,
+        "net": -82.237852,
+        "rounding_residual": 0.44411204
+      },
+      "H02-H720-none|diag_main": {
+        "adverse_execution": 9.55521,
+        "entry_raw_off_tick": 0,
+        "fees": 38.220847,
+        "fees_recomputed": 38.220847,
+        "gross": -30.794604,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 456,
+        "net": -79.044644,
+        "rounding_residual": 0.47398338
+      },
+      "H02-H720-none|diag_risk_matched": {
+        "adverse_execution": 3.897804,
+        "entry_raw_off_tick": 0,
+        "fees": 15.591215,
+        "fees_recomputed": 15.591215,
+        "gross": -10.916721,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 380,
+        "net": -30.511545,
+        "rounding_residual": 0.10580491
+      },
+      "H02-H720-none|diag_rt0": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 0.0,
+        "fees_recomputed": 0.0,
+        "gross": -31.772157,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 456,
+        "net": -31.772157,
+        "rounding_residual": 0.0
+      },
+      "H02-H720-none|diag_rt10": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 22.504971,
+        "fees_recomputed": 22.504971,
+        "gross": -32.367872,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 456,
+        "net": -54.872844,
+        "rounding_residual": 0.0
+      },
+      "H02-H720-none|diag_rt40": {
+        "adverse_execution": 16.131713,
+        "entry_raw_off_tick": 0,
+        "fees": 48.395163,
+        "fees_recomputed": 48.395163,
+        "gross": -24.78219,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 456,
+        "net": -89.603549,
+        "rounding_residual": 0.29448287
+      },
+      "H03-H4320-none|constrained_main": {
+        "adverse_execution": 0.545859,
+        "entry_raw_off_tick": 0,
+        "fees": 2.183439,
+        "fees_recomputed": 2.183439,
+        "gross": -7.355599,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 22,
+        "net": -10.099023,
+        "rounding_residual": 0.01412652
+      },
+      "H03-H4320-none|diag_delay5": {
+        "adverse_execution": 1.217375,
+        "entry_raw_off_tick": 0,
+        "fees": 4.869511,
+        "fees_recomputed": 4.869511,
+        "gross": -14.695141,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 49,
+        "net": -20.822947,
+        "rounding_residual": 0.04092032
+      },
+      "H03-H4320-none|diag_main": {
+        "adverse_execution": 1.218605,
+        "entry_raw_off_tick": 0,
+        "fees": 4.874434,
+        "fees_recomputed": 4.874434,
+        "gross": -11.390574,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 49,
+        "net": -17.524483,
+        "rounding_residual": 0.0408699
+      },
+      "H03-H4320-none|diag_risk_matched": {
+        "adverse_execution": 0.053037,
+        "entry_raw_off_tick": 0,
+        "fees": 0.212149,
+        "fees_recomputed": 0.212149,
+        "gross": -0.873508,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 8,
+        "net": -1.13875,
+        "rounding_residual": 5.519e-05
+      },
+      "H03-H4320-none|diag_rt0": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 0.0,
+        "fees_recomputed": 0.0,
+        "gross": -11.391254,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 49,
+        "net": -11.391254,
+        "rounding_residual": 0.0
+      },
+      "H03-H4320-none|diag_rt10": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 2.43762,
+        "fees_recomputed": 2.43762,
+        "gross": -11.391254,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 49,
+        "net": -13.828873,
+        "rounding_residual": 0.0
+      },
+      "H03-H4320-none|diag_rt40": {
+        "adverse_execution": 2.436133,
+        "entry_raw_off_tick": 0,
+        "fees": 7.308423,
+        "fees_recomputed": 7.308423,
+        "gross": -11.398077,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 49,
+        "net": -21.189946,
+        "rounding_residual": 0.04731338
+      }
+    },
+    "depletion": {
+      "G01-B1-H60-thr0|constrained_main": {
+        "blocked_reason": "total_loss_stop",
+        "cash_end": 89.8796,
+        "first_blocked_intent": "2021-10-11 20:00:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 13857,
+        "last_exit": "2021-10-11 19:47:00+00:00",
+        "share_of_oos_period_before_block": 0.0237,
+        "trades": 94
+      },
+      "G01-B1-H60-thr0|diag_main": {
+        "blocked_reason": "min_notional_or_cash",
+        "cash_end": 10.0081,
+        "first_blocked_intent": "2021-12-18 18:00:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 11223,
+        "last_exit": "2021-12-19 04:31:00+00:00",
+        "share_of_oos_period_before_block": 0.1723,
+        "trades": 1119
+      },
+      "G01-X-H60-thr0|constrained_main": {
+        "blocked_reason": "total_loss_stop",
+        "cash_end": 89.8984,
+        "first_blocked_intent": "2021-10-08 20:30:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 13606,
+        "last_exit": "2021-10-08 19:51:00+00:00",
+        "share_of_oos_period_before_block": 0.0172,
+        "trades": 62
+      },
+      "G01-X-H60-thr0|diag_main": {
+        "blocked_reason": "min_notional_or_cash",
+        "cash_end": 9.9046,
+        "first_blocked_intent": "2021-12-28 02:00:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 10752,
+        "last_exit": "2021-12-28 17:31:00+00:00",
+        "share_of_oos_period_before_block": 0.1927,
+        "trades": 1195
+      },
+      "H01-H120-none|constrained_main": {
+        "blocked_reason": "total_loss_stop",
+        "cash_end": 89.8923,
+        "first_blocked_intent": "2021-10-23 10:00:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 2521,
+        "last_exit": "2021-10-23 06:07:00+00:00",
+        "share_of_oos_period_before_block": 0.0491,
+        "trades": 77
+      },
+      "H01-H120-none|diag_main": {
+        "blocked_reason": "min_notional_or_cash",
+        "cash_end": 9.9301,
+        "first_blocked_intent": "2022-06-14 05:00:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 1155,
+        "last_exit": "2022-06-16 12:01:00+00:00",
+        "share_of_oos_period_before_block": 0.5606,
+        "trades": 966
+      },
+      "H02-H720-none|constrained_main": {
+        "blocked_reason": "total_loss_stop",
+        "cash_end": 89.9225,
+        "first_blocked_intent": "2021-12-05 04:00:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 960,
+        "last_exit": "2021-12-03 14:56:00+00:00",
+        "share_of_oos_period_before_block": 0.1426,
+        "trades": 77
+      },
+      "H02-H720-none|diag_main": {
+        "blocked_reason": null,
+        "cash_end": 20.9554,
+        "first_blocked_intent": null,
+        "intents_blocked_by_cash_or_total_stop": 0,
+        "last_exit": "2022-12-31 04:01:00+00:00",
+        "share_of_oos_period_before_block": 1.0,
+        "trades": 456
+      },
+      "H03-H4320-none|constrained_main": {
+        "blocked_reason": "total_loss_stop",
+        "cash_end": 89.901,
+        "first_blocked_intent": "2021-11-29 00:00:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 107,
+        "last_exit": "2021-11-26 03:47:00+00:00",
+        "share_of_oos_period_before_block": 0.1291,
+        "trades": 22
+      },
+      "H03-H4320-none|diag_main": {
+        "blocked_reason": null,
+        "cash_end": 82.4755,
+        "first_blocked_intent": null,
+        "intents_blocked_by_cash_or_total_stop": 0,
+        "last_exit": "2022-12-27 00:01:00+00:00",
+        "share_of_oos_period_before_block": 1.0,
+        "trades": 49
+      }
+    },
+    "primary_tests_inputs": {
+      "G01_H04_X_thrc_minus_thr0": "ok",
+      "G01_economic_X_minus_B1_thr0": "ok",
+      "G01_forecast_mse_B1_minus_X_H60": "ok",
+      "H01_H04_c_minus_common_H120": "ok",
+      "H01_net_H120": "ok",
+      "H02_H04_c_minus_common_H720": "ok",
+      "H02_net_H720": "ok",
+      "H03_H04_c_minus_common_H4320": "ok",
+      "H03_net_H4320": "ok"
+    },
+    "signal_tables": {
+      "g01": {
+        "file": "development_g01_all_predictions.csv.gz",
+        "rows": 196911
+      },
+      "h01": {
+        "file": "development_h01_all_decisions.csv.gz",
+        "rows": 98658,
+        "signals": 15675
+      },
+      "h02": {
+        "file": "development_h02_all_decisions.csv.gz",
+        "rows": 24597,
+        "signals": 7143
+      },
+      "h03": {
+        "file": "development_h03_all_decisions.csv.gz",
+        "rows": 4005,
+        "signals": 936
+      }
+    }
+  },
+  "v01_rt0_residual": {
+    "development": {
+      "entry_fill_differs_from_raw": 0,
+      "exit_fill_differs_from_raw": 1673,
+      "fees": 0.0,
+      "residual_by_exit_reason": [
+        {
+          "count": 3,
+          "exit_reason": "risk_exit_daily",
+          "sum": 0.0
+        },
+        {
+          "count": 1119,
+          "exit_reason": "stop",
+          "sum": 0.85789
+        },
+        {
+          "count": 581,
+          "exit_reason": "target",
+          "sum": 0.487658
+        },
+        {
+          "count": 2130,
+          "exit_reason": "time_exit",
+          "sum": 0.0
+        }
+      ],
+      "slippage_cost_column": 1.345547,
+      "trades": 3833
+    },
+    "validation": {
+      "entry_fill_differs_from_raw": 0,
+      "exit_fill_differs_from_raw": 301,
+      "fees": 0.0,
+      "residual_by_exit_reason": [
+        {
+          "count": 193,
+          "exit_reason": "stop",
+          "sum": 0.226884
+        },
+        {
+          "count": 114,
+          "exit_reason": "target",
+          "sum": 0.11317
+        },
+        {
+          "count": 1,
+          "exit_reason": "target_gap",
+          "sum": 0.003449
+        },
+        {
+          "count": 706,
+          "exit_reason": "time_exit",
+          "sum": 0.0
+        }
+      ],
+      "slippage_cost_column": 0.343502,
+      "trades": 1014
+    }
+  },
+  "validation": {
+    "clustering": {
+      "G01": {
+        "corr_of_labels_across_targets_same_T": 0.7299,
+        "rows": 105024,
+        "rows_pred_X_gt0": 61700,
+        "share_decisions_all_3_targets_gt0": 0.5311
+      },
+      "H01": {
+        "days_with_signal": 725,
+        "decision_times_with_signal": 5383,
+        "hold_min": 120,
+        "lag1_autocorr_daily_mean_label": -0.018,
+        "max_signals_per_day": 36,
+        "mean_assets_per_signal_time": 1.912,
+        "mean_later_same_asset_signals_inside_hold": 0.226,
+        "n_signals": 10294,
+        "naive_n_over_unique_days": 14.2,
+        "share_decisions_with_>=2_assets": 0.5839
+      },
+      "H02": {
+        "days_with_signal": 658,
+        "decision_times_with_signal": 2174,
+        "hold_min": 720,
+        "lag1_autocorr_daily_mean_label": -0.0016,
+        "max_signals_per_day": 17,
+        "mean_assets_per_signal_time": 1.93,
+        "mean_later_same_asset_signals_inside_hold": 0.875,
+        "n_signals": 4196,
+        "naive_n_over_unique_days": 6.38,
+        "share_decisions_with_>=2_assets": 0.6012
+      },
+      "H03": {
+        "days_with_signal": 415,
+        "decision_times_with_signal": 415,
+        "hold_min": 4320,
+        "lag1_autocorr_daily_mean_label": 0.5971,
+        "max_signals_per_day": 3,
+        "mean_assets_per_signal_time": 2.111,
+        "mean_later_same_asset_signals_inside_hold": 1.6,
+        "n_signals": 876,
+        "naive_n_over_unique_days": 2.11,
+        "share_decisions_with_>=2_assets": 0.694
+      }
+    },
+    "cost_decomposition": {
+      "G01-B1-H60-thr0|constrained_main": {
+        "adverse_execution": 2.622953,
+        "entry_raw_off_tick": 0,
+        "fees": 10.49181,
+        "fees_recomputed": 10.49181,
+        "gross": 5.591359,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 105,
+        "net": -10.120963,
+        "rounding_residual": 2.59755886
+      },
+      "G01-B1-H60-thr0|diag_delay5": {
+        "adverse_execution": 18.211778,
+        "entry_raw_off_tick": 0,
+        "fees": 72.847112,
+        "fees_recomputed": 72.847112,
+        "gross": 8.804307,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 1085,
+        "net": -90.019413,
+        "rounding_residual": 7.76483024
+      },
+      "G01-B1-H60-thr0|diag_main": {
+        "adverse_execution": 17.682834,
+        "entry_raw_off_tick": 0,
+        "fees": 70.731334,
+        "fees_recomputed": 70.731334,
+        "gross": 5.957392,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 1085,
+        "net": -90.041638,
+        "rounding_residual": 7.58486285
+      },
+      "G01-B1-H60-thr0|diag_risk_matched": {
+        "adverse_execution": 17.980966,
+        "entry_raw_off_tick": 0,
+        "fees": 71.923862,
+        "fees_recomputed": 71.923862,
+        "gross": 5.853252,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 1113,
+        "net": -90.018546,
+        "rounding_residual": 5.96697007
+      },
+      "G01-B1-H60-thr0|diag_rt0": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 0.0,
+        "fees_recomputed": 0.0,
+        "gross": 90.67178,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 10942,
+        "net": 90.67178,
+        "rounding_residual": 0.0
+      },
+      "G01-B1-H60-thr0|diag_rt10": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 112.331764,
+        "fees_recomputed": 112.331764,
+        "gross": 22.318829,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 2994,
+        "net": -90.012934,
+        "rounding_residual": 0.0
+      },
+      "G01-B1-H60-thr0|diag_rt40": {
+        "adverse_execution": 22.285151,
+        "entry_raw_off_tick": 0,
+        "fees": 66.855448,
+        "fees_recomputed": 66.855448,
+        "gross": 4.642916,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 650,
+        "net": -89.997875,
+        "rounding_residual": 5.50019241
+      },
+      "G01-X-H60-thr0|constrained_main": {
+        "adverse_execution": 5.921541,
+        "entry_raw_off_tick": 0,
+        "fees": 23.686164,
+        "fees_recomputed": 23.686164,
+        "gross": 22.238021,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 237,
+        "net": -10.230589,
+        "rounding_residual": 2.86090516
+      },
+      "G01-X-H60-thr0|diag_delay5": {
+        "adverse_execution": 19.245991,
+        "entry_raw_off_tick": 0,
+        "fees": 76.983963,
+        "fees_recomputed": 76.983963,
+        "gross": 14.69826,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 1074,
+        "net": -90.019272,
+        "rounding_residual": 8.48757804
+      },
+      "G01-X-H60-thr0|diag_main": {
+        "adverse_execution": 19.996572,
+        "entry_raw_off_tick": 0,
+        "fees": 79.98629,
+        "fees_recomputed": 79.98629,
+        "gross": 18.798491,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 1087,
+        "net": -89.994414,
+        "rounding_residual": 8.81004223
+      },
+      "G01-X-H60-thr0|diag_risk_matched": {
+        "adverse_execution": 21.5701,
+        "entry_raw_off_tick": 0,
+        "fees": 86.280398,
+        "fees_recomputed": 86.280398,
+        "gross": 24.447047,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 1219,
+        "net": -90.024667,
+        "rounding_residual": 6.62121616
+      },
+      "G01-X-H60-thr0|diag_rt0": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 0.0,
+        "fees_recomputed": 0.0,
+        "gross": 143.647016,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 10048,
+        "net": 143.647016,
+        "rounding_residual": 0.0
+      },
+      "G01-X-H60-thr0|diag_rt10": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 115.07918,
+        "fees_recomputed": 115.07918,
+        "gross": 25.075032,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 3088,
+        "net": -90.004147,
+        "rounding_residual": 0.0
+      },
+      "G01-X-H60-thr0|diag_rt40": {
+        "adverse_execution": 25.909314,
+        "entry_raw_off_tick": 0,
+        "fees": 77.727919,
+        "fees_recomputed": 77.727919,
+        "gross": 21.381229,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 697,
+        "net": -89.995546,
+        "rounding_residual": 7.73954207
+      },
+      "H01-H120-none|constrained_main": {
+        "adverse_execution": 4.370527,
+        "entry_raw_off_tick": 0,
+        "fees": 17.482108,
+        "fees_recomputed": 17.482108,
+        "gross": 13.708071,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 175,
+        "net": -10.357768,
+        "rounding_residual": 2.21320409
+      },
+      "H01-H120-none|diag_delay5": {
+        "adverse_execution": 16.79479,
+        "entry_raw_off_tick": 0,
+        "fees": 67.17916,
+        "fees_recomputed": 67.17916,
+        "gross": -1.120795,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 905,
+        "net": -90.071215,
+        "rounding_residual": 4.97646987
+      },
+      "H01-H120-none|diag_main": {
+        "adverse_execution": 17.389557,
+        "entry_raw_off_tick": 0,
+        "fees": 69.558231,
+        "fees_recomputed": 69.558231,
+        "gross": 2.073432,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 948,
+        "net": -90.014391,
+        "rounding_residual": 5.14003453
+      },
+      "H01-H120-none|diag_risk_matched": {
+        "adverse_execution": 16.191337,
+        "entry_raw_off_tick": 0,
+        "fees": 64.765351,
+        "fees_recomputed": 64.765351,
+        "gross": -5.127242,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 1003,
+        "net": -90.157722,
+        "rounding_residual": 4.07379229
+      },
+      "H01-H120-none|diag_rt0": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 0.0,
+        "fees_recomputed": 0.0,
+        "gross": 46.202094,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 3249,
+        "net": 46.202094,
+        "rounding_residual": 0.0
+      },
+      "H01-H120-none|diag_rt10": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 116.835968,
+        "fees_recomputed": 116.835968,
+        "gross": 29.045804,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 3249,
+        "net": -87.790164,
+        "rounding_residual": 0.0
+      },
+      "H01-H120-none|diag_rt40": {
+        "adverse_execution": 24.008038,
+        "entry_raw_off_tick": 0,
+        "fees": 72.024085,
+        "fees_recomputed": 72.024085,
+        "gross": 9.559497,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 642,
+        "net": -90.149367,
+        "rounding_residual": 3.67673996
+      },
+      "H02-H720-none|constrained_main": {
+        "adverse_execution": 3.393476,
+        "entry_raw_off_tick": 0,
+        "fees": 13.573902,
+        "fees_recomputed": 13.573902,
+        "gross": 7.201241,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 136,
+        "net": -10.217336,
+        "rounding_residual": 0.45120003
+      },
+      "H02-H720-none|diag_delay5": {
+        "adverse_execution": 20.066072,
+        "entry_raw_off_tick": 0,
+        "fees": 80.26427,
+        "fees_recomputed": 80.26427,
+        "gross": 81.706064,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 805,
+        "net": -20.238837,
+        "rounding_residual": 1.61456001
+      },
+      "H02-H720-none|diag_main": {
+        "adverse_execution": 20.065157,
+        "entry_raw_off_tick": 0,
+        "fees": 80.260614,
+        "fees_recomputed": 80.260614,
+        "gross": 80.467143,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 805,
+        "net": -21.472842,
+        "rounding_residual": 1.61421371
+      },
+      "H02-H720-none|diag_risk_matched": {
+        "adverse_execution": 10.665264,
+        "entry_raw_off_tick": 0,
+        "fees": 42.661048,
+        "fees_recomputed": 42.661048,
+        "gross": 36.544951,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 772,
+        "net": -17.265476,
+        "rounding_residual": 0.48411423
+      },
+      "H02-H720-none|diag_rt0": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 0.0,
+        "fees_recomputed": 0.0,
+        "gross": 80.539308,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 805,
+        "net": 80.539308,
+        "rounding_residual": 0.0
+      },
+      "H02-H720-none|diag_rt10": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 40.144737,
+        "fees_recomputed": 40.144737,
+        "gross": 80.539308,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 805,
+        "net": 40.394571,
+        "rounding_residual": 0.0
+      },
+      "H02-H720-none|diag_rt40": {
+        "adverse_execution": 36.40309,
+        "entry_raw_off_tick": 0,
+        "fees": 109.209326,
+        "fees_recomputed": 109.209326,
+        "gross": 72.55147,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 805,
+        "net": -74.929923,
+        "rounding_residual": 1.86897627
+      },
+      "H03-H4320-none|constrained_main": {
+        "adverse_execution": 3.869963,
+        "entry_raw_off_tick": 0,
+        "fees": 15.479841,
+        "fees_recomputed": 15.479841,
+        "gross": 39.914695,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 155,
+        "net": 20.324177,
+        "rounding_residual": 0.24071443
+      },
+      "H03-H4320-none|diag_delay5": {
+        "adverse_execution": 2.948794,
+        "entry_raw_off_tick": 0,
+        "fees": 11.795164,
+        "fees_recomputed": 11.795164,
+        "gross": 49.526145,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 118,
+        "net": 34.65638,
+        "rounding_residual": 0.12580745
+      },
+      "H03-H4320-none|diag_main": {
+        "adverse_execution": 2.950164,
+        "entry_raw_off_tick": 0,
+        "fees": 11.800644,
+        "fees_recomputed": 11.800644,
+        "gross": 50.023293,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 118,
+        "net": 35.146321,
+        "rounding_residual": 0.12616419
+      },
+      "H03-H4320-none|diag_risk_matched": {
+        "adverse_execution": 0.553412,
+        "entry_raw_off_tick": 0,
+        "fees": 2.213644,
+        "fees_recomputed": 2.213644,
+        "gross": 8.61948,
+        "gross_minus_costs_minus_net": -0.0,
+        "n": 85,
+        "net": 5.846595,
+        "rounding_residual": 0.00582896
+      },
+      "H03-H4320-none|diag_rt0": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 0.0,
+        "fees_recomputed": 0.0,
+        "gross": 49.979563,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 118,
+        "net": 49.979563,
+        "rounding_residual": 0.0
+      },
+      "H03-H4320-none|diag_rt10": {
+        "adverse_execution": 0.0,
+        "entry_raw_off_tick": 0,
+        "fees": 5.901182,
+        "fees_recomputed": 5.901182,
+        "gross": 49.979563,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 118,
+        "net": 44.07838,
+        "rounding_residual": 0.0
+      },
+      "H03-H4320-none|diag_rt40": {
+        "adverse_execution": 5.898268,
+        "entry_raw_off_tick": 0,
+        "fees": 17.694768,
+        "fees_recomputed": 17.694768,
+        "gross": 49.960486,
+        "gross_minus_costs_minus_net": 0.0,
+        "n": 118,
+        "net": 26.191472,
+        "rounding_residual": 0.17597747
+      }
+    },
+    "depletion": {
+      "G01-B1-H60-thr0|constrained_main": {
+        "blocked_reason": "total_loss_stop",
+        "cash_end": 89.879,
+        "first_blocked_intent": "2023-01-12 06:30:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 30489,
+        "last_exit": "2023-01-12 06:02:00+00:00",
+        "share_of_oos_period_before_block": 0.0154,
+        "trades": 105
+      },
+      "G01-B1-H60-thr0|diag_main": {
+        "blocked_reason": "min_notional_or_cash",
+        "cash_end": 9.9584,
+        "first_blocked_intent": "2023-03-27 15:00:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 28100,
+        "last_exit": "2023-03-27 14:31:00+00:00",
+        "share_of_oos_period_before_block": 0.1171,
+        "trades": 1085
+      },
+      "G01-X-H60-thr0|constrained_main": {
+        "blocked_reason": "total_loss_stop",
+        "cash_end": 89.7694,
+        "first_blocked_intent": "2023-01-25 23:30:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 26013,
+        "last_exit": "2023-01-25 22:57:00+00:00",
+        "share_of_oos_period_before_block": 0.0342,
+        "trades": 237
+      },
+      "G01-X-H60-thr0|diag_main": {
+        "blocked_reason": "min_notional_or_cash",
+        "cash_end": 10.0056,
+        "first_blocked_intent": "2023-04-04 08:30:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 24077,
+        "last_exit": "2023-04-04 18:31:00+00:00",
+        "share_of_oos_period_before_block": 0.1277,
+        "trades": 1087
+      },
+      "H01-H120-none|constrained_main": {
+        "blocked_reason": "total_loss_stop",
+        "cash_end": 89.6422,
+        "first_blocked_intent": "2023-02-22 07:00:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 5106,
+        "last_exit": "2023-02-22 06:59:00+00:00",
+        "share_of_oos_period_before_block": 0.0715,
+        "trades": 175
+      },
+      "H01-H120-none|diag_main": {
+        "blocked_reason": "min_notional_or_cash",
+        "cash_end": 9.9856,
+        "first_blocked_intent": "2023-09-19 14:00:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 3955,
+        "last_exit": "2023-09-21 03:01:00+00:00",
+        "share_of_oos_period_before_block": 0.3578,
+        "trades": 948
+      },
+      "H02-H720-none|constrained_main": {
+        "blocked_reason": "total_loss_stop",
+        "cash_end": 89.7827,
+        "first_blocked_intent": "2023-05-12 16:00:00+00:00",
+        "intents_blocked_by_cash_or_total_stop": 1808,
+        "last_exit": "2023-05-11 08:03:00+00:00",
+        "share_of_oos_period_before_block": 0.1801,
+        "trades": 136
+      },
+      "H02-H720-none|diag_main": {
+        "blocked_reason": null,
+        "cash_end": 78.5272,
+        "first_blocked_intent": null,
+        "intents_blocked_by_cash_or_total_stop": 0,
+        "last_exit": "2024-12-31 08:01:00+00:00",
+        "share_of_oos_period_before_block": 1.0,
+        "trades": 805
+      },
+      "H03-H4320-none|constrained_main": {
+        "blocked_reason": null,
+        "cash_end": 120.3242,
+        "first_blocked_intent": null,
+        "intents_blocked_by_cash_or_total_stop": 0,
+        "last_exit": "2024-12-18 00:01:00+00:00",
+        "share_of_oos_period_before_block": 1.0,
+        "trades": 155
+      },
+      "H03-H4320-none|diag_main": {
+        "blocked_reason": null,
+        "cash_end": 135.1463,
+        "first_blocked_intent": null,
+        "intents_blocked_by_cash_or_total_stop": 0,
+        "last_exit": "2024-12-20 00:01:00+00:00",
+        "share_of_oos_period_before_block": 1.0,
+        "trades": 118
+      }
+    },
+    "primary_tests_inputs": {
+      "G01_H04_X_thrc_minus_thr0": "ok",
+      "G01_economic_X_minus_B1_thr0": "ok",
+      "G01_forecast_mse_B1_minus_X_H60": "ok",
+      "H01_H04_c_minus_common_H120": "ok",
+      "H01_net_H120": "ok",
+      "H02_H04_c_minus_common_H720": "ok",
+      "H02_net_H720": "ok",
+      "H03_H04_c_minus_common_H4320": "ok",
+      "H03_net_H4320": "ok"
+    },
+    "signal_tables": {
+      "g01": {
+        "file": "validation_g01_all_predictions.csv.gz",
+        "rows": 315072
+      },
+      "h01": {
+        "file": "validation_h01_all_decisions.csv.gz",
+        "rows": 157827,
+        "signals": 30882
+      },
+      "h02": {
+        "file": "validation_h02_all_decisions.csv.gz",
+        "rows": 39384,
+        "signals": 12588
+      },
+      "h03": {
+        "file": "validation_h03_all_decisions.csv.gz",
+        "rows": 6480,
+        "signals": 2628
+      }
+    }
+  }
+}

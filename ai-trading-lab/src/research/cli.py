@@ -66,6 +66,16 @@ def cmd_report(cfg, a):
     return 0
 
 
+def cmd_diag_d1(cfg, a):
+    if not a.confirmed:
+        print("REFUSED: MH-v0.2-D1 is a pre-registered diagnostic that runs only after owner confirmation (--confirmed).")
+        return 6
+    from src.research.diag_d1 import run_d1
+    out = run_d1(cfg, a.split, n_seeds=a.seeds)
+    print(f"D1 directory: {out.relative_to(ROOT)}")
+    return 0
+
+
 def verify_approval(cfg, path) -> tuple[bool, str]:
     """Fail-closed. The approval artifact must be written by the project owner, not by any script or agent."""
     if not path or not Path(path).exists():
@@ -104,11 +114,13 @@ def main(argv=None):
     r.add_argument("--seeds", type=int, default=None); r.add_argument("--smoke-days", type=int, default=None)
     rp = sub.add_parser("report"); rp.add_argument("--split", required=True, choices=["development", "validation"])
     rp.add_argument("--rerender", action="store_true")
+    dd = sub.add_parser("diag-d1"); dd.add_argument("--split", required=True, choices=["development", "validation"])
+    dd.add_argument("--confirmed", action="store_true"); dd.add_argument("--seeds", type=int, default=None)
     h = sub.add_parser("historical-test"); h.add_argument("--approval-file", default=None)
     a = p.parse_args(argv)
     cfg = load_config(a.config)
     return {"download": cmd_download, "validate-data": cmd_validate, "run": cmd_run, "report": cmd_report,
-            "historical-test": cmd_hist_test}[a.cmd](cfg, a)
+            "historical-test": cmd_hist_test, "diag-d1": cmd_diag_d1}[a.cmd](cfg, a)
 
 
 if __name__ == "__main__":

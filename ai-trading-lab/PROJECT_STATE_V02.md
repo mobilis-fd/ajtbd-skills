@@ -17,6 +17,12 @@ Reports (all numbers come from code output):
 * code: git `0ad6beb`, code hash `a5bca96b79`, config `cf00d9bc`. The report text was re-rendered from the unchanged
   metrics.json after a formatting fix (`report --rerender`).
 
+## QA addendum (after FINAL_AUDIT_V01)
+
+See `reports/v02/QA_ADDENDUM_V02.md`. Main finding: the pre-registered diag wallet depletes, so the G01/H01
+primary-test effect sizes are dominated by forced zero days and are not edge estimates; verdict directions stand.
+The diagnostic MH-v0.2-D1 (`SPEC_DIAGNOSTIC_D1.md`) is pre-registered but **not executed** pending confirmation.
+
 ## Primary results (pre-registered, Holm over 9 tests, 14-day day-blocks, H0 "≤ 0")
 
 | test | development (observed, Holm p) | validation (observed, Holm p) | reading |
