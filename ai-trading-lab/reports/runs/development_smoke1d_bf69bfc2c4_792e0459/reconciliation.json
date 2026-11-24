@@ -1,0 +1,44 @@
+{
+  "B01-h30": {
+    "issues": [],
+    "n_trades": 3,
+    "ok": "True",
+    "recomputed_final_cash": 99.78871327,
+    "sum_net_pnl": -0.21128673
+  },
+  "B01-h60": {
+    "issues": [],
+    "n_trades": 2,
+    "ok": "True",
+    "recomputed_final_cash": 99.77277751,
+    "sum_net_pnl": -0.22722249
+  },
+  "E01-F": {
+    "issues": [],
+    "n_trades": 1,
+    "ok": "True",
+    "recomputed_final_cash": 100.14746042,
+    "sum_net_pnl": 0.14746042
+  },
+  "E01-P": {
+    "issues": [],
+    "n_trades": 1,
+    "ok": "True",
+    "recomputed_final_cash": 100.14746042,
+    "sum_net_pnl": 0.14746042
+  },
+  "E02-F": {
+    "issues": [],
+    "n_trades": 1,
+    "ok": "True",
+    "recomputed_final_cash": 99.8931744,
+    "sum_net_pnl": -0.1068256
+  },
+  "E02-P": {
+    "issues": [],
+    "n_trades": 1,
+    "ok": "True",
+    "recomputed_final_cash": 99.8931744,
+    "sum_net_pnl": -0.1068256
+  }
+}

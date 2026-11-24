@@ -88,7 +88,8 @@ def compute_metrics(trades: pd.DataFrame, rejections: pd.DataFrame, equity: pd.S
     else:
         m["sharpe_daily_ann"] = None
     downside = np.sqrt((np.minimum(dr, 0) ** 2).mean()) if len(dr) else 0
-    m["sortino_daily_ann"] = _r(dr.mean() / downside * math.sqrt(ann_days)) if downside > 0 else None
+    m["sortino_daily_ann"] = (_r(dr.mean() / downside * math.sqrt(ann_days))
+                              if len(dr) >= 2 and downside > 0 else None)
     m["windows"] = {}
     for w in windows:
         m["windows"][f"{w}d"] = window_table(equity, trades, initial, seg_start, seg_end, w)["summary"]

@@ -1,0 +1,31 @@
+{
+  "code_sha256": "bf69bfc2c424ec33f8489c4213c3650cd063a30cf34ea5f2d76c528e153192a2",
+  "config_file": "/home/user/ajtbd-skills/ai-trading-lab/configs/mvp.yaml",
+  "config_sha256": "792e04593f9a8de8084dcc948b73c5651055bdc2d70b0b2e16c413a35eaba8e8",
+  "data_manifest_sha256": "4031c50d06c1662fe2e1a76d8508b1a685db1cd21331f2e4b166ddb46142c678",
+  "data_sha256_1m_split": {
+    "BTCUSDT": "09a772d4e6d6bc70d1976cac5504a9f14130b174e09c1c6982c328b7c804af22",
+    "ETHUSDT": "0bff255666ca6c305cae535cfb3e72fb7b811deef3c2313a623ff3c2cdeb2c0f",
+    "SOLUSDT": "eadff5dd3ac6886ab56bcb6f2fba56b1d298ecd8a20c5665930321fd5eb8a35d"
+  },
+  "experiment_id": "MVP-v0.1-E01E02",
+  "freqtrade_sample_strategy_sha256": "18d48d64b955dc9bd1b43f59115c16f2002a881c62c2851ceca64569a6f8651c",
+  "git_commit": "944e2b16188f3c68186455fe5f7fd2d76d7c2251-dirty",
+  "label": "development_smoke1d",
+  "outputs_sha256": {
+    "equity_hourly.csv": "cc1ae087f39d1c0f5cbdf16c567c122e1f3171d29726aad77f7489854a1a5cbb",
+    "event_study.csv": "d8a1f240ffae4e2af4e0cc959671d14659bdc28a87dc747c1187200d9afc8fec",
+    "metrics.json": "1abbc345575b394e80344c69329d09a5c8624cf209129f067c79827bbe79a7c1",
+    "random_benchmark.csv": "aa87e541bbb6054e54db2b7c40a29afd8238b2f1584b7288bf1d252310ef95ca",
+    "reconciliation.json": "2927ac8d60ff59d60e6f705d3c3865d95970d8dba5c112e1c3334612a1499bb5",
+    "rejected_signals.csv": "bc84b40399912ac05cbbfb6a0ad2e4d4cdbfd1d9a1b4af090c4e09a76321e7eb",
+    "signals.csv": "6ed8a9e1aeafc19b84070c5041cf6738696d32bc557d68ae60f1eb7b62888f54",
+    "trades.csv": "57bf4a6ac4e964f8e1bcf4caac115f8c37d03210e834107d92f98230ff6ab99b"
+  },
+  "regime_thresholds_sha256": "2011718b3d3fc0254eca85827b6dac0a364cec4673202ad48f5626a2d390da93",
+  "segment": [
+    "2025-11-01 00:00:00+00:00",
+    "2025-11-02 00:00:00+00:00"
+  ],
+  "split": "development"
+}
