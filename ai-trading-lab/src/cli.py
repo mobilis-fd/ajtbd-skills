@@ -157,6 +157,18 @@ def cmd_holdout(cfg, args):
     return 0
 
 
+def cmd_summary(cfg, args):
+    from src.evaluation.report import write_summary
+    dirs = {}
+    for sp in ("development", "validation"):
+        runs = [r for r in sorted((ROOT / "reports" / "runs").glob(f"{sp}_*"), key=lambda p: p.stat().st_mtime)
+                if "smoke" not in r.name]
+        if runs:
+            dirs[sp] = runs[-1]
+    print(write_summary(dirs, ROOT / "reports" / "SUMMARY_development_validation.md"))
+    return 0
+
+
 def cmd_ft_export(cfg, args):
     from src.ftbridge.export import export_freqtrade_data
     print(export_freqtrade_data(cfg))
@@ -182,13 +194,14 @@ def main(argv=None):
     r = sub.add_parser("report"); r.add_argument("--split", required=True, choices=["development", "validation"])
     h = sub.add_parser("holdout"); h.add_argument("--approval-file", default=None)
     sub.add_parser("ft-export")
+    sub.add_parser("summary")
     c = sub.add_parser("ft-compare"); c.add_argument("--split", required=True, choices=["development", "validation"])
     c.add_argument("--ft-dir", required=True)
     args = p.parse_args(argv)
     cfg = load_config(args.config)
     fn = {"download": cmd_download, "validate-data": cmd_validate, "test-signals": cmd_test_signals,
           "backtest": cmd_backtest, "report": cmd_report, "holdout": cmd_holdout, "ft-export": cmd_ft_export,
-          "ft-compare": cmd_ft_compare}[args.cmd]
+          "ft-compare": cmd_ft_compare, "summary": cmd_summary}[args.cmd]
     return fn(cfg, args)
 
 

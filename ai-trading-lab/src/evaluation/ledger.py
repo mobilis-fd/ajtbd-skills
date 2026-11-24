@@ -54,7 +54,8 @@ def manual_check_text(t: pd.Series, bars_df: pd.DataFrame, fee: float, slip: flo
              f"  qty = floor_step(min(50, cash/(1+fee)) / fill) = {t['qty']:.8g}; notional_in = {t['notional_in']:.8f}; "
              f"fee_in = {t['fee_in']:.8f}",
              f"  stop = fill*(1-0.006) = {t['stop_level']:.8g}; target = fill*(1+0.009) = {t['target_level']:.8g}",
-             f"  exit {t['exit_reason']} at {t['exit_time']}: raw {t['raw_exit']:.8g}; x(1-{slip}) rounded down "
+             f"  exit {t['exit_reason']} recorded at {t['exit_time']} (intrabar stop/target = end of trigger minute; "
+             f"open-based exits = that bar's open): raw {t['raw_exit']:.8g}; x(1-{slip}) rounded down "
              f"= fill {t['fill_exit']:.8g}",
              f"  net = qty*fill_exit*(1-fee) - qty*fill_entry*(1+fee) = "
              f"{t['qty'] * t['fill_exit'] * (1 - fee) - t['qty'] * t['fill_entry'] * (1 + fee):.8f} "

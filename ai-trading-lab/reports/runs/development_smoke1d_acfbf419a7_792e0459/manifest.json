@@ -10,7 +10,7 @@
   },
   "experiment_id": "MVP-v0.1-E01E02",
   "freqtrade_sample_strategy_sha256": "18d48d64b955dc9bd1b43f59115c16f2002a881c62c2851ceca64569a6f8651c",
-  "git_commit": "5f4f481631166355ab5e42549911ebf4998a57dc-dirty",
+  "git_commit": "2036eb977e4c7a61ecb25844d8e55bd90b5fee49",
   "label": "development_smoke1d",
   "outputs_sha256": {
     "equity_hourly.csv": "cc1ae087f39d1c0f5cbdf16c567c122e1f3171d29726aad77f7489854a1a5cbb",
