@@ -1,0 +1,10 @@
+{
+  "fixed_on": "development",
+  "statistic": "median of vol24h (std of r5 over trailing 288 candles)",
+  "created_utc": "2026-11-24T19:18:26.862551+00:00",
+  "vol_threshold": {
+    "BTCUSDT": 0.0012921027428653181,
+    "ETHUSDT": 0.0017630529905519072,
+    "SOLUSDT": 0.001887791331291883
+  }
+}

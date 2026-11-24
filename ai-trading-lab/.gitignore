@@ -1,0 +1,24 @@
+# environments
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# data (raw/processed market data is never committed)
+data/
+user_data/data/
+user_data/backtest_results/
+user_data/logs/
+user_data/hyperopt_results/
+user_data/plot/
+*.sqlite
+*.sqlite-*
+*.db
+# large run artefacts (csv/json/md summaries ARE committed)
+reports/runs/**/*.parquet
+# secrets: never commit credentials; live keys are not used in this project
+.env
+.env.*
+*secret*
+*private*.json
+config_live*.json
+approvals/
