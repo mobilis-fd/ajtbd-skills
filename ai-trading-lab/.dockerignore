@@ -1,0 +1,7 @@
+.venv
+data
+user_data/data
+user_data/backtest_results
+reports/runs
+**/__pycache__
+.pytest_cache

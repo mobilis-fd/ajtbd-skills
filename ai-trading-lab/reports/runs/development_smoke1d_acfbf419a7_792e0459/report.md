@@ -1,7 +1,7 @@
 # Backtest report — development_smoke1d
 
 Experiment `MVP-v0.1-E01E02`; segment `[2025-11-01 00:00:00+00:00, 2025-11-02 00:00:00+00:00)` UTC.
-Config sha256 `792e04593f9a8de8…`, code sha256 `bf69bfc2c424ec33…`, git `944e2b16188f3c68186455fe5f7fd2d76d7c2251-dirty`.
+Config sha256 `792e04593f9a8de8…`, code sha256 `acfbf419a708f106…`, git `5f4f481631166355ab5e42549911ebf4998a57dc-dirty`.
 
 Research replay with virtual capital (100 USDT per strategy wallet). No real orders. Results include negative outcomes; nothing was tuned on these data.
 Cost model (main): fee 10 bps/side + adverse price adjustment 2.5 bps/side = 25 bps round trip (working assumption, not the user's tariff; real spread unknown on OHLCV).
@@ -176,8 +176,8 @@ Forward log returns from the 1m open at decision time; pooled across symbols (AL
 ```
 {
   "config_sha256": "792e04593f9a8de8084dcc948b73c5651055bdc2d70b0b2e16c413a35eaba8e8",
-  "code_sha256": "bf69bfc2c424ec33f8489c4213c3650cd063a30cf34ea5f2d76c528e153192a2",
-  "git_commit": "944e2b16188f3c68186455fe5f7fd2d76d7c2251-dirty",
+  "code_sha256": "acfbf419a708f10681b92d1f32f79c8381aed093380d20e2d67d8d9e8546dbd7",
+  "git_commit": "5f4f481631166355ab5e42549911ebf4998a57dc-dirty",
   "regime_thresholds_sha256": "2011718b3d3fc0254eca85827b6dac0a364cec4673202ad48f5626a2d390da93",
   "data_manifest_sha256": "4031c50d06c1662fe2e1a76d8508b1a685db1cd21331f2e4b166ddb46142c678"
 }

@@ -60,7 +60,7 @@ def write_report(cfg, out: Path, metrics: dict, manifest: dict, recon: dict, tra
         m = metrics[n]["scenarios"]["main"]
         ev = [e["event"] for e in m.get("risk_events", [])]
         L.append(f"- **{n}**: exits {m['exit_reasons']}; rejected {m['rejected_signals']}; "
-                 f"risk events {dict(pd.Series(ev).value_counts()) if ev else {}}; "
+                 f"risk events { {str(k): int(v) for k, v in pd.Series(ev).value_counts().items()} if ev else {} }; "
                  f"uncertain-gap trades {m['uncertain_gap_trades']} "
                  f"(conservative-gap net {_f(m['conservative_gap_scenario_net_pnl'], 4)})")
     L += ["", "## 2. Baselines", ""]

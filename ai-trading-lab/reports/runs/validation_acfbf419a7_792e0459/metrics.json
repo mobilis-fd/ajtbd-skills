@@ -1,0 +1,5759 @@
+{
+  "B00-cash": {
+    "n_trades": 0,
+    "net_pnl": 0.0,
+    "note": "cash, before any external costs",
+    "return_pct": 0.0
+  },
+  "B01-h30": {
+    "hold_minutes": 30,
+    "n_raw_signals": 469,
+    "raw_signals_by_symbol": {
+      "BTCUSDT": 170,
+      "ETHUSDT": 139,
+      "SOLUSDT": 160
+    },
+    "scenarios": {
+      "coarse_step_x10": {
+        "avg_hold_minutes": 25.476923,
+        "avg_loss": -0.221321,
+        "avg_win": 0.138202,
+        "conservative_gap_scenario_net_pnl": -10.07157,
+        "exit_reasons": {
+          "risk_exit_daily": 1,
+          "risk_exit_total": 1,
+          "stop": 17,
+          "target": 3,
+          "time_exit": 43
+        },
+        "expectancy": -0.154947,
+        "exposure_pct_time": 1.575342,
+        "fees": 6.224786,
+        "final_equity": 89.92843,
+        "gross_pnl": -2.242304,
+        "max_drawdown_pct": 10.07157,
+        "max_drawdown_usdt": 10.07157,
+        "n_days": 73,
+        "n_trades": 65,
+        "net_pnl": -10.07157,
+        "profit_factor": 0.141383,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 33,
+          "cooldown": 3,
+          "daily_loss_pause": 3,
+          "position_open": 23,
+          "total_loss_stop": 342
+        },
+        "return_pct": -10.07157,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -5.980192,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -7.229566,
+        "slippage_cost": 1.60448,
+        "sortino_daily_ann": -6.802958,
+        "turnover_x_initial": 62.24786,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.184615,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -2.736452,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.722222
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -5.240212,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.7
+          }
+        }
+      },
+      "cost_rt0": {
+        "avg_hold_minutes": 28.357724,
+        "avg_loss": -0.12973,
+        "avg_win": 0.114354,
+        "break_even_roundtrip_cost_bps": -1.5992,
+        "conservative_gap_scenario_net_pnl": -2.005611,
+        "exit_reasons": {
+          "stop": 27,
+          "target": 6,
+          "time_exit": 213
+        },
+        "expectancy": -0.008153,
+        "exposure_pct_time": 6.636225,
+        "fees": 0.0,
+        "final_equity": 97.994389,
+        "gross_pnl": -1.959321,
+        "max_drawdown_pct": 3.941564,
+        "max_drawdown_usdt": 3.958358,
+        "n_days": 73,
+        "n_trades": 246,
+        "net_pnl": -2.005611,
+        "profit_factor": 0.87431,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 98,
+          "cooldown": 15,
+          "position_open": 110
+        },
+        "return_pct": -2.005611,
+        "rolling_7d_pnl": {
+          "max": 1.602173,
+          "median": -0.223213,
+          "min": -1.880833,
+          "n": 67,
+          "share_positive": 0.38806
+        },
+        "sharpe_daily_ann": -1.707697,
+        "slippage_cost": 0.046291,
+        "sortino_daily_ann": -2.231626,
+        "turnover_x_initial": 245.023896,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.495935,
+        "windows": {
+          "4d": {
+            "max_pnl": 1.407068,
+            "median_pnl": -0.196579,
+            "min_pnl": -0.789104,
+            "n_windows_complete": 18,
+            "share_positive": 0.333333,
+            "share_zero_trades": 0.0
+          },
+          "7d": {
+            "max_pnl": 1.437641,
+            "median_pnl": -0.261821,
+            "min_pnl": -1.631169,
+            "n_windows_complete": 10,
+            "share_positive": 0.4,
+            "share_zero_trades": 0.0
+          }
+        }
+      },
+      "cost_rt10": {
+        "avg_hold_minutes": 27.34,
+        "avg_loss": -0.165674,
+        "avg_win": 0.142925,
+        "conservative_gap_scenario_net_pnl": -10.038346,
+        "exit_reasons": {
+          "risk_exit_total": 1,
+          "stop": 25,
+          "target": 6,
+          "time_exit": 118
+        },
+        "expectancy": -0.066922,
+        "exposure_pct_time": 3.901256,
+        "fees": 5.974807,
+        "final_equity": 89.961654,
+        "gross_pnl": -2.443667,
+        "max_drawdown_pct": 10.038346,
+        "max_drawdown_usdt": 10.038346,
+        "n_days": 73,
+        "n_trades": 150,
+        "net_pnl": -10.038346,
+        "profit_factor": 0.405972,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 61,
+          "cooldown": 11,
+          "position_open": 67,
+          "total_loss_stop": 180
+        },
+        "return_pct": -10.038346,
+        "rolling_7d_pnl": {
+          "max": 0.008787,
+          "median": -0.80284,
+          "min": -3.587127,
+          "n": 67,
+          "share_positive": 0.014925
+        },
+        "sharpe_daily_ann": -8.109666,
+        "slippage_cost": 1.619872,
+        "sortino_daily_ann": -7.851859,
+        "turnover_x_initial": 149.370187,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.32,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.024806,
+            "median_pnl": -0.240749,
+            "min_pnl": -1.589459,
+            "n_windows_complete": 18,
+            "share_positive": 0.055556,
+            "share_zero_trades": 0.333333
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": -0.865248,
+            "min_pnl": -3.293489,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.3
+          }
+        }
+      },
+      "cost_rt40": {
+        "avg_hold_minutes": 27.413043,
+        "avg_loss": -0.24303,
+        "avg_win": 0.135135,
+        "conservative_gap_scenario_net_pnl": -10.044894,
+        "exit_reasons": {
+          "stop": 10,
+          "target": 1,
+          "time_exit": 35
+        },
+        "expectancy": -0.218367,
+        "exposure_pct_time": 1.199581,
+        "fees": 7.327619,
+        "final_equity": 89.955106,
+        "gross_pnl": -0.847467,
+        "max_drawdown_pct": 10.044894,
+        "max_drawdown_usdt": 10.044894,
+        "n_days": 73,
+        "n_trades": 46,
+        "net_pnl": -10.044894,
+        "profit_factor": 0.038794,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 24,
+          "cooldown": 2,
+          "daily_loss_pause": 6,
+          "position_open": 16,
+          "total_loss_stop": 375
+        },
+        "return_pct": -10.044894,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -5.922981,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -7.510884,
+        "slippage_cost": 1.869808,
+        "sortino_daily_ann": -7.03194,
+        "turnover_x_initial": 45.79762,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.065217,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.323795,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.777778
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.90834,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.7
+          }
+        }
+      },
+      "delay60": {
+        "avg_hold_minutes": 25.730159,
+        "avg_loss": -0.231213,
+        "avg_win": 0.1393,
+        "conservative_gap_scenario_net_pnl": -10.120284,
+        "exit_reasons": {
+          "risk_exit_daily": 2,
+          "risk_exit_total": 1,
+          "stop": 14,
+          "target": 3,
+          "time_exit": 43
+        },
+        "expectancy": -0.160639,
+        "exposure_pct_time": 1.542047,
+        "fees": 6.268273,
+        "final_equity": 89.879716,
+        "gross_pnl": -2.236034,
+        "max_drawdown_pct": 10.120284,
+        "max_drawdown_usdt": 10.120284,
+        "n_days": 73,
+        "n_trades": 63,
+        "net_pnl": -10.120284,
+        "profit_factor": 0.141759,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 33,
+          "cooldown": 2,
+          "daily_loss_pause": 8,
+          "position_open": 21,
+          "total_loss_stop": 342
+        },
+        "return_pct": -10.120284,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -5.792052,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -7.191672,
+        "slippage_cost": 1.615977,
+        "sortino_daily_ann": -6.772458,
+        "turnover_x_initial": 62.682728,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.190476,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.072865,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.722222
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -5.508058,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.7
+          }
+        }
+      },
+      "main": {
+        "avg_hold_minutes": 26.206349,
+        "avg_loss": -0.2302,
+        "avg_win": 0.14289,
+        "bootstrap": {
+          "block_14d": {
+            "block_days": 14,
+            "ci95_mean_daily": [
+              -0.32303,
+              0.0
+            ],
+            "ci95_total": [
+              -23.581206,
+              0.0
+            ],
+            "mean_daily_pnl": -0.137336,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -10.025525
+          },
+          "block_3d": {
+            "block_days": 3,
+            "ci95_mean_daily": [
+              -0.254884,
+              -0.035928
+            ],
+            "ci95_total": [
+              -18.60652,
+              -2.62277
+            ],
+            "mean_daily_pnl": -0.137336,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -10.025525
+          },
+          "block_7d": {
+            "block_days": 7,
+            "ci95_mean_daily": [
+              -0.29311,
+              0.0
+            ],
+            "ci95_total": [
+              -21.397033,
+              0.0
+            ],
+            "mean_daily_pnl": -0.137336,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -10.025525
+          }
+        },
+        "by_regime": {
+          "down_highvol": {
+            "avg_loss": -0.250642,
+            "avg_win": 0.149113,
+            "expectancy": -0.16498,
+            "fees": 2.788167,
+            "gross_pnl": -1.103167,
+            "n_trades": 28,
+            "net_pnl": -4.619452,
+            "profit_factor": 0.162252,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.728119,
+            "win_rate": 0.214286
+          },
+          "down_lowvol": {
+            "avg_loss": -0.218751,
+            "avg_win": 0.132109,
+            "expectancy": -0.166122,
+            "fees": 1.990811,
+            "gross_pnl": -0.824235,
+            "n_trades": 20,
+            "net_pnl": -3.322442,
+            "profit_factor": 0.106575,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.507395,
+            "win_rate": 0.15
+          },
+          "up_highvol": {
+            "avg_loss": -0.328943,
+            "avg_win": 0.055359,
+            "expectancy": -0.252082,
+            "fees": 0.49872,
+            "gross_pnl": -0.630145,
+            "n_trades": 5,
+            "net_pnl": -1.260412,
+            "profit_factor": 0.042073,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.131547,
+            "win_rate": 0.2
+          },
+          "up_lowvol": {
+            "avg_loss": -0.148942,
+            "avg_win": 0.184158,
+            "expectancy": -0.082322,
+            "fees": 0.992569,
+            "gross_pnl": 0.418599,
+            "n_trades": 10,
+            "net_pnl": -0.823219,
+            "profit_factor": 0.30911,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.249249,
+            "win_rate": 0.2
+          }
+        },
+        "by_symbol": {
+          "BTCUSDT": {
+            "avg_loss": -0.186248,
+            "avg_win": 0.234968,
+            "expectancy": -0.146759,
+            "fees": 3.177213,
+            "gross_pnl": -0.724497,
+            "n_trades": 32,
+            "net_pnl": -4.696286,
+            "profit_factor": 0.130509,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.794576,
+            "win_rate": 0.09375
+          },
+          "ETHUSDT": {
+            "avg_loss": -0.252263,
+            "avg_win": 0.102992,
+            "expectancy": -0.133845,
+            "fees": 2.095407,
+            "gross_pnl": -0.184575,
+            "n_trades": 21,
+            "net_pnl": -2.810742,
+            "profit_factor": 0.204137,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.53076,
+            "win_rate": 0.333333
+          },
+          "SOLUSDT": {
+            "avg_loss": -0.350916,
+            "avg_win": 0.144415,
+            "expectancy": -0.25185,
+            "fees": 0.997647,
+            "gross_pnl": -1.229877,
+            "n_trades": 10,
+            "net_pnl": -2.518497,
+            "profit_factor": 0.102884,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.290973,
+            "win_rate": 0.2
+          }
+        },
+        "conservative_gap_scenario_net_pnl": -10.025525,
+        "exit_reasons": {
+          "risk_exit_daily": 1,
+          "stop": 16,
+          "target": 3,
+          "time_exit": 43
+        },
+        "expectancy": -0.159135,
+        "exposure_pct_time": 1.570586,
+        "fees": 6.270267,
+        "final_equity": 89.974475,
+        "gross_pnl": -2.138948,
+        "max_drawdown_pct": 10.025525,
+        "max_drawdown_usdt": 10.025525,
+        "n_days": 73,
+        "n_trades": 63,
+        "net_pnl": -10.025525,
+        "profit_factor": 0.146052,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 33,
+          "cooldown": 3,
+          "daily_loss_pause": 4,
+          "position_open": 23,
+          "total_loss_stop": 343
+        },
+        "return_pct": -10.025525,
+        "risk_events": [
+          {
+            "day_start_equity": 97.05597462509996,
+            "equity": NaN,
+            "event": "risk_exit_daily_triggered",
+            "exceeded_by": NaN,
+            "mtm_equity": 95.54798814169993,
+            "symbol": "ETHUSDT",
+            "time": "2026-06-18 17:22:00+00:00"
+          },
+          {
+            "day_start_equity": 97.05597462509996,
+            "equity": 95.48550994169992,
+            "event": "daily_pause",
+            "exceeded_by": 0.07046468340004708,
+            "mtm_equity": NaN,
+            "symbol": "ETHUSDT",
+            "time": "2026-06-18 17:23:00+00:00"
+          },
+          {
+            "day_start_equity": 94.19219940929989,
+            "equity": 92.69090496529991,
+            "event": "daily_pause",
+            "exceeded_by": 0.001294443999981354,
+            "mtm_equity": NaN,
+            "symbol": "ETHUSDT",
+            "time": "2026-06-23 09:45:00+00:00"
+          },
+          {
+            "day_start_equity": 92.69090496529991,
+            "equity": 91.1571674972999,
+            "event": "daily_pause",
+            "exceeded_by": 0.03373746800001243,
+            "mtm_equity": NaN,
+            "symbol": "SOLUSDT",
+            "time": "2026-06-24 17:07:00+00:00"
+          },
+          {
+            "day_start_equity": NaN,
+            "equity": 89.97447532259991,
+            "event": "total_stop",
+            "exceeded_by": 0.02552467740008524,
+            "mtm_equity": NaN,
+            "symbol": "BTCUSDT",
+            "time": "2026-06-26 10:40:00+00:00"
+          }
+        ],
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -5.898807,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -7.344065,
+        "slippage_cost": 1.616309,
+        "sortino_daily_ann": -6.896886,
+        "turnover_x_initial": 62.702673,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.190476,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -2.71643,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.722222
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -5.166988,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.7
+          }
+        },
+        "windows_detail": {
+          "4d": [
+            {
+              "complete": true,
+              "end": "2026-06-12 00:00:00+00:00",
+              "n_trades": 9,
+              "pnl": -1.485931,
+              "start": "2026-06-08 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-16 00:00:00+00:00",
+              "n_trades": 9,
+              "pnl": -0.830082,
+              "start": "2026-06-12 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-20 00:00:00+00:00",
+              "n_trades": 17,
+              "pnl": -2.388881,
+              "start": "2026-06-16 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-24 00:00:00+00:00",
+              "n_trades": 15,
+              "pnl": -2.604201,
+              "start": "2026-06-20 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-28 00:00:00+00:00",
+              "n_trades": 13,
+              "pnl": -2.71643,
+              "start": "2026-06-24 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-02 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-06-28 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-06 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-02 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-10 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-06 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-14 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-10 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-18 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-14 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-22 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-18 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-26 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-22 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-30 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-26 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-03 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-30 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-07 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-03 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-11 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-07 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-15 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-11 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-19 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-15 00:00:00+00:00"
+            },
+            {
+              "complete": false,
+              "end": "2026-08-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-19 00:00:00+00:00"
+            }
+          ],
+          "7d": [
+            {
+              "complete": true,
+              "end": "2026-06-15 00:00:00+00:00",
+              "n_trades": 16,
+              "pnl": -2.165185,
+              "start": "2026-06-08 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-22 00:00:00+00:00",
+              "n_trades": 24,
+              "pnl": -2.693351,
+              "start": "2026-06-15 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-29 00:00:00+00:00",
+              "n_trades": 23,
+              "pnl": -5.166988,
+              "start": "2026-06-22 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-06 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-06-29 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-13 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-06 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-13 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-27 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-20 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-03 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-27 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-10 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-03 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-17 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-10 00:00:00+00:00"
+            },
+            {
+              "complete": false,
+              "end": "2026-08-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-17 00:00:00+00:00"
+            }
+          ]
+        }
+      },
+      "signal_only_no_portfolio_stop": {
+        "avg_hold_minutes": 28.080972,
+        "avg_loss": -0.184565,
+        "avg_win": 0.122836,
+        "by_regime": {
+          "down_highvol": {
+            "avg_loss": -0.253375,
+            "avg_win": 0.160753,
+            "expectancy": -0.147189,
+            "fees": 3.883993,
+            "gross_pnl": -0.841351,
+            "n_trades": 39,
+            "net_pnl": -5.740357,
+            "profit_factor": 0.218774,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.015013,
+            "win_rate": 0.25641
+          },
+          "down_lowvol": {
+            "avg_loss": -0.181225,
+            "avg_win": 0.116941,
+            "expectancy": -0.139295,
+            "fees": 12.747921,
+            "gross_pnl": -1.816002,
+            "n_trades": 128,
+            "net_pnl": -17.829759,
+            "profit_factor": 0.105592,
+            "profit_factor_note": "ok",
+            "slippage_cost": 3.265837,
+            "win_rate": 0.140625
+          },
+          "up_highvol": {
+            "avg_loss": -0.254721,
+            "avg_win": 0.04897,
+            "expectancy": -0.204106,
+            "fees": 1.19476,
+            "gross_pnl": -0.942849,
+            "n_trades": 12,
+            "net_pnl": -2.449272,
+            "profit_factor": 0.03845,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.311663,
+            "win_rate": 0.166667
+          },
+          "up_lowvol": {
+            "avg_loss": -0.143695,
+            "avg_win": 0.111444,
+            "expectancy": -0.102423,
+            "fees": 6.770642,
+            "gross_pnl": 1.530136,
+            "n_trades": 68,
+            "net_pnl": -6.964748,
+            "profit_factor": 0.149669,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.724243,
+            "win_rate": 0.161765
+          }
+        },
+        "by_symbol": {
+          "BTCUSDT": {
+            "avg_loss": -0.172328,
+            "avg_win": 0.126427,
+            "expectancy": -0.140752,
+            "fees": 12.217084,
+            "gross_pnl": -2.040195,
+            "n_trades": 123,
+            "net_pnl": -17.3125,
+            "profit_factor": 0.086703,
+            "profit_factor_note": "ok",
+            "slippage_cost": 3.05522,
+            "win_rate": 0.105691
+          },
+          "ETHUSDT": {
+            "avg_loss": -0.203256,
+            "avg_win": 0.117217,
+            "expectancy": -0.116348,
+            "fees": 5.887916,
+            "gross_pnl": 0.512047,
+            "n_trades": 59,
+            "net_pnl": -6.864532,
+            "profit_factor": 0.214584,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.488663,
+            "win_rate": 0.271186
+          },
+          "SOLUSDT": {
+            "avg_loss": -0.1948,
+            "avg_win": 0.126439,
+            "expectancy": -0.135494,
+            "fees": 6.492316,
+            "gross_pnl": -0.541918,
+            "n_trades": 65,
+            "net_pnl": -8.807106,
+            "profit_factor": 0.14696,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.772872,
+            "win_rate": 0.184615
+          }
+        },
+        "conservative_gap_scenario_net_pnl": -32.984137,
+        "exit_reasons": {
+          "stop": 31,
+          "target": 6,
+          "time_exit": 210
+        },
+        "expectancy": -0.133539,
+        "exposure_pct_time": 6.598174,
+        "fees": 24.597316,
+        "final_equity": 67.015863,
+        "gross_pnl": -2.070065,
+        "max_drawdown_pct": 32.984137,
+        "max_drawdown_usdt": 32.984137,
+        "n_days": 73,
+        "n_trades": 247,
+        "net_pnl": -32.984137,
+        "profit_factor": 0.132463,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 98,
+          "cooldown": 14,
+          "position_open": 110
+        },
+        "return_pct": -32.984137,
+        "rolling_7d_pnl": {
+          "max": -1.175394,
+          "median": -3.175833,
+          "min": -5.892236,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -18.744673,
+        "slippage_cost": 6.316756,
+        "sortino_daily_ann": -13.506094,
+        "turnover_x_initial": 245.973159,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.165992,
+        "windows": {
+          "4d": {
+            "max_pnl": -0.54583,
+            "median_pnl": -1.856578,
+            "min_pnl": -2.992621,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.0
+          },
+          "7d": {
+            "max_pnl": -1.323903,
+            "median_pnl": -2.99482,
+            "min_pnl": -5.527033,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.0
+          }
+        }
+      }
+    }
+  },
+  "B01-h60": {
+    "hold_minutes": 60,
+    "n_raw_signals": 469,
+    "raw_signals_by_symbol": {
+      "BTCUSDT": 170,
+      "ETHUSDT": 139,
+      "SOLUSDT": 160
+    },
+    "scenarios": {
+      "coarse_step_x10": {
+        "avg_hold_minutes": 42.096774,
+        "avg_loss": -0.244233,
+        "avg_win": 0.217414,
+        "conservative_gap_scenario_net_pnl": -10.064323,
+        "exit_reasons": {
+          "risk_exit_daily": 3,
+          "risk_exit_total": 1,
+          "stop": 21,
+          "target": 5,
+          "time_exit": 32
+        },
+        "expectancy": -0.162328,
+        "exposure_pct_time": 2.482877,
+        "fees": 5.944989,
+        "final_equity": 89.935677,
+        "gross_pnl": -2.584962,
+        "max_drawdown_pct": 10.064323,
+        "max_drawdown_usdt": 10.064323,
+        "n_days": 73,
+        "n_trades": 62,
+        "net_pnl": -10.064323,
+        "profit_factor": 0.192002,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 30,
+          "cooldown": 1,
+          "daily_loss_pause": 7,
+          "position_open": 34,
+          "total_loss_stop": 335
+        },
+        "return_pct": -10.064323,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -6.015845,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -7.218392,
+        "slippage_cost": 1.534372,
+        "sortino_daily_ann": -6.794363,
+        "turnover_x_initial": 59.449888,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.177419,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.101817,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.666667
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -5.838226,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.7
+          }
+        }
+      },
+      "cost_rt0": {
+        "avg_hold_minutes": 52.147465,
+        "avg_loss": -0.165864,
+        "avg_win": 0.145655,
+        "break_even_roundtrip_cost_bps": -2.5344,
+        "conservative_gap_scenario_net_pnl": -2.805543,
+        "exit_reasons": {
+          "stop": 45,
+          "target": 13,
+          "time_exit": 159
+        },
+        "expectancy": -0.012929,
+        "exposure_pct_time": 10.76484,
+        "fees": 0.0,
+        "final_equity": 97.194457,
+        "gross_pnl": -2.73918,
+        "max_drawdown_pct": 5.348674,
+        "max_drawdown_usdt": 5.382494,
+        "n_days": 73,
+        "n_trades": 217,
+        "net_pnl": -2.805543,
+        "profit_factor": 0.84623,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 88,
+          "cooldown": 13,
+          "position_open": 151
+        },
+        "return_pct": -2.805543,
+        "rolling_7d_pnl": {
+          "max": 1.052349,
+          "median": -0.163712,
+          "min": -3.127615,
+          "n": 67,
+          "share_positive": 0.402985
+        },
+        "sharpe_daily_ann": -2.080508,
+        "slippage_cost": 0.066363,
+        "sortino_daily_ann": -2.506393,
+        "turnover_x_initial": 216.134667,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.488479,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.777835,
+            "median_pnl": -0.118749,
+            "min_pnl": -1.257113,
+            "n_windows_complete": 18,
+            "share_positive": 0.5,
+            "share_zero_trades": 0.0
+          },
+          "7d": {
+            "max_pnl": 0.758568,
+            "median_pnl": -0.213492,
+            "min_pnl": -2.505377,
+            "n_windows_complete": 10,
+            "share_positive": 0.3,
+            "share_zero_trades": 0.0
+          }
+        }
+      },
+      "cost_rt10": {
+        "avg_hold_minutes": 46.568807,
+        "avg_loss": -0.221917,
+        "avg_win": 0.160667,
+        "conservative_gap_scenario_net_pnl": -10.03337,
+        "exit_reasons": {
+          "risk_exit_daily": 1,
+          "risk_exit_total": 1,
+          "stop": 35,
+          "target": 7,
+          "time_exit": 65
+        },
+        "expectancy": -0.092049,
+        "exposure_pct_time": 4.828767,
+        "fees": 4.340966,
+        "final_equity": 89.96663,
+        "gross_pnl": -4.52472,
+        "max_drawdown_pct": 10.03337,
+        "max_drawdown_usdt": 10.03337,
+        "n_days": 73,
+        "n_trades": 109,
+        "net_pnl": -10.03337,
+        "profit_factor": 0.372053,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 47,
+          "cooldown": 6,
+          "position_open": 73,
+          "total_loss_stop": 234
+        },
+        "return_pct": -10.03337,
+        "rolling_7d_pnl": {
+          "max": 0.301376,
+          "median": -0.470788,
+          "min": -4.426213,
+          "n": 67,
+          "share_positive": 0.014925
+        },
+        "sharpe_daily_ann": -7.052138,
+        "slippage_cost": 1.167685,
+        "sortino_daily_ann": -6.844242,
+        "turnover_x_initial": 108.524138,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.33945,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": -0.106124,
+            "min_pnl": -2.038044,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.444444
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": -0.930029,
+            "min_pnl": -3.799297,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.4
+          }
+        }
+      },
+      "cost_rt40": {
+        "avg_hold_minutes": 45.75,
+        "avg_loss": -0.306283,
+        "avg_win": 0.172901,
+        "conservative_gap_scenario_net_pnl": -10.122185,
+        "exit_reasons": {
+          "risk_exit_daily": 1,
+          "risk_exit_total": 1,
+          "stop": 14,
+          "target": 3,
+          "time_exit": 25
+        },
+        "expectancy": -0.23005,
+        "exposure_pct_time": 1.914954,
+        "fees": 7.008354,
+        "final_equity": 89.877815,
+        "gross_pnl": -1.320599,
+        "max_drawdown_pct": 10.122185,
+        "max_drawdown_usdt": 10.122185,
+        "n_days": 73,
+        "n_trades": 44,
+        "net_pnl": -10.122185,
+        "profit_factor": 0.1068,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 20,
+          "cooldown": 1,
+          "daily_loss_pause": 10,
+          "position_open": 28,
+          "total_loss_stop": 366
+        },
+        "return_pct": -10.122185,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -5.981972,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -7.486108,
+        "slippage_cost": 1.793232,
+        "sortino_daily_ann": -7.011873,
+        "turnover_x_initial": 43.802212,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.159091,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.371057,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.722222
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.766266,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.7
+          }
+        }
+      },
+      "delay60": {
+        "avg_hold_minutes": 43.092308,
+        "avg_loss": -0.246243,
+        "avg_win": 0.207095,
+        "conservative_gap_scenario_net_pnl": -10.112414,
+        "exit_reasons": {
+          "risk_exit_daily": 3,
+          "risk_exit_total": 1,
+          "stop": 22,
+          "target": 5,
+          "time_exit": 34
+        },
+        "expectancy": -0.155576,
+        "exposure_pct_time": 2.664574,
+        "fees": 6.468555,
+        "final_equity": 89.887586,
+        "gross_pnl": -1.977317,
+        "max_drawdown_pct": 10.142966,
+        "max_drawdown_usdt": 10.146415,
+        "n_days": 73,
+        "n_trades": 65,
+        "net_pnl": -10.112414,
+        "profit_factor": 0.210254,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 30,
+          "cooldown": 2,
+          "daily_loss_pause": 7,
+          "position_open": 35,
+          "total_loss_stop": 330
+        },
+        "return_pct": -10.112414,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -5.920224,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -7.326134,
+        "slippage_cost": 1.666542,
+        "sortino_daily_ann": -6.882154,
+        "turnover_x_initial": 64.685553,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.2,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.128492,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.666667
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -5.841957,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.6
+          }
+        }
+      },
+      "main": {
+        "avg_hold_minutes": 41.116667,
+        "avg_loss": -0.256696,
+        "avg_win": 0.222269,
+        "bootstrap": {
+          "block_14d": {
+            "block_days": 14,
+            "ci95_mean_daily": [
+              -0.329748,
+              0.0
+            ],
+            "ci95_total": [
+              -24.071591,
+              0.0
+            ],
+            "mean_daily_pnl": -0.13881,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -10.133138
+          },
+          "block_3d": {
+            "block_days": 3,
+            "ci95_mean_daily": [
+              -0.263427,
+              -0.034533
+            ],
+            "ci95_total": [
+              -19.23014,
+              -2.520945
+            ],
+            "mean_daily_pnl": -0.13881,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -10.133138
+          },
+          "block_7d": {
+            "block_days": 7,
+            "ci95_mean_daily": [
+              -0.300598,
+              -0.003928
+            ],
+            "ci95_total": [
+              -21.943632,
+              -0.286771
+            ],
+            "mean_daily_pnl": -0.13881,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -10.133138
+          }
+        },
+        "by_regime": {
+          "down_highvol": {
+            "avg_loss": -0.269697,
+            "avg_win": 0.284204,
+            "expectancy": -0.167123,
+            "fees": 2.688561,
+            "gross_pnl": -1.121178,
+            "n_trades": 27,
+            "net_pnl": -4.512321,
+            "profit_factor": 0.239497,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.702582,
+            "win_rate": 0.185185
+          },
+          "down_lowvol": {
+            "avg_loss": -0.264117,
+            "avg_win": 0.183587,
+            "expectancy": -0.17884,
+            "fees": 2.08998,
+            "gross_pnl": -1.133023,
+            "n_trades": 21,
+            "net_pnl": -3.755646,
+            "profit_factor": 0.163552,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.532644,
+            "win_rate": 0.190476
+          },
+          "up_highvol": {
+            "avg_loss": -0.313998,
+            "avg_win": null,
+            "expectancy": -0.313998,
+            "fees": 0.398735,
+            "gross_pnl": -0.750819,
+            "n_trades": 4,
+            "net_pnl": -1.255991,
+            "profit_factor": 0.0,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.106437,
+            "win_rate": 0.0
+          },
+          "up_lowvol": {
+            "avg_loss": -0.149796,
+            "avg_win": 0.144798,
+            "expectancy": -0.076147,
+            "fees": 0.793551,
+            "gross_pnl": 0.383516,
+            "n_trades": 8,
+            "net_pnl": -0.609178,
+            "profit_factor": 0.322212,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.199143,
+            "win_rate": 0.25
+          }
+        },
+        "by_symbol": {
+          "BTCUSDT": {
+            "avg_loss": -0.237626,
+            "avg_win": 0.194861,
+            "expectancy": -0.172098,
+            "fees": 3.276731,
+            "gross_pnl": -1.58301,
+            "n_trades": 33,
+            "net_pnl": -5.67922,
+            "profit_factor": 0.146435,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.819479,
+            "win_rate": 0.151515
+          },
+          "ETHUSDT": {
+            "avg_loss": -0.244545,
+            "avg_win": 0.263891,
+            "expectancy": -0.124913,
+            "fees": 1.69626,
+            "gross_pnl": 0.002182,
+            "n_trades": 17,
+            "net_pnl": -2.123521,
+            "profit_factor": 0.332034,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.429443,
+            "win_rate": 0.235294
+          },
+          "SOLUSDT": {
+            "avg_loss": -0.343186,
+            "avg_win": 0.207546,
+            "expectancy": -0.23304,
+            "fees": 0.997836,
+            "gross_pnl": -1.040676,
+            "n_trades": 10,
+            "net_pnl": -2.330396,
+            "profit_factor": 0.151191,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.291884,
+            "win_rate": 0.2
+          }
+        },
+        "conservative_gap_scenario_net_pnl": -10.133138,
+        "exit_reasons": {
+          "risk_exit_daily": 3,
+          "risk_exit_total": 1,
+          "stop": 21,
+          "target": 5,
+          "time_exit": 30
+        },
+        "expectancy": -0.168886,
+        "exposure_pct_time": 2.346842,
+        "fees": 5.970828,
+        "final_equity": 89.866862,
+        "gross_pnl": -2.621504,
+        "max_drawdown_pct": 10.133138,
+        "max_drawdown_usdt": 10.133138,
+        "n_days": 73,
+        "n_trades": 60,
+        "net_pnl": -10.133138,
+        "profit_factor": 0.194383,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 30,
+          "cooldown": 3,
+          "daily_loss_pause": 7,
+          "position_open": 32,
+          "total_loss_stop": 337
+        },
+        "return_pct": -10.133138,
+        "risk_events": [
+          {
+            "day_start_equity": 97.63863247239999,
+            "equity": NaN,
+            "event": "risk_exit_daily_triggered",
+            "exceeded_by": NaN,
+            "mtm_equity": 96.10264653259998,
+            "symbol": "BTCUSDT",
+            "time": "2026-06-18 16:14:00+00:00"
+          },
+          {
+            "day_start_equity": 97.63863247239999,
+            "equity": 96.04080980399999,
+            "event": "daily_pause",
+            "exceeded_by": 0.0978226683999992,
+            "mtm_equity": NaN,
+            "symbol": "BTCUSDT",
+            "time": "2026-06-18 16:15:00+00:00"
+          },
+          {
+            "day_start_equity": 94.6659696214,
+            "equity": NaN,
+            "event": "risk_exit_daily_triggered",
+            "exceeded_by": NaN,
+            "mtm_equity": 93.1428344966,
+            "symbol": "BTCUSDT",
+            "time": "2026-06-23 13:36:00+00:00"
+          },
+          {
+            "day_start_equity": 94.6659696214,
+            "equity": 93.0805861446,
+            "event": "daily_pause",
+            "exceeded_by": 0.08538347679998992,
+            "mtm_equity": NaN,
+            "symbol": "BTCUSDT",
+            "time": "2026-06-23 13:37:00+00:00"
+          },
+          {
+            "day_start_equity": 93.0805861446,
+            "equity": NaN,
+            "event": "risk_exit_daily_triggered",
+            "exceeded_by": NaN,
+            "mtm_equity": 91.53091357089998,
+            "symbol": "SOLUSDT",
+            "time": "2026-06-24 17:05:00+00:00"
+          },
+          {
+            "day_start_equity": 93.0805861446,
+            "equity": 91.4587757809,
+            "event": "daily_pause",
+            "exceeded_by": 0.12181036370000697,
+            "mtm_equity": NaN,
+            "symbol": "SOLUSDT",
+            "time": "2026-06-24 17:06:00+00:00"
+          },
+          {
+            "day_start_equity": 90.07488517750002,
+            "equity": NaN,
+            "event": "risk_exit_total_triggered",
+            "exceeded_by": NaN,
+            "mtm_equity": 89.92938218490004,
+            "symbol": "ETHUSDT",
+            "time": "2026-06-27 22:25:00+00:00"
+          },
+          {
+            "day_start_equity": NaN,
+            "equity": 89.86686249390003,
+            "event": "total_stop",
+            "exceeded_by": 0.13313750609997044,
+            "mtm_equity": NaN,
+            "symbol": "ETHUSDT",
+            "time": "2026-06-27 22:26:00+00:00"
+          }
+        ],
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -6.179857,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -7.092267,
+        "slippage_cost": 1.540806,
+        "sortino_daily_ann": -6.690744,
+        "turnover_x_initial": 59.708276,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.183333,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.213724,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.722222
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -5.766262,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.7
+          }
+        },
+        "windows_detail": {
+          "4d": [
+            {
+              "complete": true,
+              "end": "2026-06-12 00:00:00+00:00",
+              "n_trades": 9,
+              "pnl": -1.558703,
+              "start": "2026-06-08 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-16 00:00:00+00:00",
+              "n_trades": 6,
+              "pnl": -0.577582,
+              "start": "2026-06-12 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-20 00:00:00+00:00",
+              "n_trades": 16,
+              "pnl": -2.008574,
+              "start": "2026-06-16 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-24 00:00:00+00:00",
+              "n_trades": 13,
+              "pnl": -2.774555,
+              "start": "2026-06-20 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-28 00:00:00+00:00",
+              "n_trades": 16,
+              "pnl": -3.213724,
+              "start": "2026-06-24 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-02 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-06-28 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-06 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-02 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-10 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-06 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-14 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-10 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-18 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-14 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-22 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-18 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-26 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-22 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-30 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-26 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-03 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-30 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-07 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-03 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-11 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-07 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-15 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-11 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-19 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-15 00:00:00+00:00"
+            },
+            {
+              "complete": false,
+              "end": "2026-08-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-19 00:00:00+00:00"
+            }
+          ],
+          "7d": [
+            {
+              "complete": true,
+              "end": "2026-06-15 00:00:00+00:00",
+              "n_trades": 14,
+              "pnl": -1.847493,
+              "start": "2026-06-08 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-22 00:00:00+00:00",
+              "n_trades": 21,
+              "pnl": -2.519382,
+              "start": "2026-06-15 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-29 00:00:00+00:00",
+              "n_trades": 25,
+              "pnl": -5.766262,
+              "start": "2026-06-22 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-06 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-06-29 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-13 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-06 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-13 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-27 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-20 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-03 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-27 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-10 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-03 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-17 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-10 00:00:00+00:00"
+            },
+            {
+              "complete": false,
+              "end": "2026-08-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-17 00:00:00+00:00"
+            }
+          ]
+        }
+      },
+      "signal_only_no_portfolio_stop": {
+        "avg_hold_minutes": 51.374429,
+        "avg_loss": -0.20773,
+        "avg_win": 0.157321,
+        "by_regime": {
+          "down_highvol": {
+            "avg_loss": -0.262174,
+            "avg_win": 0.261126,
+            "expectancy": -0.163171,
+            "fees": 3.68398,
+            "gross_pnl": -1.401627,
+            "n_trades": 37,
+            "net_pnl": -6.037342,
+            "profit_factor": 0.2324,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.951735,
+            "win_rate": 0.189189
+          },
+          "down_lowvol": {
+            "avg_loss": -0.213609,
+            "avg_win": 0.130726,
+            "expectancy": -0.145362,
+            "fees": 11.053582,
+            "gross_pnl": -2.255087,
+            "n_trades": 111,
+            "net_pnl": -16.135224,
+            "profit_factor": 0.151277,
+            "profit_factor_note": "ok",
+            "slippage_cost": 2.826555,
+            "win_rate": 0.198198
+          },
+          "up_highvol": {
+            "avg_loss": -0.330323,
+            "avg_win": 0.126049,
+            "expectancy": -0.239049,
+            "fees": 0.995881,
+            "gross_pnl": -1.132915,
+            "n_trades": 10,
+            "net_pnl": -2.390486,
+            "profit_factor": 0.095398,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.26169,
+            "win_rate": 0.2
+          },
+          "up_lowvol": {
+            "avg_loss": -0.143703,
+            "avg_win": 0.150737,
+            "expectancy": -0.08578,
+            "fees": 6.075031,
+            "gross_pnl": 2.392792,
+            "n_trades": 61,
+            "net_pnl": -5.23258,
+            "profit_factor": 0.256886,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.550341,
+            "win_rate": 0.196721
+          }
+        },
+        "by_symbol": {
+          "BTCUSDT": {
+            "avg_loss": -0.197006,
+            "avg_win": 0.170327,
+            "expectancy": -0.14125,
+            "fees": 11.126166,
+            "gross_pnl": -1.911389,
+            "n_trades": 112,
+            "net_pnl": -15.81999,
+            "profit_factor": 0.154714,
+            "profit_factor_note": "ok",
+            "slippage_cost": 2.782436,
+            "win_rate": 0.151786
+          },
+          "ETHUSDT": {
+            "avg_loss": -0.227247,
+            "avg_win": 0.180146,
+            "expectancy": -0.133233,
+            "fees": 5.188521,
+            "gross_pnl": -0.428295,
+            "n_trades": 52,
+            "net_pnl": -6.928125,
+            "profit_factor": 0.23782,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.311309,
+            "win_rate": 0.230769
+          },
+          "SOLUSDT": {
+            "avg_loss": -0.213536,
+            "avg_win": 0.121962,
+            "expectancy": -0.128137,
+            "fees": 5.493787,
+            "gross_pnl": -0.057154,
+            "n_trades": 55,
+            "net_pnl": -7.047517,
+            "profit_factor": 0.195028,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.496576,
+            "win_rate": 0.254545
+          }
+        },
+        "conservative_gap_scenario_net_pnl": -29.795632,
+        "exit_reasons": {
+          "stop": 48,
+          "target": 12,
+          "time_exit": 159
+        },
+        "expectancy": -0.136053,
+        "exposure_pct_time": 10.703006,
+        "fees": 21.808474,
+        "final_equity": 70.204368,
+        "gross_pnl": -2.396837,
+        "max_drawdown_pct": 29.795632,
+        "max_drawdown_usdt": 29.795632,
+        "n_days": 73,
+        "n_trades": 219,
+        "net_pnl": -29.795632,
+        "profit_factor": 0.18503,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 90,
+          "cooldown": 10,
+          "position_open": 150
+        },
+        "return_pct": -29.795632,
+        "rolling_7d_pnl": {
+          "max": -0.802664,
+          "median": -2.842004,
+          "min": -6.406643,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -16.857346,
+        "slippage_cost": 5.590321,
+        "sortino_daily_ann": -12.745958,
+        "turnover_x_initial": 218.084736,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.196347,
+        "windows": {
+          "4d": {
+            "max_pnl": -0.501016,
+            "median_pnl": -1.646306,
+            "min_pnl": -3.216753,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.0
+          },
+          "7d": {
+            "max_pnl": -1.770229,
+            "median_pnl": -2.841551,
+            "min_pnl": -5.767927,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.0
+          }
+        }
+      }
+    }
+  },
+  "B02-BH-BTCUSDT": {
+    "exposure_pct_time": 100.0,
+    "fees": 0.103479,
+    "max_drawdown_usdt": 7.339925,
+    "net_pnl": 4.552809,
+    "note": "single $50 buy at segment start, mark-to-market, sold at segment end; no stop/risk limits: different risk and exposure than E01/E02",
+    "return_pct": 4.552809,
+    "stake": 50.0
+  },
+  "B02-BH-ETHUSDT": {
+    "exposure_pct_time": 100.0,
+    "fees": 0.116323,
+    "max_drawdown_usdt": 9.90315,
+    "net_pnl": 16.442027,
+    "note": "single $50 buy at segment start, mark-to-market, sold at segment end; no stop/risk limits: different risk and exposure than E01/E02",
+    "return_pct": 16.442027,
+    "stake": 50.0
+  },
+  "B02-BH-SOLUSDT": {
+    "exposure_pct_time": 100.0,
+    "fees": 0.114054,
+    "max_drawdown_usdt": 9.99581,
+    "net_pnl": 14.027276,
+    "note": "single $50 buy at segment start, mark-to-market, sold at segment end; no stop/risk limits: different risk and exposure than E01/E02",
+    "return_pct": 14.027276,
+    "stake": 50.0
+  },
+  "B03-random": {
+    "E01-F": {
+      "mean_n_trades": 75.26,
+      "mean_net_pnl": -9.579378,
+      "n_seeds": 100,
+      "net_pnl_quantiles_5_25_50_75_95": [
+        -10.124749,
+        -10.088193,
+        -10.06311,
+        -9.123335,
+        -7.965799
+      ],
+      "note": "frequency-matched random entries; a conditional benchmark, not a strategy",
+      "share_seeds_ge_strategy": 0.01,
+      "strategy_net_pnl": -7.387823
+    },
+    "E01-P": {
+      "mean_n_trades": 81.63,
+      "mean_net_pnl": -10.081081,
+      "n_seeds": 100,
+      "net_pnl_quantiles_5_25_50_75_95": [
+        -10.143466,
+        -10.09802,
+        -10.079391,
+        -10.065785,
+        -10.016958
+      ],
+      "note": "frequency-matched random entries; a conditional benchmark, not a strategy",
+      "share_seeds_ge_strategy": 0.67,
+      "strategy_net_pnl": -10.092652
+    },
+    "E02-F": {
+      "mean_n_trades": 77.43,
+      "mean_net_pnl": -10.077064,
+      "n_seeds": 100,
+      "net_pnl_quantiles_5_25_50_75_95": [
+        -10.144342,
+        -10.092268,
+        -10.073698,
+        -10.063658,
+        -10.008643
+      ],
+      "note": "frequency-matched random entries; a conditional benchmark, not a strategy",
+      "share_seeds_ge_strategy": 0.52,
+      "strategy_net_pnl": -10.076126
+    },
+    "E02-P": {
+      "mean_n_trades": 80.7,
+      "mean_net_pnl": -10.086798,
+      "n_seeds": 100,
+      "net_pnl_quantiles_5_25_50_75_95": [
+        -10.164282,
+        -10.10389,
+        -10.082434,
+        -10.066356,
+        -10.023767
+      ],
+      "note": "frequency-matched random entries; a conditional benchmark, not a strategy",
+      "share_seeds_ge_strategy": 0.21,
+      "strategy_net_pnl": -10.06469
+    }
+  },
+  "E01-F": {
+    "hold_minutes": 30,
+    "n_raw_signals": 83,
+    "raw_signals_by_symbol": {
+      "BTCUSDT": 15,
+      "ETHUSDT": 33,
+      "SOLUSDT": 35
+    },
+    "scenarios": {
+      "coarse_step_x10": {
+        "avg_hold_minutes": 26.0,
+        "avg_loss": -0.222386,
+        "avg_win": 0.155286,
+        "conservative_gap_scenario_net_pnl": -7.124037,
+        "exit_reasons": {
+          "stop": 13,
+          "target": 4,
+          "time_exit": 49
+        },
+        "expectancy": -0.10794,
+        "exposure_pct_time": 1.63242,
+        "fees": 6.39265,
+        "final_equity": 92.875963,
+        "gross_pnl": 0.987613,
+        "max_drawdown_pct": 7.377201,
+        "max_drawdown_usdt": 7.397365,
+        "n_days": 73,
+        "n_trades": 66,
+        "net_pnl": -7.124037,
+        "profit_factor": 0.303596,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 16,
+          "position_open": 1
+        },
+        "return_pct": -7.124037,
+        "rolling_7d_pnl": {
+          "max": 0.36083,
+          "median": -0.527563,
+          "min": -1.660103,
+          "n": 67,
+          "share_positive": 0.059701
+        },
+        "sharpe_daily_ann": -8.957018,
+        "slippage_cost": 1.719,
+        "sortino_daily_ann": -8.456498,
+        "turnover_x_initial": 63.9265,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.30303,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.2593,
+            "median_pnl": -0.359287,
+            "min_pnl": -1.130829,
+            "n_windows_complete": 18,
+            "share_positive": 0.111111,
+            "share_zero_trades": 0.111111
+          },
+          "7d": {
+            "max_pnl": 0.36083,
+            "median_pnl": -0.714116,
+            "min_pnl": -1.660103,
+            "n_windows_complete": 10,
+            "share_positive": 0.2,
+            "share_zero_trades": 0.1
+          }
+        }
+      },
+      "cost_rt0": {
+        "avg_hold_minutes": 26.030303,
+        "avg_loss": -0.174669,
+        "avg_win": 0.18553,
+        "break_even_roundtrip_cost_bps": 2.2462,
+        "conservative_gap_scenario_net_pnl": 0.71862,
+        "exit_reasons": {
+          "stop": 13,
+          "target": 4,
+          "time_exit": 49
+        },
+        "expectancy": 0.010888,
+        "exposure_pct_time": 1.634323,
+        "fees": 0.0,
+        "final_equity": 100.71862,
+        "gross_pnl": 0.739477,
+        "max_drawdown_pct": 2.095024,
+        "max_drawdown_usdt": 2.155232,
+        "n_days": 73,
+        "n_trades": 66,
+        "net_pnl": 0.71862,
+        "profit_factor": 1.128568,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 16,
+          "position_open": 1
+        },
+        "return_pct": 0.71862,
+        "rolling_7d_pnl": {
+          "max": 2.080939,
+          "median": -0.017359,
+          "min": -0.911779,
+          "n": 67,
+          "share_positive": 0.432836
+        },
+        "sharpe_daily_ann": 0.803634,
+        "slippage_cost": 0.020857,
+        "sortino_daily_ann": 1.543007,
+        "turnover_x_initial": 65.849797,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.515152,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.828011,
+            "median_pnl": 0.0,
+            "min_pnl": -0.529582,
+            "n_windows_complete": 18,
+            "share_positive": 0.444444,
+            "share_zero_trades": 0.111111
+          },
+          "7d": {
+            "max_pnl": 2.080939,
+            "median_pnl": -0.05077,
+            "min_pnl": -0.818631,
+            "n_windows_complete": 10,
+            "share_positive": 0.4,
+            "share_zero_trades": 0.1
+          }
+        }
+      },
+      "cost_rt10": {
+        "avg_hold_minutes": 26.0,
+        "avg_loss": -0.190152,
+        "avg_win": 0.179478,
+        "conservative_gap_scenario_net_pnl": -2.570012,
+        "exit_reasons": {
+          "stop": 13,
+          "target": 4,
+          "time_exit": 49
+        },
+        "expectancy": -0.03894,
+        "exposure_pct_time": 1.63242,
+        "fees": 2.63372,
+        "final_equity": 97.429988,
+        "gross_pnl": 0.837784,
+        "max_drawdown_pct": 3.33279,
+        "max_drawdown_usdt": 3.359089,
+        "n_days": 73,
+        "n_trades": 66,
+        "net_pnl": -2.570012,
+        "profit_factor": 0.653446,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 16,
+          "position_open": 1
+        },
+        "return_pct": -2.570012,
+        "rolling_7d_pnl": {
+          "max": 1.385483,
+          "median": -0.221155,
+          "min": -1.236088,
+          "n": 67,
+          "share_positive": 0.298507
+        },
+        "sharpe_daily_ann": -3.095631,
+        "slippage_cost": 0.774076,
+        "sortino_daily_ann": -4.086239,
+        "turnover_x_initial": 65.842996,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.409091,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.476338,
+            "median_pnl": -0.050979,
+            "min_pnl": -0.784566,
+            "n_windows_complete": 18,
+            "share_positive": 0.222222,
+            "share_zero_trades": 0.111111
+          },
+          "7d": {
+            "max_pnl": 1.385483,
+            "median_pnl": -0.228943,
+            "min_pnl": -1.1165,
+            "n_windows_complete": 10,
+            "share_positive": 0.4,
+            "share_zero_trades": 0.1
+          }
+        }
+      },
+      "cost_rt40": {
+        "avg_hold_minutes": 25.745763,
+        "avg_loss": -0.267619,
+        "avg_win": 0.136272,
+        "conservative_gap_scenario_net_pnl": -10.135065,
+        "exit_reasons": {
+          "risk_exit_total": 1,
+          "stop": 11,
+          "target": 4,
+          "time_exit": 43
+        },
+        "expectancy": -0.171781,
+        "exposure_pct_time": 1.445015,
+        "fees": 9.416625,
+        "final_equity": 89.864935,
+        "gross_pnl": 1.757728,
+        "max_drawdown_pct": 10.353318,
+        "max_drawdown_usdt": 10.378524,
+        "n_days": 73,
+        "n_trades": 59,
+        "net_pnl": -10.135065,
+        "profit_factor": 0.158418,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 16,
+          "position_open": 1,
+          "total_loss_stop": 7
+        },
+        "return_pct": -10.135065,
+        "rolling_7d_pnl": {
+          "max": 0.043799,
+          "median": -0.77245,
+          "min": -2.564853,
+          "n": 67,
+          "share_positive": 0.014925
+        },
+        "sharpe_daily_ann": -11.730065,
+        "slippage_cost": 2.476168,
+        "sortino_daily_ann": -10.054658,
+        "turnover_x_initial": 58.853905,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.237288,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.043799,
+            "median_pnl": -0.548799,
+            "min_pnl": -1.521849,
+            "n_windows_complete": 18,
+            "share_positive": 0.055556,
+            "share_zero_trades": 0.222222
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": -0.893864,
+            "min_pnl": -2.440012,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.2
+          }
+        }
+      },
+      "delay60": {
+        "avg_hold_minutes": 26.287879,
+        "avg_loss": -0.22258,
+        "avg_win": 0.144294,
+        "conservative_gap_scenario_net_pnl": -6.619037,
+        "exit_reasons": {
+          "stop": 13,
+          "target": 4,
+          "time_exit": 49
+        },
+        "expectancy": -0.100288,
+        "exposure_pct_time": 1.650495,
+        "fees": 6.584328,
+        "final_equity": 93.380963,
+        "gross_pnl": 1.726952,
+        "max_drawdown_pct": 6.888888,
+        "max_drawdown_usdt": 6.908854,
+        "n_days": 73,
+        "n_trades": 66,
+        "net_pnl": -6.619037,
+        "profit_factor": 0.324141,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 16,
+          "position_open": 1
+        },
+        "return_pct": -6.619037,
+        "rolling_7d_pnl": {
+          "max": 0.365282,
+          "median": -0.527569,
+          "min": -1.334363,
+          "n": 67,
+          "share_positive": 0.059701
+        },
+        "sharpe_daily_ann": -7.751376,
+        "slippage_cost": 1.761661,
+        "sortino_daily_ann": -7.493499,
+        "turnover_x_initial": 65.843281,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.333333,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.131318,
+            "median_pnl": -0.362812,
+            "min_pnl": -0.933872,
+            "n_windows_complete": 18,
+            "share_positive": 0.166667,
+            "share_zero_trades": 0.111111
+          },
+          "7d": {
+            "max_pnl": 0.365282,
+            "median_pnl": -0.570744,
+            "min_pnl": -1.334363,
+            "n_windows_complete": 10,
+            "share_positive": 0.1,
+            "share_zero_trades": 0.1
+          }
+        }
+      },
+      "main": {
+        "avg_hold_minutes": 26.0,
+        "avg_loss": -0.229274,
+        "avg_win": 0.157938,
+        "bootstrap": {
+          "block_14d": {
+            "block_days": 14,
+            "ci95_mean_daily": [
+              -0.134461,
+              -0.054222
+            ],
+            "ci95_total": [
+              -9.815657,
+              -3.958229
+            ],
+            "mean_daily_pnl": -0.101203,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -7.387823
+          },
+          "block_3d": {
+            "block_days": 3,
+            "ci95_mean_daily": [
+              -0.142509,
+              -0.049483
+            ],
+            "ci95_total": [
+              -10.403139,
+              -3.612273
+            ],
+            "mean_daily_pnl": -0.101203,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -7.387823
+          },
+          "block_7d": {
+            "block_days": 7,
+            "ci95_mean_daily": [
+              -0.14043,
+              -0.047882
+            ],
+            "ci95_total": [
+              -10.251379,
+              -3.495359
+            ],
+            "mean_daily_pnl": -0.101203,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -7.387823
+          }
+        },
+        "by_regime": {
+          "down_highvol": {
+            "avg_loss": -0.239672,
+            "avg_win": 0.190425,
+            "expectancy": -0.07425,
+            "fees": 1.294713,
+            "gross_pnl": 0.675363,
+            "n_trades": 13,
+            "net_pnl": -0.965247,
+            "profit_factor": 0.496578,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.345898,
+            "win_rate": 0.384615
+          },
+          "down_lowvol": {
+            "avg_loss": -0.21932,
+            "avg_win": 0.184369,
+            "expectancy": -0.057845,
+            "fees": 2.495293,
+            "gross_pnl": 1.702399,
+            "n_trades": 25,
+            "net_pnl": -1.446121,
+            "profit_factor": 0.560424,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.653227,
+            "win_rate": 0.4
+          },
+          "up_highvol": {
+            "avg_loss": -0.256353,
+            "avg_win": 0.119085,
+            "expectancy": -0.202719,
+            "fees": 1.396588,
+            "gross_pnl": -1.061055,
+            "n_trades": 14,
+            "net_pnl": -2.838065,
+            "profit_factor": 0.077422,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.380422,
+            "win_rate": 0.142857
+          },
+          "up_lowvol": {
+            "avg_loss": -0.205743,
+            "avg_win": 0.041593,
+            "expectancy": -0.152742,
+            "fees": 1.397199,
+            "gross_pnl": -0.353017,
+            "n_trades": 14,
+            "net_pnl": -2.138389,
+            "profit_factor": 0.055135,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.388173,
+            "win_rate": 0.214286
+          }
+        },
+        "by_symbol": {
+          "BTCUSDT": {
+            "avg_loss": -0.205252,
+            "avg_win": 0.08184,
+            "expectancy": -0.143733,
+            "fees": 1.390689,
+            "gross_pnl": -0.273809,
+            "n_trades": 14,
+            "net_pnl": -2.012256,
+            "profit_factor": 0.108744,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.347757,
+            "win_rate": 0.214286
+          },
+          "ETHUSDT": {
+            "avg_loss": -0.216869,
+            "avg_win": 0.151903,
+            "expectancy": -0.085165,
+            "fees": 2.795435,
+            "gross_pnl": 1.118996,
+            "n_trades": 28,
+            "net_pnl": -2.384608,
+            "profit_factor": 0.389131,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.708169,
+            "win_rate": 0.357143
+          },
+          "SOLUSDT": {
+            "avg_loss": -0.257951,
+            "avg_win": 0.199173,
+            "expectancy": -0.124623,
+            "fees": 2.397669,
+            "gross_pnl": 0.118504,
+            "n_trades": 24,
+            "net_pnl": -2.990959,
+            "profit_factor": 0.317938,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.711794,
+            "win_rate": 0.291667
+          }
+        },
+        "conservative_gap_scenario_net_pnl": -7.387823,
+        "exit_reasons": {
+          "stop": 13,
+          "target": 4,
+          "time_exit": 49
+        },
+        "expectancy": -0.111937,
+        "exposure_pct_time": 1.63242,
+        "fees": 6.583793,
+        "final_equity": 92.612177,
+        "gross_pnl": 0.963691,
+        "max_drawdown_pct": 7.647212,
+        "max_drawdown_usdt": 7.668691,
+        "n_days": 73,
+        "n_trades": 66,
+        "net_pnl": -7.387823,
+        "profit_factor": 0.299506,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 16,
+          "position_open": 1
+        },
+        "return_pct": -7.387823,
+        "risk_events": [],
+        "rolling_7d_pnl": {
+          "max": 0.374857,
+          "median": -0.548409,
+          "min": -1.702351,
+          "n": 67,
+          "share_positive": 0.059701
+        },
+        "sharpe_daily_ann": -9.020536,
+        "slippage_cost": 1.76772,
+        "sortino_daily_ann": -8.498905,
+        "turnover_x_initial": 65.837933,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.30303,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.260083,
+            "median_pnl": -0.383719,
+            "min_pnl": -1.146812,
+            "n_windows_complete": 18,
+            "share_positive": 0.111111,
+            "share_zero_trades": 0.111111
+          },
+          "7d": {
+            "max_pnl": 0.374857,
+            "median_pnl": -0.741689,
+            "min_pnl": -1.695221,
+            "n_windows_complete": 10,
+            "share_positive": 0.2,
+            "share_zero_trades": 0.1
+          }
+        },
+        "windows_detail": {
+          "4d": [
+            {
+              "complete": true,
+              "end": "2026-06-12 00:00:00+00:00",
+              "n_trades": 8,
+              "pnl": -0.607284,
+              "start": "2026-06-08 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-16 00:00:00+00:00",
+              "n_trades": 4,
+              "pnl": -0.268804,
+              "start": "2026-06-12 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-20 00:00:00+00:00",
+              "n_trades": 7,
+              "pnl": -0.984476,
+              "start": "2026-06-16 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-24 00:00:00+00:00",
+              "n_trades": 6,
+              "pnl": -0.635198,
+              "start": "2026-06-20 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-28 00:00:00+00:00",
+              "n_trades": 4,
+              "pnl": 0.037595,
+              "start": "2026-06-24 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-02 00:00:00+00:00",
+              "n_trades": 10,
+              "pnl": -0.371875,
+              "start": "2026-06-28 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-06 00:00:00+00:00",
+              "n_trades": 2,
+              "pnl": -0.480556,
+              "start": "2026-07-02 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-10 00:00:00+00:00",
+              "n_trades": 3,
+              "pnl": 0.260083,
+              "start": "2026-07-06 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-14 00:00:00+00:00",
+              "n_trades": 3,
+              "pnl": -0.268331,
+              "start": "2026-07-10 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-18 00:00:00+00:00",
+              "n_trades": 1,
+              "pnl": -0.079216,
+              "start": "2026-07-14 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-22 00:00:00+00:00",
+              "n_trades": 2,
+              "pnl": -0.405311,
+              "start": "2026-07-18 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-26 00:00:00+00:00",
+              "n_trades": 2,
+              "pnl": -0.395564,
+              "start": "2026-07-22 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-30 00:00:00+00:00",
+              "n_trades": 5,
+              "pnl": -1.146812,
+              "start": "2026-07-26 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-03 00:00:00+00:00",
+              "n_trades": 3,
+              "pnl": -0.548409,
+              "start": "2026-07-30 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-07 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-03 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-11 00:00:00+00:00",
+              "n_trades": 1,
+              "pnl": -0.130703,
+              "start": "2026-08-07 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-15 00:00:00+00:00",
+              "n_trades": 2,
+              "pnl": -0.551799,
+              "start": "2026-08-11 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-19 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-15 00:00:00+00:00"
+            },
+            {
+              "complete": false,
+              "end": "2026-08-20 00:00:00+00:00",
+              "n_trades": 3,
+              "pnl": -0.811161,
+              "start": "2026-08-19 00:00:00+00:00"
+            }
+          ],
+          "7d": [
+            {
+              "complete": true,
+              "end": "2026-06-15 00:00:00+00:00",
+              "n_trades": 11,
+              "pnl": -0.812181,
+              "start": "2026-06-08 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-22 00:00:00+00:00",
+              "n_trades": 12,
+              "pnl": -1.569253,
+              "start": "2026-06-15 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-29 00:00:00+00:00",
+              "n_trades": 14,
+              "pnl": 0.374857,
+              "start": "2026-06-22 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-06 00:00:00+00:00",
+              "n_trades": 4,
+              "pnl": -1.30402,
+              "start": "2026-06-29 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-13 00:00:00+00:00",
+              "n_trades": 4,
+              "pnl": 0.07557,
+              "start": "2026-07-06 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-20 00:00:00+00:00",
+              "n_trades": 3,
+              "pnl": -0.163035,
+              "start": "2026-07-13 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-27 00:00:00+00:00",
+              "n_trades": 4,
+              "pnl": -0.800876,
+              "start": "2026-07-20 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-03 00:00:00+00:00",
+              "n_trades": 8,
+              "pnl": -1.695221,
+              "start": "2026-07-27 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-10 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-03 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-17 00:00:00+00:00",
+              "n_trades": 3,
+              "pnl": -0.682502,
+              "start": "2026-08-10 00:00:00+00:00"
+            },
+            {
+              "complete": false,
+              "end": "2026-08-20 00:00:00+00:00",
+              "n_trades": 3,
+              "pnl": -0.811161,
+              "start": "2026-08-17 00:00:00+00:00"
+            }
+          ]
+        }
+      },
+      "signal_only_no_portfolio_stop": {
+        "avg_hold_minutes": 26.0,
+        "avg_loss": -0.229274,
+        "avg_win": 0.157938,
+        "by_regime": {
+          "down_highvol": {
+            "avg_loss": -0.239672,
+            "avg_win": 0.190425,
+            "expectancy": -0.07425,
+            "fees": 1.294713,
+            "gross_pnl": 0.675363,
+            "n_trades": 13,
+            "net_pnl": -0.965247,
+            "profit_factor": 0.496578,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.345898,
+            "win_rate": 0.384615
+          },
+          "down_lowvol": {
+            "avg_loss": -0.21932,
+            "avg_win": 0.184369,
+            "expectancy": -0.057845,
+            "fees": 2.495293,
+            "gross_pnl": 1.702399,
+            "n_trades": 25,
+            "net_pnl": -1.446121,
+            "profit_factor": 0.560424,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.653227,
+            "win_rate": 0.4
+          },
+          "up_highvol": {
+            "avg_loss": -0.256353,
+            "avg_win": 0.119085,
+            "expectancy": -0.202719,
+            "fees": 1.396588,
+            "gross_pnl": -1.061055,
+            "n_trades": 14,
+            "net_pnl": -2.838065,
+            "profit_factor": 0.077422,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.380422,
+            "win_rate": 0.142857
+          },
+          "up_lowvol": {
+            "avg_loss": -0.205743,
+            "avg_win": 0.041593,
+            "expectancy": -0.152742,
+            "fees": 1.397199,
+            "gross_pnl": -0.353017,
+            "n_trades": 14,
+            "net_pnl": -2.138389,
+            "profit_factor": 0.055135,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.388173,
+            "win_rate": 0.214286
+          }
+        },
+        "by_symbol": {
+          "BTCUSDT": {
+            "avg_loss": -0.205252,
+            "avg_win": 0.08184,
+            "expectancy": -0.143733,
+            "fees": 1.390689,
+            "gross_pnl": -0.273809,
+            "n_trades": 14,
+            "net_pnl": -2.012256,
+            "profit_factor": 0.108744,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.347757,
+            "win_rate": 0.214286
+          },
+          "ETHUSDT": {
+            "avg_loss": -0.216869,
+            "avg_win": 0.151903,
+            "expectancy": -0.085165,
+            "fees": 2.795435,
+            "gross_pnl": 1.118996,
+            "n_trades": 28,
+            "net_pnl": -2.384608,
+            "profit_factor": 0.389131,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.708169,
+            "win_rate": 0.357143
+          },
+          "SOLUSDT": {
+            "avg_loss": -0.257951,
+            "avg_win": 0.199173,
+            "expectancy": -0.124623,
+            "fees": 2.397669,
+            "gross_pnl": 0.118504,
+            "n_trades": 24,
+            "net_pnl": -2.990959,
+            "profit_factor": 0.317938,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.711794,
+            "win_rate": 0.291667
+          }
+        },
+        "conservative_gap_scenario_net_pnl": -7.387823,
+        "exit_reasons": {
+          "stop": 13,
+          "target": 4,
+          "time_exit": 49
+        },
+        "expectancy": -0.111937,
+        "exposure_pct_time": 1.63242,
+        "fees": 6.583793,
+        "final_equity": 92.612177,
+        "gross_pnl": 0.963691,
+        "max_drawdown_pct": 7.647212,
+        "max_drawdown_usdt": 7.668691,
+        "n_days": 73,
+        "n_trades": 66,
+        "net_pnl": -7.387823,
+        "profit_factor": 0.299506,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 16,
+          "position_open": 1
+        },
+        "return_pct": -7.387823,
+        "rolling_7d_pnl": {
+          "max": 0.374857,
+          "median": -0.548409,
+          "min": -1.702351,
+          "n": 67,
+          "share_positive": 0.059701
+        },
+        "sharpe_daily_ann": -9.020536,
+        "slippage_cost": 1.76772,
+        "sortino_daily_ann": -8.498905,
+        "turnover_x_initial": 65.837933,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.30303,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.260083,
+            "median_pnl": -0.383719,
+            "min_pnl": -1.146812,
+            "n_windows_complete": 18,
+            "share_positive": 0.111111,
+            "share_zero_trades": 0.111111
+          },
+          "7d": {
+            "max_pnl": 0.374857,
+            "median_pnl": -0.741689,
+            "min_pnl": -1.695221,
+            "n_windows_complete": 10,
+            "share_positive": 0.2,
+            "share_zero_trades": 0.1
+          }
+        }
+      }
+    }
+  },
+  "E01-P": {
+    "hold_minutes": 30,
+    "n_raw_signals": 239,
+    "raw_signals_by_symbol": {
+      "BTCUSDT": 38,
+      "ETHUSDT": 95,
+      "SOLUSDT": 106
+    },
+    "scenarios": {
+      "coarse_step_x10": {
+        "avg_hold_minutes": 25.052632,
+        "avg_loss": -0.224135,
+        "avg_win": 0.150229,
+        "conservative_gap_scenario_net_pnl": -10.061901,
+        "exit_reasons": {
+          "risk_exit_daily": 1,
+          "risk_exit_total": 1,
+          "stop": 20,
+          "target": 6,
+          "time_exit": 67
+        },
+        "expectancy": -0.105915,
+        "exposure_pct_time": 2.264079,
+        "fees": 9.252549,
+        "final_equity": 89.938099,
+        "gross_pnl": 1.716325,
+        "max_drawdown_pct": 10.292295,
+        "max_drawdown_usdt": 10.318728,
+        "n_days": 73,
+        "n_trades": 95,
+        "net_pnl": -10.061901,
+        "profit_factor": 0.309351,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 55,
+          "cooldown": 3,
+          "daily_loss_pause": 2,
+          "position_open": 3,
+          "total_loss_stop": 81
+        },
+        "return_pct": -10.061901,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -4.264615,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -9.131959,
+        "slippage_cost": 2.525677,
+        "sortino_daily_ann": -8.31338,
+        "turnover_x_initial": 92.525491,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.315789,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -2.926733,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.611111
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -4.014353,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.6
+          }
+        }
+      },
+      "cost_rt0": {
+        "avg_hold_minutes": 25.854167,
+        "avg_loss": -0.161236,
+        "avg_win": 0.189284,
+        "break_even_roundtrip_cost_bps": 6.0503,
+        "conservative_gap_scenario_net_pnl": 4.283836,
+        "exit_reasons": {
+          "stop": 22,
+          "target": 13,
+          "time_exit": 109
+        },
+        "expectancy": 0.029749,
+        "exposure_pct_time": 3.541667,
+        "fees": 0.0,
+        "final_equity": 104.283836,
+        "gross_pnl": 4.344549,
+        "max_drawdown_pct": 1.596665,
+        "max_drawdown_usdt": 1.606925,
+        "n_days": 73,
+        "n_trades": 144,
+        "net_pnl": 4.283836,
+        "profit_factor": 1.408751,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 83,
+          "cooldown": 4,
+          "position_open": 8
+        },
+        "return_pct": 4.283836,
+        "rolling_7d_pnl": {
+          "max": 2.624109,
+          "median": 0.208278,
+          "min": -0.92979,
+          "n": 67,
+          "share_positive": 0.671642
+        },
+        "sharpe_daily_ann": 3.710162,
+        "slippage_cost": 0.060714,
+        "sortino_daily_ann": 8.162862,
+        "turnover_x_initial": 143.657775,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.541667,
+        "windows": {
+          "4d": {
+            "max_pnl": 1.621111,
+            "median_pnl": 0.026151,
+            "min_pnl": -0.493352,
+            "n_windows_complete": 18,
+            "share_positive": 0.5,
+            "share_zero_trades": 0.055556
+          },
+          "7d": {
+            "max_pnl": 1.346254,
+            "median_pnl": 0.186806,
+            "min_pnl": -0.558267,
+            "n_windows_complete": 10,
+            "share_positive": 0.7,
+            "share_zero_trades": 0.0
+          }
+        }
+      },
+      "cost_rt10": {
+        "avg_hold_minutes": 25.916667,
+        "avg_loss": -0.179061,
+        "avg_win": 0.175316,
+        "conservative_gap_scenario_net_pnl": -3.104621,
+        "exit_reasons": {
+          "stop": 23,
+          "target": 12,
+          "time_exit": 109
+        },
+        "expectancy": -0.02156,
+        "exposure_pct_time": 3.550228,
+        "fees": 5.745811,
+        "final_equity": 96.895379,
+        "gross_pnl": 4.292096,
+        "max_drawdown_pct": 4.560393,
+        "max_drawdown_usdt": 4.575315,
+        "n_days": 73,
+        "n_trades": 144,
+        "net_pnl": -3.104621,
+        "profit_factor": 0.783271,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 83,
+          "cooldown": 4,
+          "position_open": 8
+        },
+        "return_pct": -3.104621,
+        "rolling_7d_pnl": {
+          "max": 1.291598,
+          "median": -0.210086,
+          "min": -2.186785,
+          "n": 67,
+          "share_positive": 0.373134
+        },
+        "sharpe_daily_ann": -2.795341,
+        "slippage_cost": 1.650907,
+        "sortino_daily_ann": -3.665336,
+        "turnover_x_initial": 143.64527,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.444444,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.836124,
+            "median_pnl": -0.27098,
+            "min_pnl": -1.403179,
+            "n_windows_complete": 18,
+            "share_positive": 0.222222,
+            "share_zero_trades": 0.055556
+          },
+          "7d": {
+            "max_pnl": 0.342843,
+            "median_pnl": -0.232118,
+            "min_pnl": -2.01273,
+            "n_windows_complete": 10,
+            "share_positive": 0.4,
+            "share_zero_trades": 0.0
+          }
+        }
+      },
+      "cost_rt40": {
+        "avg_hold_minutes": 25.276596,
+        "avg_loss": -0.273243,
+        "avg_win": 0.065921,
+        "conservative_gap_scenario_net_pnl": -10.12912,
+        "exit_reasons": {
+          "risk_exit_daily": 1,
+          "risk_exit_total": 1,
+          "stop": 10,
+          "time_exit": 35
+        },
+        "expectancy": -0.215513,
+        "exposure_pct_time": 1.130137,
+        "fees": 7.49673,
+        "final_equity": 89.87088,
+        "gross_pnl": -0.687288,
+        "max_drawdown_pct": 10.355454,
+        "max_drawdown_usdt": 10.3816,
+        "n_days": 73,
+        "n_trades": 47,
+        "net_pnl": -10.12912,
+        "profit_factor": 0.049488,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 33,
+          "daily_loss_pause": 4,
+          "position_open": 2,
+          "total_loss_stop": 153
+        },
+        "return_pct": -10.12912,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -5.742693,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -8.034815,
+        "slippage_cost": 1.945101,
+        "sortino_daily_ann": -7.449956,
+        "turnover_x_initial": 46.854565,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.170213,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.80023,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.777778
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -5.412179,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.7
+          }
+        }
+      },
+      "delay60": {
+        "avg_hold_minutes": 25.737864,
+        "avg_loss": -0.224056,
+        "avg_win": 0.157597,
+        "conservative_gap_scenario_net_pnl": -10.101525,
+        "exit_reasons": {
+          "risk_exit_total": 1,
+          "stop": 20,
+          "target": 7,
+          "time_exit": 75
+        },
+        "expectancy": -0.098073,
+        "exposure_pct_time": 2.52188,
+        "fees": 10.275253,
+        "final_equity": 89.898475,
+        "gross_pnl": 2.960349,
+        "max_drawdown_pct": 10.361115,
+        "max_drawdown_usdt": 10.39112,
+        "n_days": 73,
+        "n_trades": 103,
+        "net_pnl": -10.101525,
+        "profit_factor": 0.346596,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 60,
+          "cooldown": 3,
+          "position_open": 8,
+          "total_loss_stop": 65
+        },
+        "return_pct": -10.101525,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": -0.311436,
+          "min": -3.271749,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -9.229447,
+        "slippage_cost": 2.786621,
+        "sortino_daily_ann": -8.473977,
+        "turnover_x_initial": 102.752525,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.330097,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": -0.155718,
+            "min_pnl": -2.217414,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.5
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": -0.460405,
+            "min_pnl": -2.644001,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.5
+          }
+        }
+      },
+      "main": {
+        "avg_hold_minutes": 24.905263,
+        "avg_loss": -0.22634,
+        "avg_win": 0.153982,
+        "bootstrap": {
+          "block_14d": {
+            "block_days": 14,
+            "ci95_mean_daily": [
+              -0.25064,
+              -0.003581
+            ],
+            "ci95_total": [
+              -18.296719,
+              -0.261444
+            ],
+            "mean_daily_pnl": -0.138256,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -10.092652
+          },
+          "block_3d": {
+            "block_days": 3,
+            "ci95_mean_daily": [
+              -0.240126,
+              -0.057517
+            ],
+            "ci95_total": [
+              -17.529171,
+              -4.198773
+            ],
+            "mean_daily_pnl": -0.138256,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -10.092652
+          },
+          "block_7d": {
+            "block_days": 7,
+            "ci95_mean_daily": [
+              -0.236753,
+              -0.028597
+            ],
+            "ci95_total": [
+              -17.282994,
+              -2.087609
+            ],
+            "mean_daily_pnl": -0.138256,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -10.092652
+          }
+        },
+        "by_regime": {
+          "down_highvol": {
+            "avg_loss": -0.258995,
+            "avg_win": 0.156048,
+            "expectancy": -0.101565,
+            "fees": 2.888755,
+            "gross_pnl": 0.713372,
+            "n_trades": 29,
+            "net_pnl": -2.94538,
+            "profit_factor": 0.368203,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.769996,
+            "win_rate": 0.37931
+          },
+          "down_lowvol": {
+            "avg_loss": -0.165231,
+            "avg_win": 0.175653,
+            "expectancy": -0.028877,
+            "fees": 1.99689,
+            "gross_pnl": 1.948677,
+            "n_trades": 20,
+            "net_pnl": -0.577548,
+            "profit_factor": 0.708717,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.529335,
+            "win_rate": 0.4
+          },
+          "up_highvol": {
+            "avg_loss": -0.242463,
+            "avg_win": 0.15812,
+            "expectancy": -0.139087,
+            "fees": 3.093565,
+            "gross_pnl": -0.361623,
+            "n_trades": 31,
+            "net_pnl": -4.311683,
+            "profit_factor": 0.226831,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.856495,
+            "win_rate": 0.258065
+          },
+          "up_lowvol": {
+            "avg_loss": -0.207566,
+            "avg_win": 0.077582,
+            "expectancy": -0.150536,
+            "fees": 1.495523,
+            "gross_pnl": -0.335888,
+            "n_trades": 15,
+            "net_pnl": -2.258041,
+            "profit_factor": 0.093443,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.42663,
+            "win_rate": 0.2
+          }
+        },
+        "by_symbol": {
+          "BTCUSDT": {
+            "avg_loss": -0.202081,
+            "avg_win": 0.165153,
+            "expectancy": -0.058381,
+            "fees": 2.284851,
+            "gross_pnl": 1.513462,
+            "n_trades": 23,
+            "net_pnl": -1.342762,
+            "profit_factor": 0.525382,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.571373,
+            "win_rate": 0.391304
+          },
+          "ETHUSDT": {
+            "avg_loss": -0.18728,
+            "avg_win": 0.137986,
+            "expectancy": -0.078858,
+            "fees": 3.894794,
+            "gross_pnl": 1.805609,
+            "n_trades": 39,
+            "net_pnl": -3.075461,
+            "profit_factor": 0.368395,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.986276,
+            "win_rate": 0.333333
+          },
+          "SOLUSDT": {
+            "avg_loss": -0.280548,
+            "avg_win": 0.167408,
+            "expectancy": -0.171952,
+            "fees": 3.295088,
+            "gross_pnl": -1.354533,
+            "n_trades": 33,
+            "net_pnl": -5.674428,
+            "profit_factor": 0.19095,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.024807,
+            "win_rate": 0.242424
+          }
+        },
+        "conservative_gap_scenario_net_pnl": -10.092652,
+        "exit_reasons": {
+          "risk_exit_daily": 1,
+          "risk_exit_total": 1,
+          "stop": 20,
+          "target": 6,
+          "time_exit": 67
+        },
+        "expectancy": -0.106238,
+        "exposure_pct_time": 2.250761,
+        "fees": 9.474733,
+        "final_equity": 89.907348,
+        "gross_pnl": 1.964538,
+        "max_drawdown_pct": 10.352493,
+        "max_drawdown_usdt": 10.3825,
+        "n_days": 73,
+        "n_trades": 95,
+        "net_pnl": -10.092652,
+        "profit_factor": 0.31399,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 55,
+          "cooldown": 3,
+          "daily_loss_pause": 2,
+          "position_open": 3,
+          "total_loss_stop": 81
+        },
+        "return_pct": -10.092652,
+        "risk_events": [
+          {
+            "day_start_equity": 99.44041420330001,
+            "equity": NaN,
+            "event": "risk_exit_daily_triggered",
+            "exceeded_by": NaN,
+            "mtm_equity": 97.8256119753,
+            "symbol": "ETHUSDT",
+            "time": "2026-06-10 17:35:00+00:00"
+          },
+          {
+            "day_start_equity": 99.44041420330001,
+            "equity": 97.76359801530002,
+            "event": "daily_pause",
+            "exceeded_by": 0.17681618799998944,
+            "mtm_equity": NaN,
+            "symbol": "ETHUSDT",
+            "time": "2026-06-10 17:36:00+00:00"
+          },
+          {
+            "day_start_equity": 90.36582141950001,
+            "equity": NaN,
+            "event": "risk_exit_total_triggered",
+            "exceeded_by": NaN,
+            "mtm_equity": 89.9698921255,
+            "symbol": "ETHUSDT",
+            "time": "2026-07-05 23:34:00+00:00"
+          },
+          {
+            "day_start_equity": NaN,
+            "equity": 89.9073482415,
+            "event": "total_stop",
+            "exceeded_by": 0.09265175849999707,
+            "mtm_equity": NaN,
+            "symbol": "ETHUSDT",
+            "time": "2026-07-05 23:35:00+00:00"
+          }
+        ],
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -4.3344,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -9.090149,
+        "slippage_cost": 2.582456,
+        "sortino_daily_ann": -8.282272,
+        "turnover_x_initial": 94.747335,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.315789,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -2.977713,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.611111
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -4.088739,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.6
+          }
+        },
+        "windows_detail": {
+          "4d": [
+            {
+              "complete": true,
+              "end": "2026-06-12 00:00:00+00:00",
+              "n_trades": 19,
+              "pnl": -2.977713,
+              "start": "2026-06-08 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-16 00:00:00+00:00",
+              "n_trades": 10,
+              "pnl": -1.434481,
+              "start": "2026-06-12 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-20 00:00:00+00:00",
+              "n_trades": 13,
+              "pnl": -1.718077,
+              "start": "2026-06-16 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-24 00:00:00+00:00",
+              "n_trades": 10,
+              "pnl": -1.187436,
+              "start": "2026-06-20 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-28 00:00:00+00:00",
+              "n_trades": 12,
+              "pnl": -1.260934,
+              "start": "2026-06-24 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-02 00:00:00+00:00",
+              "n_trades": 16,
+              "pnl": -0.359301,
+              "start": "2026-06-28 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-06 00:00:00+00:00",
+              "n_trades": 15,
+              "pnl": -1.15471,
+              "start": "2026-07-02 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-10 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-06 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-14 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-10 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-18 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-14 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-22 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-18 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-26 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-22 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-30 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-26 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-03 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-30 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-07 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-03 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-11 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-07 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-15 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-11 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-19 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-15 00:00:00+00:00"
+            },
+            {
+              "complete": false,
+              "end": "2026-08-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-19 00:00:00+00:00"
+            }
+          ],
+          "7d": [
+            {
+              "complete": true,
+              "end": "2026-06-15 00:00:00+00:00",
+              "n_trades": 26,
+              "pnl": -4.088739,
+              "start": "2026-06-08 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-22 00:00:00+00:00",
+              "n_trades": 21,
+              "pnl": -2.561976,
+              "start": "2026-06-15 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-29 00:00:00+00:00",
+              "n_trades": 25,
+              "pnl": -1.723394,
+              "start": "2026-06-22 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-06 00:00:00+00:00",
+              "n_trades": 23,
+              "pnl": -1.718542,
+              "start": "2026-06-29 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-13 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-06 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-13 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-27 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-20 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-03 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-27 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-10 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-03 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-17 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-10 00:00:00+00:00"
+            },
+            {
+              "complete": false,
+              "end": "2026-08-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-17 00:00:00+00:00"
+            }
+          ]
+        }
+      },
+      "signal_only_no_portfolio_stop": {
+        "avg_hold_minutes": 25.798611,
+        "avg_loss": -0.221428,
+        "avg_win": 0.145037,
+        "by_regime": {
+          "down_highvol": {
+            "avg_loss": -0.255916,
+            "avg_win": 0.150495,
+            "expectancy": -0.085485,
+            "fees": 3.088968,
+            "gross_pnl": 1.25959,
+            "n_trades": 31,
+            "net_pnl": -2.650043,
+            "profit_factor": 0.424715,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.820664,
+            "win_rate": 0.419355
+          },
+          "down_lowvol": {
+            "avg_loss": -0.194959,
+            "avg_win": 0.141886,
+            "expectancy": -0.087455,
+            "fees": 4.688614,
+            "gross_pnl": 1.79604,
+            "n_trades": 47,
+            "net_pnl": -4.110397,
+            "profit_factor": 0.341144,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.217822,
+            "win_rate": 0.319149
+          },
+          "up_highvol": {
+            "avg_loss": -0.247044,
+            "avg_win": 0.206456,
+            "expectancy": -0.108474,
+            "fees": 3.592543,
+            "gross_pnl": 0.676323,
+            "n_trades": 36,
+            "net_pnl": -3.905075,
+            "profit_factor": 0.367711,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.988854,
+            "win_rate": 0.305556
+          },
+          "up_lowvol": {
+            "avg_loss": -0.200722,
+            "avg_win": 0.075107,
+            "expectancy": -0.108779,
+            "fees": 2.993628,
+            "gross_pnl": 0.563511,
+            "n_trades": 30,
+            "net_pnl": -3.263377,
+            "profit_factor": 0.187091,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.833261,
+            "win_rate": 0.333333
+          }
+        },
+        "by_symbol": {
+          "BTCUSDT": {
+            "avg_loss": -0.217045,
+            "avg_win": 0.156358,
+            "expectancy": -0.089021,
+            "fees": 3.476971,
+            "gross_pnl": 1.23071,
+            "n_trades": 35,
+            "net_pnl": -3.11575,
+            "profit_factor": 0.375857,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.869488,
+            "win_rate": 0.342857
+          },
+          "ETHUSDT": {
+            "avg_loss": -0.191892,
+            "avg_win": 0.119015,
+            "expectancy": -0.077096,
+            "fees": 6.491404,
+            "gross_pnl": 3.121826,
+            "n_trades": 65,
+            "net_pnl": -5.011223,
+            "profit_factor": 0.363054,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.641645,
+            "win_rate": 0.369231
+          },
+          "SOLUSDT": {
+            "avg_loss": -0.263745,
+            "avg_win": 0.182628,
+            "expectancy": -0.131862,
+            "fees": 4.395378,
+            "gross_pnl": -0.057072,
+            "n_trades": 44,
+            "net_pnl": -5.801918,
+            "profit_factor": 0.290379,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.349468,
+            "win_rate": 0.295455
+          }
+        },
+        "conservative_gap_scenario_net_pnl": -13.928891,
+        "exit_reasons": {
+          "stop": 24,
+          "target": 11,
+          "time_exit": 109
+        },
+        "expectancy": -0.096728,
+        "exposure_pct_time": 3.534056,
+        "fees": 14.363754,
+        "final_equity": 86.071109,
+        "gross_pnl": 4.295464,
+        "max_drawdown_pct": 14.916739,
+        "max_drawdown_usdt": 14.959975,
+        "n_days": 73,
+        "n_trades": 144,
+        "net_pnl": -13.928891,
+        "profit_factor": 0.337845,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 83,
+          "cooldown": 4,
+          "position_open": 8
+        },
+        "return_pct": -13.928891,
+        "rolling_7d_pnl": {
+          "max": 0.454829,
+          "median": -1.065829,
+          "min": -4.226189,
+          "n": 67,
+          "share_positive": 0.014925
+        },
+        "sharpe_daily_ann": -11.360741,
+        "slippage_cost": 3.860601,
+        "sortino_daily_ann": -10.115228,
+        "turnover_x_initial": 143.637538,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.340278,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.167212,
+            "median_pnl": -0.651073,
+            "min_pnl": -2.869502,
+            "n_windows_complete": 18,
+            "share_positive": 0.111111,
+            "share_zero_trades": 0.055556
+          },
+          "7d": {
+            "max_pnl": -0.069105,
+            "median_pnl": -1.394611,
+            "min_pnl": -3.980529,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.0
+          }
+        }
+      }
+    }
+  },
+  "E02-F": {
+    "hold_minutes": 60,
+    "n_raw_signals": 320,
+    "raw_signals_by_symbol": {
+      "BTCUSDT": 89,
+      "ETHUSDT": 116,
+      "SOLUSDT": 115
+    },
+    "scenarios": {
+      "coarse_step_x10": {
+        "avg_hold_minutes": 41.480769,
+        "avg_loss": -0.256917,
+        "avg_win": 0.279941,
+        "conservative_gap_scenario_net_pnl": -10.076743,
+        "exit_reasons": {
+          "risk_exit_total": 1,
+          "stop": 30,
+          "target": 24,
+          "time_exit": 49
+        },
+        "expectancy": -0.096892,
+        "exposure_pct_time": 4.103881,
+        "fees": 9.988748,
+        "final_equity": 89.923257,
+        "gross_pnl": 2.542648,
+        "max_drawdown_pct": 10.076743,
+        "max_drawdown_usdt": 10.076743,
+        "n_days": 73,
+        "n_trades": 104,
+        "net_pnl": -10.076743,
+        "profit_factor": 0.462714,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 42,
+          "cooldown": 24,
+          "position_open": 47,
+          "total_loss_stop": 103
+        },
+        "return_pct": -10.076743,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": -0.605563,
+          "min": -4.183987,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -8.512373,
+        "slippage_cost": 2.630643,
+        "sortino_daily_ann": -8.078804,
+        "turnover_x_initial": 99.887478,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.298077,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.127417,
+            "median_pnl": -0.020688,
+            "min_pnl": -2.415344,
+            "n_windows_complete": 18,
+            "share_positive": 0.055556,
+            "share_zero_trades": 0.444444
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": -0.617388,
+            "min_pnl": -3.751621,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.4
+          }
+        }
+      },
+      "cost_rt0": {
+        "avg_hold_minutes": 43.980132,
+        "avg_loss": -0.190774,
+        "avg_win": 0.279984,
+        "break_even_roundtrip_cost_bps": 6.2161,
+        "conservative_gap_scenario_net_pnl": 4.61698,
+        "exit_reasons": {
+          "stop": 35,
+          "target": 35,
+          "time_exit": 81
+        },
+        "expectancy": 0.030576,
+        "exposure_pct_time": 6.317542,
+        "fees": 0.0,
+        "final_equity": 104.61698,
+        "gross_pnl": 4.677324,
+        "max_drawdown_pct": 2.259942,
+        "max_drawdown_usdt": 2.31986,
+        "n_days": 73,
+        "n_trades": 151,
+        "net_pnl": 4.61698,
+        "profit_factor": 1.302517,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 56,
+          "cooldown": 38,
+          "position_open": 75
+        },
+        "return_pct": 4.61698,
+        "rolling_7d_pnl": {
+          "max": 2.357671,
+          "median": 0.451503,
+          "min": -1.261943,
+          "n": 67,
+          "share_positive": 0.656716
+        },
+        "sharpe_daily_ann": 3.374809,
+        "slippage_cost": 0.060344,
+        "sortino_daily_ann": 5.901984,
+        "turnover_x_initial": 150.537506,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.470199,
+        "windows": {
+          "4d": {
+            "max_pnl": 1.342571,
+            "median_pnl": -0.017448,
+            "min_pnl": -0.60189,
+            "n_windows_complete": 18,
+            "share_positive": 0.5,
+            "share_zero_trades": 0.0
+          },
+          "7d": {
+            "max_pnl": 1.960779,
+            "median_pnl": 0.278064,
+            "min_pnl": -0.668808,
+            "n_windows_complete": 10,
+            "share_positive": 0.6,
+            "share_zero_trades": 0.0
+          }
+        }
+      },
+      "cost_rt10": {
+        "avg_hold_minutes": 43.966887,
+        "avg_loss": -0.207878,
+        "avg_win": 0.296348,
+        "conservative_gap_scenario_net_pnl": -2.64872,
+        "exit_reasons": {
+          "stop": 35,
+          "target": 35,
+          "time_exit": 81
+        },
+        "expectancy": -0.017541,
+        "exposure_pct_time": 6.315639,
+        "fees": 6.021548,
+        "final_equity": 97.35128,
+        "gross_pnl": 5.061639,
+        "max_drawdown_pct": 5.585412,
+        "max_drawdown_usdt": 5.633499,
+        "n_days": 73,
+        "n_trades": 151,
+        "net_pnl": -2.64872,
+        "profit_factor": 0.86445,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 56,
+          "cooldown": 38,
+          "position_open": 75
+        },
+        "return_pct": -2.64872,
+        "rolling_7d_pnl": {
+          "max": 1.398821,
+          "median": -0.156993,
+          "min": -2.441538,
+          "n": 67,
+          "share_positive": 0.402985
+        },
+        "sharpe_daily_ann": -1.888386,
+        "slippage_cost": 1.68881,
+        "sortino_daily_ann": -2.512864,
+        "turnover_x_initial": 150.538705,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.377483,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.998564,
+            "median_pnl": -0.31387,
+            "min_pnl": -1.314524,
+            "n_windows_complete": 18,
+            "share_positive": 0.333333,
+            "share_zero_trades": 0.0
+          },
+          "7d": {
+            "max_pnl": 1.020525,
+            "median_pnl": -0.340332,
+            "min_pnl": -1.851186,
+            "n_windows_complete": 10,
+            "share_positive": 0.3,
+            "share_zero_trades": 0.0
+          }
+        }
+      },
+      "cost_rt40": {
+        "avg_hold_minutes": 40.754098,
+        "avg_loss": -0.342485,
+        "avg_win": 0.230172,
+        "conservative_gap_scenario_net_pnl": -10.011103,
+        "exit_reasons": {
+          "stop": 20,
+          "target": 15,
+          "time_exit": 26
+        },
+        "expectancy": -0.164116,
+        "exposure_pct_time": 2.364916,
+        "fees": 9.727812,
+        "final_equity": 89.988897,
+        "gross_pnl": 2.228166,
+        "max_drawdown_pct": 10.011103,
+        "max_drawdown_usdt": 10.011103,
+        "n_days": 73,
+        "n_trades": 61,
+        "net_pnl": -10.011103,
+        "profit_factor": 0.304029,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 29,
+          "cooldown": 10,
+          "position_open": 32,
+          "total_loss_stop": 188
+        },
+        "return_pct": -10.011103,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -3.724488,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -7.699565,
+        "slippage_cost": 2.511457,
+        "sortino_daily_ann": -7.271366,
+        "turnover_x_initial": 60.798825,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.311475,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -2.744758,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.666667
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.137686,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.6
+          }
+        }
+      },
+      "delay60": {
+        "avg_hold_minutes": 43.917526,
+        "avg_loss": -0.274922,
+        "avg_win": 0.243546,
+        "conservative_gap_scenario_net_pnl": -10.07646,
+        "exit_reasons": {
+          "risk_exit_total": 1,
+          "stop": 26,
+          "target": 20,
+          "time_exit": 50
+        },
+        "expectancy": -0.103881,
+        "exposure_pct_time": 4.052511,
+        "fees": 9.666219,
+        "final_equity": 89.92354,
+        "gross_pnl": 2.133526,
+        "max_drawdown_pct": 10.084757,
+        "max_drawdown_usdt": 10.085687,
+        "n_days": 73,
+        "n_trades": 97,
+        "net_pnl": -10.07646,
+        "profit_factor": 0.436122,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 40,
+          "cooldown": 18,
+          "position_open": 42,
+          "total_loss_stop": 123
+        },
+        "return_pct": -10.07646,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": -0.45413,
+          "min": -3.443273,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -8.124512,
+        "slippage_cost": 2.543767,
+        "sortino_daily_ann": -8.098087,
+        "turnover_x_initial": 96.662186,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.329897,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.048639,
+            "median_pnl": -0.013955,
+            "min_pnl": -2.390567,
+            "n_windows_complete": 18,
+            "share_positive": 0.055556,
+            "share_zero_trades": 0.444444
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": -0.4717,
+            "min_pnl": -2.71211,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.4
+          }
+        }
+      },
+      "main": {
+        "avg_hold_minutes": 41.627451,
+        "avg_loss": -0.268433,
+        "avg_win": 0.289762,
+        "bootstrap": {
+          "block_14d": {
+            "block_days": 14,
+            "ci95_mean_daily": [
+              -0.279041,
+              -0.023875
+            ],
+            "ci95_total": [
+              -20.369998,
+              -1.742886
+            ],
+            "mean_daily_pnl": -0.138029,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 0.999,
+            "status": "ok",
+            "total_pnl": -10.076126
+          },
+          "block_3d": {
+            "block_days": 3,
+            "ci95_mean_daily": [
+              -0.224188,
+              -0.055322
+            ],
+            "ci95_total": [
+              -16.365692,
+              -4.038497
+            ],
+            "mean_daily_pnl": -0.138029,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -10.076126
+          },
+          "block_7d": {
+            "block_days": 7,
+            "ci95_mean_daily": [
+              -0.24183,
+              -0.041117
+            ],
+            "ci95_total": [
+              -17.65359,
+              -3.001515
+            ],
+            "mean_daily_pnl": -0.138029,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 1.0,
+            "status": "ok",
+            "total_pnl": -10.076126
+          }
+        },
+        "by_regime": {
+          "down_highvol": {
+            "avg_loss": -0.251476,
+            "avg_win": 0.20165,
+            "expectancy": -0.07526,
+            "fees": 1.793107,
+            "gross_pnl": 0.90351,
+            "n_trades": 18,
+            "net_pnl": -1.354689,
+            "profit_factor": 0.510278,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.465092,
+            "win_rate": 0.388889
+          },
+          "down_lowvol": {
+            "avg_loss": -0.253388,
+            "avg_win": 0.336229,
+            "expectancy": -0.117323,
+            "fees": 1.294897,
+            "gross_pnl": 0.112018,
+            "n_trades": 13,
+            "net_pnl": -1.525196,
+            "profit_factor": 0.39808,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.342316,
+            "win_rate": 0.230769
+          },
+          "up_highvol": {
+            "avg_loss": -0.308627,
+            "avg_win": 0.31976,
+            "expectancy": -0.078218,
+            "fees": 2.988964,
+            "gross_pnl": 1.419899,
+            "n_trades": 30,
+            "net_pnl": -2.34655,
+            "profit_factor": 0.599832,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.777485,
+            "win_rate": 0.366667
+          },
+          "up_lowvol": {
+            "avg_loss": -0.254668,
+            "avg_win": 0.304502,
+            "expectancy": -0.118285,
+            "fees": 4.08663,
+            "gross_pnl": 0.325015,
+            "n_trades": 41,
+            "net_pnl": -4.849692,
+            "profit_factor": 0.385704,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.088076,
+            "win_rate": 0.243902
+          }
+        },
+        "by_symbol": {
+          "BTCUSDT": {
+            "avg_loss": -0.277475,
+            "avg_win": 0.238959,
+            "expectancy": -0.139759,
+            "fees": 4.46891,
+            "gross_pnl": -0.702663,
+            "n_trades": 45,
+            "net_pnl": -6.289156,
+            "profit_factor": 0.313161,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.117583,
+            "win_rate": 0.266667
+          },
+          "ETHUSDT": {
+            "avg_loss": -0.246518,
+            "avg_win": 0.321564,
+            "expectancy": -0.05124,
+            "fees": 3.196468,
+            "gross_pnl": 2.36432,
+            "n_trades": 32,
+            "net_pnl": -1.63968,
+            "profit_factor": 0.683269,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.807532,
+            "win_rate": 0.34375
+          },
+          "SOLUSDT": {
+            "avg_loss": -0.277953,
+            "avg_win": 0.322238,
+            "expectancy": -0.085892,
+            "fees": 2.49822,
+            "gross_pnl": 1.098785,
+            "n_trades": 25,
+            "net_pnl": -2.14729,
+            "profit_factor": 0.545566,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.747855,
+            "win_rate": 0.32
+          }
+        },
+        "conservative_gap_scenario_net_pnl": -10.076126,
+        "exit_reasons": {
+          "risk_exit_total": 1,
+          "stop": 30,
+          "target": 24,
+          "time_exit": 47
+        },
+        "expectancy": -0.098786,
+        "exposure_pct_time": 4.039193,
+        "fees": 10.163598,
+        "final_equity": 89.923874,
+        "gross_pnl": 2.760442,
+        "max_drawdown_pct": 10.076126,
+        "max_drawdown_usdt": 10.076126,
+        "n_days": 73,
+        "n_trades": 102,
+        "net_pnl": -10.076126,
+        "profit_factor": 0.471312,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 41,
+          "cooldown": 24,
+          "position_open": 45,
+          "total_loss_stop": 108
+        },
+        "return_pct": -10.076126,
+        "risk_events": [
+          {
+            "day_start_equity": 90.18754085339994,
+            "equity": NaN,
+            "event": "risk_exit_total_triggered",
+            "exceeded_by": NaN,
+            "mtm_equity": 89.98586695789993,
+            "symbol": "BTCUSDT",
+            "time": "2026-07-16 15:07:00+00:00"
+          },
+          {
+            "day_start_equity": NaN,
+            "equity": 89.92387367269993,
+            "event": "total_stop",
+            "exceeded_by": 0.07612632730007363,
+            "mtm_equity": NaN,
+            "symbol": "BTCUSDT",
+            "time": "2026-07-16 15:08:00+00:00"
+          }
+        ],
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": -0.461328,
+          "min": -4.270452,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -8.188799,
+        "slippage_cost": 2.67297,
+        "sortino_daily_ann": -7.819776,
+        "turnover_x_initial": 101.63598,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.303922,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.111421,
+            "median_pnl": -0.025692,
+            "min_pnl": -2.455598,
+            "n_windows_complete": 18,
+            "share_positive": 0.055556,
+            "share_zero_trades": 0.444444
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": -0.449558,
+            "min_pnl": -3.795653,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.4
+          }
+        },
+        "windows_detail": {
+          "4d": [
+            {
+              "complete": true,
+              "end": "2026-06-12 00:00:00+00:00",
+              "n_trades": 11,
+              "pnl": -1.80543,
+              "start": "2026-06-08 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-16 00:00:00+00:00",
+              "n_trades": 10,
+              "pnl": 0.111421,
+              "start": "2026-06-12 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-20 00:00:00+00:00",
+              "n_trades": 10,
+              "pnl": -0.650538,
+              "start": "2026-06-16 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-24 00:00:00+00:00",
+              "n_trades": 9,
+              "pnl": -0.566375,
+              "start": "2026-06-20 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-28 00:00:00+00:00",
+              "n_trades": 8,
+              "pnl": -0.886677,
+              "start": "2026-06-24 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-02 00:00:00+00:00",
+              "n_trades": 13,
+              "pnl": -1.816574,
+              "start": "2026-06-28 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-06 00:00:00+00:00",
+              "n_trades": 15,
+              "pnl": -2.455598,
+              "start": "2026-07-02 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-10 00:00:00+00:00",
+              "n_trades": 10,
+              "pnl": -1.320721,
+              "start": "2026-07-06 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-14 00:00:00+00:00",
+              "n_trades": 7,
+              "pnl": -0.051384,
+              "start": "2026-07-10 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-18 00:00:00+00:00",
+              "n_trades": 9,
+              "pnl": -0.634251,
+              "start": "2026-07-14 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-22 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-18 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-26 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-22 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-30 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-26 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-03 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-30 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-07 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-03 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-11 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-07 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-15 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-11 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-19 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-15 00:00:00+00:00"
+            },
+            {
+              "complete": false,
+              "end": "2026-08-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-19 00:00:00+00:00"
+            }
+          ],
+          "7d": [
+            {
+              "complete": true,
+              "end": "2026-06-15 00:00:00+00:00",
+              "n_trades": 17,
+              "pnl": -1.73505,
+              "start": "2026-06-08 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-22 00:00:00+00:00",
+              "n_trades": 19,
+              "pnl": -0.356386,
+              "start": "2026-06-15 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-29 00:00:00+00:00",
+              "n_trades": 14,
+              "pnl": -2.182682,
+              "start": "2026-06-22 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-06 00:00:00+00:00",
+              "n_trades": 26,
+              "pnl": -3.795653,
+              "start": "2026-06-29 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-13 00:00:00+00:00",
+              "n_trades": 15,
+              "pnl": -1.463624,
+              "start": "2026-07-06 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-20 00:00:00+00:00",
+              "n_trades": 11,
+              "pnl": -0.542731,
+              "start": "2026-07-13 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-27 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-20 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-03 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-27 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-10 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-03 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-17 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-10 00:00:00+00:00"
+            },
+            {
+              "complete": false,
+              "end": "2026-08-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-17 00:00:00+00:00"
+            }
+          ]
+        }
+      },
+      "signal_only_no_portfolio_stop": {
+        "avg_hold_minutes": 44.093333,
+        "avg_loss": -0.255109,
+        "avg_win": 0.28861,
+        "by_regime": {
+          "down_highvol": {
+            "avg_loss": -0.251476,
+            "avg_win": 0.20165,
+            "expectancy": -0.07526,
+            "fees": 1.793107,
+            "gross_pnl": 0.90351,
+            "n_trades": 18,
+            "net_pnl": -1.354689,
+            "profit_factor": 0.510278,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.465092,
+            "win_rate": 0.388889
+          },
+          "down_lowvol": {
+            "avg_loss": -0.225742,
+            "avg_win": 0.335962,
+            "expectancy": -0.07255,
+            "fees": 2.193835,
+            "gross_pnl": 1.172227,
+            "n_trades": 22,
+            "net_pnl": -1.596103,
+            "profit_factor": 0.558096,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.574496,
+            "win_rate": 0.272727
+          },
+          "up_highvol": {
+            "avg_loss": -0.30352,
+            "avg_win": 0.321004,
+            "expectancy": -0.069323,
+            "fees": 3.188912,
+            "gross_pnl": 1.805438,
+            "n_trades": 32,
+            "net_pnl": -2.218348,
+            "profit_factor": 0.634563,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.834874,
+            "win_rate": 0.375
+          },
+          "up_lowvol": {
+            "avg_loss": -0.247067,
+            "avg_win": 0.285556,
+            "expectancy": -0.103669,
+            "fees": 7.776355,
+            "gross_pnl": 1.722451,
+            "n_trades": 78,
+            "net_pnl": -8.086154,
+            "profit_factor": 0.425815,
+            "profit_factor_note": "ok",
+            "slippage_cost": 2.03225,
+            "win_rate": 0.269231
+          }
+        },
+        "by_symbol": {
+          "BTCUSDT": {
+            "avg_loss": -0.260238,
+            "avg_win": 0.258124,
+            "expectancy": -0.121391,
+            "fees": 5.56279,
+            "gross_pnl": 0.156042,
+            "n_trades": 56,
+            "net_pnl": -6.797893,
+            "profit_factor": 0.362882,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.391146,
+            "win_rate": 0.267857
+          },
+          "ETHUSDT": {
+            "avg_loss": -0.250237,
+            "avg_win": 0.320579,
+            "expectancy": -0.073803,
+            "fees": 5.491053,
+            "gross_pnl": 2.818738,
+            "n_trades": 55,
+            "net_pnl": -4.059174,
+            "profit_factor": 0.573124,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.386859,
+            "win_rate": 0.309091
+          },
+          "SOLUSDT": {
+            "avg_loss": -0.254103,
+            "avg_win": 0.282453,
+            "expectancy": -0.061493,
+            "fees": 3.898366,
+            "gross_pnl": 2.628847,
+            "n_trades": 39,
+            "net_pnl": -2.398226,
+            "profit_factor": 0.622479,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.128707,
+            "win_rate": 0.358974
+          }
+        },
+        "conservative_gap_scenario_net_pnl": -13.255293,
+        "exit_reasons": {
+          "stop": 36,
+          "target": 35,
+          "time_exit": 79
+        },
+        "expectancy": -0.088369,
+        "exposure_pct_time": 6.291857,
+        "fees": 14.952209,
+        "final_equity": 86.744707,
+        "gross_pnl": 5.603627,
+        "max_drawdown_pct": 14.389327,
+        "max_drawdown_usdt": 14.389327,
+        "n_days": 73,
+        "n_trades": 150,
+        "net_pnl": -13.255293,
+        "profit_factor": 0.500391,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 56,
+          "cooldown": 37,
+          "position_open": 77
+        },
+        "return_pct": -13.255293,
+        "rolling_7d_pnl": {
+          "max": 0.321873,
+          "median": -1.073101,
+          "min": -4.270452,
+          "n": 67,
+          "share_positive": 0.044776
+        },
+        "sharpe_daily_ann": -8.974425,
+        "slippage_cost": 3.906711,
+        "sortino_daily_ann": -8.937286,
+        "turnover_x_initial": 149.522087,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.306667,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.499322,
+            "median_pnl": -0.640481,
+            "min_pnl": -2.455598,
+            "n_windows_complete": 18,
+            "share_positive": 0.166667,
+            "share_zero_trades": 0.0
+          },
+          "7d": {
+            "max_pnl": 0.081118,
+            "median_pnl": -1.271193,
+            "min_pnl": -3.795653,
+            "n_windows_complete": 10,
+            "share_positive": 0.1,
+            "share_zero_trades": 0.0
+          }
+        }
+      }
+    }
+  },
+  "E02-P": {
+    "hold_minutes": 60,
+    "n_raw_signals": 521,
+    "raw_signals_by_symbol": {
+      "BTCUSDT": 127,
+      "ETHUSDT": 191,
+      "SOLUSDT": 203
+    },
+    "scenarios": {
+      "coarse_step_x10": {
+        "avg_hold_minutes": 39.423077,
+        "avg_loss": -0.268088,
+        "avg_win": 0.271584,
+        "conservative_gap_scenario_net_pnl": -10.071996,
+        "exit_reasons": {
+          "risk_exit_total": 1,
+          "stop": 34,
+          "target": 25,
+          "time_exit": 44
+        },
+        "expectancy": -0.096846,
+        "exposure_pct_time": 3.900304,
+        "fees": 10.017115,
+        "final_equity": 89.928004,
+        "gross_pnl": 2.642522,
+        "max_drawdown_pct": 10.071996,
+        "max_drawdown_usdt": 10.071996,
+        "n_days": 73,
+        "n_trades": 104,
+        "net_pnl": -10.071996,
+        "profit_factor": 0.470849,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 59,
+          "cooldown": 29,
+          "position_open": 108,
+          "total_loss_stop": 221
+        },
+        "return_pct": -10.071996,
+        "rolling_7d_pnl": {
+          "max": 0.014251,
+          "median": 0.0,
+          "min": -5.021654,
+          "n": 67,
+          "share_positive": 0.014925
+        },
+        "sharpe_daily_ann": -6.542486,
+        "slippage_cost": 2.697403,
+        "sortino_daily_ann": -6.741851,
+        "turnover_x_initial": 100.171154,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.317308,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.150373,
+            "median_pnl": 0.0,
+            "min_pnl": -2.957374,
+            "n_windows_complete": 18,
+            "share_positive": 0.055556,
+            "share_zero_trades": 0.555556
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": -0.069055,
+            "min_pnl": -4.013632,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.5
+          }
+        }
+      },
+      "cost_rt0": {
+        "avg_hold_minutes": 42.157895,
+        "avg_loss": -0.20083,
+        "avg_win": 0.279999,
+        "break_even_roundtrip_cost_bps": 3.9738,
+        "conservative_gap_scenario_net_pnl": 3.674464,
+        "exit_reasons": {
+          "stop": 51,
+          "target": 43,
+          "target_gap": 1,
+          "time_exit": 95
+        },
+        "expectancy": 0.019339,
+        "exposure_pct_time": 7.619863,
+        "fees": 0.0,
+        "final_equity": 103.674464,
+        "gross_pnl": 3.763398,
+        "max_drawdown_pct": 2.424219,
+        "max_drawdown_usdt": 2.524639,
+        "n_days": 73,
+        "n_trades": 190,
+        "net_pnl": 3.674464,
+        "profit_factor": 1.177635,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 100,
+          "cooldown": 68,
+          "position_open": 163
+        },
+        "return_pct": 3.674464,
+        "rolling_7d_pnl": {
+          "max": 2.538008,
+          "median": 0.38247,
+          "min": -1.465167,
+          "n": 67,
+          "share_positive": 0.641791
+        },
+        "sharpe_daily_ann": 2.139299,
+        "slippage_cost": 0.088934,
+        "sortino_daily_ann": 3.703577,
+        "turnover_x_initial": 189.449368,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.457895,
+        "windows": {
+          "4d": {
+            "max_pnl": 1.588609,
+            "median_pnl": 0.103182,
+            "min_pnl": -1.024742,
+            "n_windows_complete": 18,
+            "share_positive": 0.555556,
+            "share_zero_trades": 0.0
+          },
+          "7d": {
+            "max_pnl": 2.474792,
+            "median_pnl": 0.060121,
+            "min_pnl": -1.462079,
+            "n_windows_complete": 10,
+            "share_positive": 0.5,
+            "share_zero_trades": 0.0
+          }
+        }
+      },
+      "cost_rt10": {
+        "avg_hold_minutes": 42.057895,
+        "avg_loss": -0.218768,
+        "avg_win": 0.290297,
+        "conservative_gap_scenario_net_pnl": -5.422316,
+        "exit_reasons": {
+          "stop": 51,
+          "target": 43,
+          "target_gap": 1,
+          "time_exit": 95
+        },
+        "expectancy": -0.028539,
+        "exposure_pct_time": 7.601788,
+        "fees": 7.577688,
+        "final_equity": 94.577684,
+        "gross_pnl": 4.295604,
+        "max_drawdown_pct": 7.093489,
+        "max_drawdown_usdt": 7.162601,
+        "n_days": 73,
+        "n_trades": 190,
+        "net_pnl": -5.422316,
+        "profit_factor": 0.791717,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 100,
+          "cooldown": 68,
+          "position_open": 163
+        },
+        "return_pct": -5.422316,
+        "rolling_7d_pnl": {
+          "max": 1.475525,
+          "median": -0.323493,
+          "min": -2.807403,
+          "n": 67,
+          "share_positive": 0.268657
+        },
+        "sharpe_daily_ann": -3.08191,
+        "slippage_cost": 2.140232,
+        "sortino_daily_ann": -3.942417,
+        "turnover_x_initial": 189.442201,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.373684,
+        "windows": {
+          "4d": {
+            "max_pnl": 1.006325,
+            "median_pnl": -0.330376,
+            "min_pnl": -1.830725,
+            "n_windows_complete": 18,
+            "share_positive": 0.388889,
+            "share_zero_trades": 0.0
+          },
+          "7d": {
+            "max_pnl": 1.392977,
+            "median_pnl": -0.554256,
+            "min_pnl": -2.328734,
+            "n_windows_complete": 10,
+            "share_positive": 0.3,
+            "share_zero_trades": 0.0
+          }
+        }
+      },
+      "cost_rt40": {
+        "avg_hold_minutes": 35.952381,
+        "avg_loss": -0.347122,
+        "avg_win": 0.239008,
+        "conservative_gap_scenario_net_pnl": -10.146087,
+        "exit_reasons": {
+          "risk_exit_total": 1,
+          "stop": 22,
+          "target": 17,
+          "time_exit": 23
+        },
+        "expectancy": -0.161049,
+        "exposure_pct_time": 2.15468,
+        "fees": 10.055519,
+        "final_equity": 89.853913,
+        "gross_pnl": 2.5272,
+        "max_drawdown_pct": 10.146087,
+        "max_drawdown_usdt": 10.146087,
+        "n_days": 73,
+        "n_trades": 63,
+        "net_pnl": -10.146087,
+        "profit_factor": 0.320252,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 36,
+          "cooldown": 18,
+          "position_open": 71,
+          "total_loss_stop": 333
+        },
+        "return_pct": -10.146087,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -4.163376,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -6.663919,
+        "slippage_cost": 2.617768,
+        "sortino_daily_ann": -6.601566,
+        "turnover_x_initial": 62.846995,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.31746,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.128317,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.666667
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -4.163376,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.6
+          }
+        }
+      },
+      "delay60": {
+        "avg_hold_minutes": 41.37234,
+        "avg_loss": -0.28502,
+        "avg_win": 0.253396,
+        "conservative_gap_scenario_net_pnl": -10.10099,
+        "exit_reasons": {
+          "risk_exit_total": 1,
+          "stop": 29,
+          "target": 21,
+          "time_exit": 43
+        },
+        "expectancy": -0.107457,
+        "exposure_pct_time": 3.699581,
+        "fees": 9.372136,
+        "final_equity": 89.89901,
+        "gross_pnl": 1.78565,
+        "max_drawdown_pct": 10.109284,
+        "max_drawdown_usdt": 10.110217,
+        "n_days": 73,
+        "n_trades": 94,
+        "net_pnl": -10.10099,
+        "profit_factor": 0.437467,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 54,
+          "cooldown": 25,
+          "position_open": 92,
+          "total_loss_stop": 256
+        },
+        "return_pct": -10.10099,
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -3.811687,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -6.502493,
+        "slippage_cost": 2.514504,
+        "sortino_daily_ann": -7.012355,
+        "turnover_x_initial": 93.721362,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.329787,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.096168,
+            "n_windows_complete": 18,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.611111
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -3.525137,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.6
+          }
+        }
+      },
+      "main": {
+        "avg_hold_minutes": 39.451613,
+        "avg_loss": -0.278678,
+        "avg_win": 0.287477,
+        "bootstrap": {
+          "block_14d": {
+            "block_days": 14,
+            "ci95_mean_daily": [
+              -0.289051,
+              -0.005311
+            ],
+            "ci95_total": [
+              -21.100717,
+              -0.387729
+            ],
+            "mean_daily_pnl": -0.137872,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 0.996,
+            "status": "ok",
+            "total_pnl": -10.06469
+          },
+          "block_3d": {
+            "block_days": 3,
+            "ci95_mean_daily": [
+              -0.247711,
+              -0.036331
+            ],
+            "ci95_total": [
+              -18.082939,
+              -2.652164
+            ],
+            "mean_daily_pnl": -0.137872,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 0.9965,
+            "status": "ok",
+            "total_pnl": -10.06469
+          },
+          "block_7d": {
+            "block_days": 7,
+            "ci95_mean_daily": [
+              -0.258896,
+              -0.024021
+            ],
+            "ci95_total": [
+              -18.899414,
+              -1.753521
+            ],
+            "mean_daily_pnl": -0.137872,
+            "n_boot": 2000,
+            "n_days": 73,
+            "p_one_sided_mean_gt_0": 1.0,
+            "seed": 20261125,
+            "share_boot_mean_le_0": 0.9995,
+            "status": "ok",
+            "total_pnl": -10.06469
+          }
+        },
+        "by_regime": {
+          "down_highvol": {
+            "avg_loss": -0.268319,
+            "avg_win": 0.238225,
+            "expectancy": -0.065702,
+            "fees": 1.993243,
+            "gross_pnl": 1.211241,
+            "n_trades": 20,
+            "net_pnl": -1.314033,
+            "profit_factor": 0.591894,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.532031,
+            "win_rate": 0.4
+          },
+          "down_lowvol": {
+            "avg_loss": -0.294968,
+            "avg_win": 0.334121,
+            "expectancy": -0.137696,
+            "fees": 0.797151,
+            "gross_pnl": -0.086662,
+            "n_trades": 8,
+            "net_pnl": -1.101567,
+            "profit_factor": 0.377579,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.217754,
+            "win_rate": 0.25
+          },
+          "up_highvol": {
+            "avg_loss": -0.306393,
+            "avg_win": 0.335083,
+            "expectancy": -0.078773,
+            "fees": 3.092078,
+            "gross_pnl": 1.485329,
+            "n_trades": 31,
+            "net_pnl": -2.44195,
+            "profit_factor": 0.601501,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.835201,
+            "win_rate": 0.354839
+          },
+          "up_lowvol": {
+            "avg_loss": -0.259131,
+            "avg_win": 0.255628,
+            "expectancy": -0.153151,
+            "fees": 3.390059,
+            "gross_pnl": -0.918248,
+            "n_trades": 34,
+            "net_pnl": -5.20714,
+            "profit_factor": 0.255755,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.898833,
+            "win_rate": 0.205882
+          }
+        },
+        "by_symbol": {
+          "BTCUSDT": {
+            "avg_loss": -0.275981,
+            "avg_win": 0.237554,
+            "expectancy": -0.133332,
+            "fees": 3.57882,
+            "gross_pnl": -0.326152,
+            "n_trades": 36,
+            "net_pnl": -4.799961,
+            "profit_factor": 0.331062,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.894989,
+            "win_rate": 0.277778
+          },
+          "ETHUSDT": {
+            "avg_loss": -0.273172,
+            "avg_win": 0.294891,
+            "expectancy": -0.159559,
+            "fees": 2.993619,
+            "gross_pnl": -1.036004,
+            "n_trades": 30,
+            "net_pnl": -4.786776,
+            "profit_factor": 0.269877,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.757153,
+            "win_rate": 0.2
+          },
+          "SOLUSDT": {
+            "avg_loss": -0.292161,
+            "avg_win": 0.325372,
+            "expectancy": -0.017702,
+            "fees": 2.700093,
+            "gross_pnl": 3.053817,
+            "n_trades": 27,
+            "net_pnl": -0.477953,
+            "profit_factor": 0.890939,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.831677,
+            "win_rate": 0.444444
+          }
+        },
+        "conservative_gap_scenario_net_pnl": -10.06469,
+        "exit_reasons": {
+          "risk_exit_total": 1,
+          "stop": 31,
+          "target": 22,
+          "time_exit": 39
+        },
+        "expectancy": -0.108222,
+        "exposure_pct_time": 3.490297,
+        "fees": 9.272532,
+        "final_equity": 89.93531,
+        "gross_pnl": 1.691661,
+        "max_drawdown_pct": 10.06469,
+        "max_drawdown_usdt": 10.06469,
+        "n_days": 73,
+        "n_trades": 93,
+        "net_pnl": -10.06469,
+        "profit_factor": 0.444371,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 51,
+          "cooldown": 26,
+          "position_open": 95,
+          "total_loss_stop": 256
+        },
+        "return_pct": -10.06469,
+        "risk_events": [
+          {
+            "day_start_equity": 90.32303977619989,
+            "equity": NaN,
+            "event": "risk_exit_total_triggered",
+            "exceeded_by": NaN,
+            "mtm_equity": 89.99776691719988,
+            "symbol": "ETHUSDT",
+            "time": "2026-07-05 15:24:00+00:00"
+          },
+          {
+            "day_start_equity": NaN,
+            "equity": 89.9353104521999,
+            "event": "total_stop",
+            "exceeded_by": 0.06468954780009994,
+            "mtm_equity": NaN,
+            "symbol": "ETHUSDT",
+            "time": "2026-07-05 15:25:00+00:00"
+          }
+        ],
+        "rolling_7d_pnl": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": -5.162682,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -6.402252,
+        "slippage_cost": 2.483819,
+        "sortino_daily_ann": -6.583651,
+        "turnover_x_initial": 92.725315,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.301075,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.155129,
+            "median_pnl": 0.0,
+            "min_pnl": -3.031192,
+            "n_windows_complete": 18,
+            "share_positive": 0.055556,
+            "share_zero_trades": 0.611111
+          },
+          "7d": {
+            "max_pnl": 0.0,
+            "median_pnl": 0.0,
+            "min_pnl": -4.828547,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.6
+          }
+        },
+        "windows_detail": {
+          "4d": [
+            {
+              "complete": true,
+              "end": "2026-06-12 00:00:00+00:00",
+              "n_trades": 12,
+              "pnl": -2.216839,
+              "start": "2026-06-08 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-16 00:00:00+00:00",
+              "n_trades": 13,
+              "pnl": -0.687477,
+              "start": "2026-06-12 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-20 00:00:00+00:00",
+              "n_trades": 10,
+              "pnl": -0.491767,
+              "start": "2026-06-16 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-24 00:00:00+00:00",
+              "n_trades": 12,
+              "pnl": 0.155129,
+              "start": "2026-06-20 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-28 00:00:00+00:00",
+              "n_trades": 12,
+              "pnl": -1.273324,
+              "start": "2026-06-24 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-02 00:00:00+00:00",
+              "n_trades": 17,
+              "pnl": -3.031192,
+              "start": "2026-06-28 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-06 00:00:00+00:00",
+              "n_trades": 17,
+              "pnl": -2.51922,
+              "start": "2026-07-02 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-10 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-06 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-14 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-10 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-18 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-14 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-22 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-18 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-26 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-22 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-30 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-26 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-03 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-30 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-07 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-03 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-11 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-07 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-15 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-11 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-19 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-15 00:00:00+00:00"
+            },
+            {
+              "complete": false,
+              "end": "2026-08-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-19 00:00:00+00:00"
+            }
+          ],
+          "7d": [
+            {
+              "complete": true,
+              "end": "2026-06-15 00:00:00+00:00",
+              "n_trades": 20,
+              "pnl": -2.713643,
+              "start": "2026-06-08 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-22 00:00:00+00:00",
+              "n_trades": 22,
+              "pnl": -0.188098,
+              "start": "2026-06-15 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-06-29 00:00:00+00:00",
+              "n_trades": 20,
+              "pnl": -2.334401,
+              "start": "2026-06-22 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-06 00:00:00+00:00",
+              "n_trades": 31,
+              "pnl": -4.828547,
+              "start": "2026-06-29 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-13 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-06 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-13 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-07-27 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-20 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-03 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-07-27 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-10 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-03 00:00:00+00:00"
+            },
+            {
+              "complete": true,
+              "end": "2026-08-17 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-10 00:00:00+00:00"
+            },
+            {
+              "complete": false,
+              "end": "2026-08-20 00:00:00+00:00",
+              "n_trades": 0,
+              "pnl": 0.0,
+              "start": "2026-08-17 00:00:00+00:00"
+            }
+          ]
+        }
+      },
+      "signal_only_no_portfolio_stop": {
+        "avg_hold_minutes": 42.210526,
+        "avg_loss": -0.263767,
+        "avg_win": 0.280191,
+        "by_regime": {
+          "down_highvol": {
+            "avg_loss": -0.279057,
+            "avg_win": 0.238225,
+            "expectancy": -0.081997,
+            "fees": 2.091912,
+            "gross_pnl": 0.926677,
+            "n_trades": 21,
+            "net_pnl": -1.72194,
+            "profit_factor": 0.525341,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.556704,
+            "win_rate": 0.380952
+          },
+          "down_lowvol": {
+            "avg_loss": -0.241458,
+            "avg_win": 0.301374,
+            "expectancy": -0.067752,
+            "fees": 2.495145,
+            "gross_pnl": 1.468262,
+            "n_trades": 25,
+            "net_pnl": -1.693796,
+            "profit_factor": 0.587361,
+            "profit_factor_note": "ok",
+            "slippage_cost": 0.666913,
+            "win_rate": 0.32
+          },
+          "up_highvol": {
+            "avg_loss": -0.310122,
+            "avg_win": 0.305628,
+            "expectancy": -0.079216,
+            "fees": 3.987218,
+            "gross_pnl": 1.878119,
+            "n_trades": 40,
+            "net_pnl": -3.168634,
+            "profit_factor": 0.591305,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.059534,
+            "win_rate": 0.375
+          },
+          "up_lowvol": {
+            "avg_loss": -0.251224,
+            "avg_win": 0.27191,
+            "expectancy": -0.12044,
+            "fees": 10.367688,
+            "gross_pnl": 0.540147,
+            "n_trades": 104,
+            "net_pnl": -12.525788,
+            "profit_factor": 0.360781,
+            "profit_factor_note": "ok",
+            "slippage_cost": 2.698247,
+            "win_rate": 0.25
+          }
+        },
+        "by_symbol": {
+          "BTCUSDT": {
+            "avg_loss": -0.267828,
+            "avg_win": 0.263302,
+            "expectancy": -0.125136,
+            "fees": 6.658091,
+            "gross_pnl": -0.060978,
+            "n_trades": 67,
+            "net_pnl": -8.384123,
+            "profit_factor": 0.361139,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.665054,
+            "win_rate": 0.268657
+          },
+          "ETHUSDT": {
+            "avg_loss": -0.253426,
+            "avg_win": 0.279654,
+            "expectancy": -0.114679,
+            "fees": 7.285172,
+            "gross_pnl": 0.753565,
+            "n_trades": 73,
+            "net_pnl": -8.371564,
+            "profit_factor": 0.388266,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.839957,
+            "win_rate": 0.260274
+          },
+          "SOLUSDT": {
+            "avg_loss": -0.27575,
+            "avg_win": 0.295901,
+            "expectancy": -0.047089,
+            "fees": 4.9987,
+            "gross_pnl": 4.120617,
+            "n_trades": 50,
+            "net_pnl": -2.35447,
+            "profit_factor": 0.715386,
+            "profit_factor_note": "ok",
+            "slippage_cost": 1.476387,
+            "win_rate": 0.4
+          }
+        },
+        "conservative_gap_scenario_net_pnl": -19.110157,
+        "exit_reasons": {
+          "stop": 52,
+          "target": 43,
+          "time_exit": 95
+        },
+        "expectancy": -0.10058,
+        "exposure_pct_time": 7.629376,
+        "fees": 18.941963,
+        "final_equity": 80.889843,
+        "gross_pnl": 4.813205,
+        "max_drawdown_pct": 19.427182,
+        "max_drawdown_usdt": 19.427182,
+        "n_days": 73,
+        "n_trades": 190,
+        "net_pnl": -19.110157,
+        "profit_factor": 0.455257,
+        "profit_factor_note": "ok",
+        "rejected_signals": {
+          "concurrent_signal_lower_priority": 100,
+          "cooldown": 66,
+          "position_open": 165
+        },
+        "return_pct": -19.110157,
+        "rolling_7d_pnl": {
+          "max": -0.001744,
+          "median": -1.639382,
+          "min": -5.162682,
+          "n": 67,
+          "share_positive": 0.0
+        },
+        "sharpe_daily_ann": -10.386551,
+        "slippage_cost": 4.981399,
+        "sortino_daily_ann": -9.798559,
+        "turnover_x_initial": 189.419627,
+        "uncertain_gap_trades": 0,
+        "win_rate": 0.3,
+        "windows": {
+          "4d": {
+            "max_pnl": 0.155129,
+            "median_pnl": -1.024228,
+            "min_pnl": -3.031192,
+            "n_windows_complete": 18,
+            "share_positive": 0.166667,
+            "share_zero_trades": 0.0
+          },
+          "7d": {
+            "max_pnl": -0.188098,
+            "median_pnl": -1.611148,
+            "min_pnl": -4.107006,
+            "n_windows_complete": 10,
+            "share_positive": 0.0,
+            "share_zero_trades": 0.0
+          }
+        }
+      }
+    }
+  },
+  "holm": {
+    "E01-F": {
+      "p": 1.0,
+      "p_holm": 1.0,
+      "reject_h0": false
+    },
+    "E01-P": {
+      "p": 1.0,
+      "p_holm": 1.0,
+      "reject_h0": false
+    },
+    "E02-F": {
+      "p": 1.0,
+      "p_holm": 1.0,
+      "reject_h0": false
+    },
+    "E02-P": {
+      "p": 1.0,
+      "p_holm": 1.0,
+      "reject_h0": false
+    }
+  }
+}

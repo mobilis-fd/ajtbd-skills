@@ -1,0 +1,12 @@
+=== lookahead MvpE01P
+┃          filename ┃ strategy ┃ has_bias ┃ total_signals ┃ biased_entry_signals ┃ biased_exit_signals ┃ biased_indicators ┃
+│ mvp_strategies.py │  MvpE01P │       No │            30 │                    0 │                   0 │                   │
+=== lookahead MvpE01F
+┃          filename ┃ strategy ┃ has_bias ┃ total_signals ┃ biased_entry_signals ┃ biased_exit_signals ┃ biased_indicators ┃
+│ mvp_strategies.py │  MvpE01F │       No │            30 │                    0 │                   0 │                   │
+=== lookahead MvpE02P
+┃          filename ┃ strategy ┃ has_bias ┃ total_signals ┃ biased_entry_signals ┃ biased_exit_signals ┃ biased_indicators ┃
+│ mvp_strategies.py │  MvpE02P │       No │            30 │                    0 │                   0 │                   │
+=== lookahead MvpE02F
+┃          filename ┃ strategy ┃ has_bias ┃ total_signals ┃ biased_entry_signals ┃ biased_exit_signals ┃ biased_indicators ┃
+│ mvp_strategies.py │  MvpE02F │       No │            30 │                    0 │                   0 │                   │

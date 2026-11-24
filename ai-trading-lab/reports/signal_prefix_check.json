@@ -1,0 +1,532 @@
+{
+  "details": [
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-10-27 13:40:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-07 20:30:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-22 03:05:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-24 21:40:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-12-15 22:50:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-12-27 21:55:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-12-29 09:25:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-01-01 18:45:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-01-02 10:30:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-01-11 02:25:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-02-08 11:10:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-02-15 14:40:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-03-05 05:15:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-03-15 17:15:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-03-28 23:40:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-04-05 23:05:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-04-18 12:55:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-04-23 08:55:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-04-27 17:40:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-04-28 19:00:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-05-01 13:15:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-05-10 12:40:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-05-15 19:35:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-05-19 07:15:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-05-26 12:15:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-03 09:30:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-04 22:20:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-10 16:00:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-14 10:05:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-16 00:45:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-20 09:40:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-25 02:45:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-25 06:00:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-29 02:10:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-12-23 00:30:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-12-27 19:30:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-01-04 16:05:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-01-07 03:05:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-02-08 11:55:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-02-12 13:20:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-02-22 19:25:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-02-26 15:00:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-03-13 01:25:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-03-20 03:35:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-03-26 07:45:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-04-01 16:25:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-04-03 03:50:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-04-24 05:45:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-05-04 17:40:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-05-24 02:05:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-05 04:15:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-14 20:25:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-16 02:50:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-24 03:10:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-11-26 03:15:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-12-12 13:55:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-12-23 06:30:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-12-28 22:00:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2025-12-31 05:55:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-01-11 21:15:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-01-24 22:45:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-01-26 03:25:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-01-28 07:25:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-02-06 11:10:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-02-08 02:20:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-03-14 07:45:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-03-28 23:15:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-04-04 03:00:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-04-25 14:10:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-04-26 00:35:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-05-01 20:10:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-05-19 00:45:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-05-23 17:55:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-06-03 07:55:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "b01_prefix_invariant": true,
+      "cut": "2026-06-06 23:35:00+00:00",
+      "future_mutation_invariant": true,
+      "prefix_invariant": true,
+      "symbol": "SOLUSDT"
+    }
+  ],
+  "n_checks": 75,
+  "n_failed": 0,
+  "ok": true
+}

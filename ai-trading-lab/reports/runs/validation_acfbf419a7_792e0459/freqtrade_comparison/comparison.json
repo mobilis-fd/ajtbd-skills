@@ -1,0 +1,202 @@
+{
+  "exit_diagnostics_all_strategies": {
+    "stop|stop_loss": {
+      "median_exit_price_diff_bps": -2.499,
+      "median_exit_time_diff_min": -1.0,
+      "n": 115
+    },
+    "stop|time_exit": {
+      "median_exit_price_diff_bps": 15.153,
+      "median_exit_time_diff_min": 4.0,
+      "n": 3
+    },
+    "target|roi": {
+      "median_exit_price_diff_bps": 22.502,
+      "median_exit_time_diff_min": 1.0,
+      "n": 66
+    },
+    "target|stop_loss": {
+      "median_exit_price_diff_bps": -151.123,
+      "median_exit_time_diff_min": 33.0,
+      "n": 2
+    },
+    "target|time_exit": {
+      "median_exit_price_diff_bps": -13.986,
+      "median_exit_time_diff_min": 19.0,
+      "n": 21
+    },
+    "time_exit|time_exit": {
+      "median_exit_price_diff_bps": 0.0,
+      "median_exit_time_diff_min": 0.0,
+      "n": 323
+    }
+  },
+  "freqtrade_results": "user_data/backtest_results/validation",
+  "reference_run": "reports/runs/validation_acfbf419a7_792e0459",
+  "strategies": {
+    "E01-F": {
+      "entry_price_abs_diff_bps_median": 0.0,
+      "exit_reason_pairs": {
+        "stop|stop_loss": 13,
+        "target|roi": 2,
+        "target|time_exit": 2,
+        "time_exit|time_exit": 49
+      },
+      "ft_net_pnl": -7.415215,
+      "ft_trades": 67,
+      "matched_entries": 66,
+      "matched_pnl_ft": -7.331518,
+      "matched_pnl_ref": -7.387823,
+      "only_freqtrade": 1,
+      "only_reference": 0,
+      "ref_net_pnl_signal_only": -7.387823,
+      "ref_trades": 66,
+      "same_exit_time_share": 0.7727
+    },
+    "E01-P": {
+      "entry_price_abs_diff_bps_median": 0.0,
+      "exit_reason_pairs": {
+        "stop|stop_loss": 23,
+        "stop|time_exit": 1,
+        "target|roi": 8,
+        "target|time_exit": 3,
+        "time_exit|time_exit": 108
+      },
+      "ft_net_pnl": -13.531031,
+      "ft_trades": 146,
+      "matched_entries": 143,
+      "matched_pnl_ft": -13.008994,
+      "matched_pnl_ref": -13.971023,
+      "only_freqtrade": 3,
+      "only_reference": 1,
+      "ref_net_pnl_signal_only": -13.928891,
+      "ref_trades": 144,
+      "same_exit_time_share": 0.7832
+    },
+    "E02-F": {
+      "entry_price_abs_diff_bps_median": 0.0,
+      "exit_reason_pairs": {
+        "stop|stop_loss": 34,
+        "stop|time_exit": 1,
+        "target|roi": 26,
+        "target|stop_loss": 1,
+        "target|time_exit": 7,
+        "time_exit|time_exit": 76
+      },
+      "ft_net_pnl": -11.878166,
+      "ft_trades": 163,
+      "matched_entries": 145,
+      "matched_pnl_ft": -11.187717,
+      "matched_pnl_ref": -12.534129,
+      "only_freqtrade": 18,
+      "only_reference": 5,
+      "ref_net_pnl_signal_only": -13.255293,
+      "ref_trades": 150,
+      "same_exit_time_share": 0.5793
+    },
+    "E02-P": {
+      "entry_price_abs_diff_bps_median": 0.0,
+      "exit_reason_pairs": {
+        "stop|stop_loss": 45,
+        "stop|time_exit": 1,
+        "target|roi": 30,
+        "target|stop_loss": 1,
+        "target|time_exit": 9,
+        "time_exit|time_exit": 90
+      },
+      "ft_net_pnl": -18.644706,
+      "ft_trades": 210,
+      "matched_entries": 176,
+      "matched_pnl_ft": -15.592052,
+      "matched_pnl_ref": -17.088878,
+      "only_freqtrade": 34,
+      "only_reference": 14,
+      "ref_net_pnl_signal_only": -19.110157,
+      "ref_trades": 190,
+      "same_exit_time_share": 0.5625
+    }
+  },
+  "summary": {
+    "E01-F": {
+      "entry_price_abs_diff_bps_median": 0.0,
+      "exit_reason_pairs": {
+        "stop|stop_loss": 13,
+        "target|roi": 2,
+        "target|time_exit": 2,
+        "time_exit|time_exit": 49
+      },
+      "ft_net_pnl": -7.415215,
+      "ft_trades": 67,
+      "matched_entries": 66,
+      "matched_pnl_ft": -7.331518,
+      "matched_pnl_ref": -7.387823,
+      "only_freqtrade": 1,
+      "only_reference": 0,
+      "ref_net_pnl_signal_only": -7.387823,
+      "ref_trades": 66,
+      "same_exit_time_share": 0.7727
+    },
+    "E01-P": {
+      "entry_price_abs_diff_bps_median": 0.0,
+      "exit_reason_pairs": {
+        "stop|stop_loss": 23,
+        "stop|time_exit": 1,
+        "target|roi": 8,
+        "target|time_exit": 3,
+        "time_exit|time_exit": 108
+      },
+      "ft_net_pnl": -13.531031,
+      "ft_trades": 146,
+      "matched_entries": 143,
+      "matched_pnl_ft": -13.008994,
+      "matched_pnl_ref": -13.971023,
+      "only_freqtrade": 3,
+      "only_reference": 1,
+      "ref_net_pnl_signal_only": -13.928891,
+      "ref_trades": 144,
+      "same_exit_time_share": 0.7832
+    },
+    "E02-F": {
+      "entry_price_abs_diff_bps_median": 0.0,
+      "exit_reason_pairs": {
+        "stop|stop_loss": 34,
+        "stop|time_exit": 1,
+        "target|roi": 26,
+        "target|stop_loss": 1,
+        "target|time_exit": 7,
+        "time_exit|time_exit": 76
+      },
+      "ft_net_pnl": -11.878166,
+      "ft_trades": 163,
+      "matched_entries": 145,
+      "matched_pnl_ft": -11.187717,
+      "matched_pnl_ref": -12.534129,
+      "only_freqtrade": 18,
+      "only_reference": 5,
+      "ref_net_pnl_signal_only": -13.255293,
+      "ref_trades": 150,
+      "same_exit_time_share": 0.5793
+    },
+    "E02-P": {
+      "entry_price_abs_diff_bps_median": 0.0,
+      "exit_reason_pairs": {
+        "stop|stop_loss": 45,
+        "stop|time_exit": 1,
+        "target|roi": 30,
+        "target|stop_loss": 1,
+        "target|time_exit": 9,
+        "time_exit|time_exit": 90
+      },
+      "ft_net_pnl": -18.644706,
+      "ft_trades": 210,
+      "matched_entries": 176,
+      "matched_pnl_ft": -15.592052,
+      "matched_pnl_ref": -17.088878,
+      "only_freqtrade": 34,
+      "only_reference": 14,
+      "ref_net_pnl_signal_only": -19.110157,
+      "ref_trades": 190,
+      "same_exit_time_share": 0.5625
+    }
+  }
+}
