@@ -20,5 +20,6 @@ All times UTC. Hashes refer to `configs/mvp.yaml` (config), `src.config.code_has
 | L14 | 2026-11-24 | Full validation backtest | all candidates negative; E01-F −7.39 without total stop, others hit total stop |
 | L15 | 2026-11-24 | Report-only code changes (formatting, summary command, manual-check selection); final reruns of development & validation at clean commit 803db3a; trades byte-identical to earlier runs; reproducibility rerun identical | reports/runs/*_2bff6fcca7_792e0459 |
 | L16 | 2026-11-24 | Holdout NOT run; dry-run NOT started | awaiting independent review |
+| L17 | 2026-11-25 | `src/data/` had never been committed (`.gitignore` rule `data/` matched it); package rebuilt from tests, CLI and D04–D06/D22, rule anchored to `/data/`. Clean-clone reproduction on the owner's machine: download 39/39 SHA256 ok, validate-data identical to reports/data_qa.md, `pytest -q` 42 passed, `test-signals` 75/75 ok; development & validation backtests: all 9 outputs and `data_sha256_1m_split` byte-identical to `*_2bff6fcca7_*`; Freqtrade offline development comparison: `matched_trades.csv` identical | code hash changes (2bff6fcca7 → 34817544ca) only because src/data is now tracked; no rule or parameter change |
 
 No rule, parameter, threshold, split or seed was changed after any result was seen.

@@ -45,7 +45,7 @@ def build_processed(cfg: dict) -> dict:
         raw = raw[(raw["open_time"] >= start) & (raw["open_time"] < end)]
         checks = check_1m(raw, start, end)
         clean, log = clean_1m(raw)
-        m1 = clean.drop(columns=["ts_unit"]).reset_index(drop=True)
+        m1 = clean.reset_index(drop=True)  # ts_unit kept: part of the 1m data hash in run manifests
         m5 = aggregate_5m(m1)
         m1.to_parquet(_path(cfg, sym, "1m"), index=False)
         m5.to_parquet(_path(cfg, sym, "5m"), index=False)

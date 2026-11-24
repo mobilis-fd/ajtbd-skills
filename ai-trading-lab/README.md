@@ -66,6 +66,7 @@ market metadata built from the assumed filters in `configs/mvp.yaml` (see DECISI
 Binance and does not change Freqtrade's source.
 
 ```bash
+mkdir -p user_data/backtest_results/development   # must exist, otherwise Freqtrade writes development-<date>.zip next to it
 python -m src.cli ft-export      # dev+val OHLCV -> user_data/data/binance/*.feather, taker sidecar -> user_data/data/sidecar
 python -m src.ftbridge.run_offline backtesting -c user_data/config_backtest.json \
     --strategy-list MvpE01P MvpE01F MvpE02P MvpE02F --timerange 20251101-20260608 \
