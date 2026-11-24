@@ -24,3 +24,11 @@ config_live*.json
 approvals/
 # v0.2 large run artefacts (csv/json/md summaries are committed)
 reports/v02/runs/**/*.parquet
+reports/v02/runs_superseded/**/*.parquet
+# large v0.2 CSVs are committed as deterministic gzip (gzip -n); gunzip reproduces the manifest sha256
+reports/v02/runs/**/trades.csv
+reports/v02/runs/**/g01_predictions_H60.csv
+reports/v02/runs/**/equity_hourly_primary.csv
+reports/v02/runs_superseded/**/trades.csv
+reports/v02/runs_superseded/**/g01_predictions_H60.csv
+reports/v02/runs_superseded/**/equity_hourly_primary.csv

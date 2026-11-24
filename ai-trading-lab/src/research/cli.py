@@ -57,6 +57,10 @@ def cmd_report(cfg, a):
     runs = [r for r in runs if "smoke" not in r.name]
     if not runs:
         print("no run"); return 1
+    if a.rerender:  # presentation only: rebuild report.md from the run's own metrics.json/manifest.json
+        from src.research.report import write_report
+        write_report(cfg, runs[-1], json.loads((runs[-1] / "metrics.json").read_text()),
+                     json.loads((runs[-1] / "manifest.json").read_text()))
     print(f"{runs[-1].relative_to(ROOT)}\n")
     print((runs[-1] / "report.md").read_text())
     return 0
@@ -99,6 +103,7 @@ def main(argv=None):
     r = sub.add_parser("run"); r.add_argument("--split", required=True, choices=["development", "validation", "test"])
     r.add_argument("--seeds", type=int, default=None); r.add_argument("--smoke-days", type=int, default=None)
     rp = sub.add_parser("report"); rp.add_argument("--split", required=True, choices=["development", "validation"])
+    rp.add_argument("--rerender", action="store_true")
     h = sub.add_parser("historical-test"); h.add_argument("--approval-file", default=None)
     a = p.parse_args(argv)
     cfg = load_config(a.config)

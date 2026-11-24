@@ -42,7 +42,10 @@ def write_report(cfg, out: Path, m: dict, man: dict) -> None:
         obs = b.get("observed", b.get("mean_daily_pnl"))
         ci = b.get("ci95", b.get("ci95_mean_daily"))
         h = pt["holm_primary_block"].get(k, {})
-        rows.append([k, obs, f"[{f(ci[0], 5)}, {f(ci[1], 5)}]" if ci else b.get("status"),
+        sc = 1e6 if k.startswith("G01_forecast") else 1.0
+        obs = obs * sc if obs is not None else None
+        rows.append([k + (" (×1e-6)" if sc != 1 else ""), obs,
+                     f"[{f(ci[0] * sc, 4)}, {f(ci[1] * sc, 4)}]" if ci else b.get("status"),
                      b.get("p_one_sided_gt_0", b.get("p_one_sided_mean_gt_0")), h.get("p_holm"), h.get("reject_h0")])
     L.append(table(rows, ["test", f"observed (block {B}d)", "95% CI", "p one-sided", "p Holm", "reject H0 (<=0)"]))
     L += ["", "G01 forecast statistic = equal-weight mean over BTC/ETH/SOL of MSE(B1) − MSE(X) on 1h OOS "
@@ -55,9 +58,10 @@ def write_report(cfg, out: Path, m: dict, man: dict) -> None:
         for a, r in per.items():
             rows.append([H, a, r["n"], r["B0"]["mse"] * 1e6, r["B1"]["mse"] * 1e6, r["X"]["mse"] * 1e6,
                          r["mse_B1_minus_X"] * 1e6, r["B1"]["r2_vs_B0"], r["X"]["r2_vs_B0"], r["B1"]["rank_ic"],
-                         r["X"]["rank_ic"], r["X"]["cond_gross_pred_gt0"], r["X"]["share_pred_gt0"]])
+                         r["X"]["rank_ic"], 1e4 * r["X"]["cond_gross_pred_gt0"] if r["X"]["cond_gross_pred_gt0"]
+                         is not None else None, r["X"]["share_pred_gt0"]])
     L.append(table(rows, ["H min", "target", "n", "MSE B0 e-6", "MSE B1 e-6", "MSE X e-6", "B1−X e-6", "R² B1 vs B0",
-                          "R² X vs B0", "IC B1", "IC X", "mean y | X>0", "share X>0"]))
+                          "R² X vs B0", "IC B1", "IC X", "mean y bps | X>0", "share X>0"]))
     L += ["", "Per-year / per-regime MSE differences and calibration bins (train edges): metrics.json, "
           "g01_calibration_oos.csv; coefficients and train windows: g01_coefficients.csv.", ""]
     # ---------------- variants

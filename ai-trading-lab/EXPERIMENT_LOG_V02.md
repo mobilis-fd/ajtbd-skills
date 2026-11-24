@@ -12,3 +12,13 @@
 Previously viewed intervals in this project: v0.1 2025-10-25 → 2026-08-20 (plus 3 raw rows of 2026-10-01).
 The assistant's general training knowledge includes public crypto market history of 2021–2025 (e.g. the 2022 bear
 market). The test period 2025-01 → 2025-11 is therefore not "unknown"; no project statistic of it was computed.
+| X07 | 2026-11-24 | Smoke development 20 d: crash in `asof` (duplicate T) → fixed; ledger checker flagged float artefact in zero-slippage fills → v0.2 rounding snapped to 1e-10 | no rule/parameter change |
+| X08 | 2026-11-24 | Real-data end-to-end prefix-invariance test (G01/H01/H02/H03 panels, truncation 2022-01-15 vs 2022-03-01): identical | tests/research/test_integration_v02.py |
+| X09 | 2026-11-24 | Development run (pre-commit, dirty tree) → moved to runs_superseded/ | identical outputs to X11 (12/12 files) |
+| X10 | 2026-11-24 | Commit 0ad6beb. Its message mentions "report formatting" but that edit was in a blocked command and NOT applied; applied later (X13) | documentation inaccuracy recorded |
+| X11 | 2026-11-24 | Final development run (code a5bca96b79, git 0ad6beb) | all primary tests non-significant; G01-X worse than B1; H01/H02 net < 0; H03 net < 0 |
+| X12 | 2026-11-24 | Final validation run (same code) | only H01-H04 rejects H0, and it is an abstention artefact (H01-c: 0 trades); H03 +35.1 diag but below random median and exposure-matched B&H; others negative |
+| X13 | 2026-11-24 | Report formatting fix + `report --rerender` from unchanged metrics.json | presentation only |
+| X14 | 2026-11-24 | Historical test, recorder smoke/pilot, Tardis samples: NOT run | awaiting audit / approvals |
+
+No rule, parameter, threshold, hold, split or seed was changed after any v0.2 result was seen.

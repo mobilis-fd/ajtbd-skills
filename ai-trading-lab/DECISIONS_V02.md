@@ -24,3 +24,7 @@ V01–V20 were taken before any v0.2 backtest output existed (pre-registration c
 | V18 | Exposure-matched passive = EW B&H daily PnL × strategy time exposure (analytic) | Disclosed approximation. |
 | V19 | Historical-test command is fail-closed: even with a valid owner-written approval it refuses, because this version does not download test data. A separate session is needed after approval | No agent-generated approvals. |
 | V20 | Track C recorder: code and synthetic tests only. `smoke` refuses without `--i-am-authorized`. api/fapi/stream.binance.com were geo-restricted from this host in v0.1 (api.binance.com "restricted location"). No connection was attempted here | Spec §8: stop, do not bypass. |
+| V21 | (post-smoke, 2026-11-24) `asof` uses `searchsorted` on bar-end index (same semantics: last closed bar ≤ T, NaN preserved) | Bug fix; no semantic change. |
+| V22 | (post-smoke) v0.2 rounding = v0.1 rounding snapped to 10 decimals | Removes 1e-12 float artefacts that the reused ledger checker correctly flagged; no economic effect. |
+| V23 | Diag wallets deplete under the spec's notional = min(50, cash); reported as a limitation, not changed | The spec defines the diag replay this way; per-signal expectancy is reported separately. |
+| V24 | Interpretation rule applied to H04: an improvement achieved by a variant with zero or near-zero trades is reported as abstention, not edge | Spec §5: refusing to trade is not a success metric. |

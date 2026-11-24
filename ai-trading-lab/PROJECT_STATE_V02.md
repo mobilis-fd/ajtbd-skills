@@ -1,0 +1,122 @@
+# Project state — MH-v0.2 (as of 2026-11-24)
+
+**Status:** stages B1 (data/QA, G01, H01–H03 and the H04 ablation) and B2 (portfolio replays, controls, stress) are done
+for **development and validation**. The **historical test is not run** and its data are not downloaded. The Track C
+recorder is code plus synthetic tests only and has **not been run**. No demo and no real orders.
+
+Reports (all numbers come from code output):
+* development: `reports/v02/runs/development_a5bca96b79_cf00d9bc/report.md` (OOS 2021-10-01 → 2023-01-01)
+* validation: `reports/v02/runs/validation_a5bca96b79_cf00d9bc/report.md` (OOS 2023-01-01 → 2025-01-01)
+* each run directory also has `metrics.json`, `qa_report.md`, `manifest.json` and `trades.csv`
+  (primary variants with all scenarios, plus diag-main of every variant; full set in `trades_all.parquet`, not committed),
+  `rejections_summary.csv`, `equity_daily_pnl.csv`, `equity_hourly_primary.csv`, `random_benchmark.csv`,
+  `g01_predictions_H60.csv`, `g01_coefficients.csv` (coefficients, train window id, dropped columns),
+  `g01_calibration_oos.csv`, `h0x_fits.csv` (H01 q20, conditional estimates, train event counts, frequencies)
+* large CSVs (`trades.csv`, `g01_predictions_H60.csv`, `equity_hourly_primary.csv`) are committed as deterministic
+  `*.csv.gz` (gzip -n). `gunzip` reproduces files whose SHA256 equals `manifest.json`'s `outputs_sha256` (verified).
+* code: git `0ad6beb`, code hash `a5bca96b79`, config `cf00d9bc`. The report text was re-rendered from the unchanged
+  metrics.json after a formatting fix (`report --rerender`).
+
+## Primary results (pre-registered, Holm over 9 tests, 14-day day-blocks, H0 "≤ 0")
+
+| test | development (observed, Holm p) | validation (observed, Holm p) | reading |
+|---|---|---|---|
+| G01 forecast MSE(B1) − MSE(X), 1h, ×1e-6 | −0.233, 1.00 | −0.190, 1.00 | **X is worse than B1 in every target and horizon, in both splits.** Both are worse than the constant B0 (R² < 0) |
+| G01 economic X − B1 (θ=0, USDT/day) | −0.000, 1.00 | +0.000, 1.00 | no incremental value |
+| H01 2h net (USDT/day, diag) | −0.197, 1.00 | −0.123, 1.00 | negative in both |
+| H02 12h net | −0.173, 1.00 | −0.029, 1.00 | negative in both |
+| H03 3d net | −0.038, 1.00 | +0.048, 0.76 | dev negative, val positive but not significant |
+| H04 G01-X θ=c − θ=0 | +0.109, 0.72 | +0.113, 0.21 | filtered variant itself loses (dev −40.1, val −7.2 USDT) |
+| H04 H01 c − common | +0.125, 0.06 | **+0.123, 0.000 (reject)** | **abstention artefact**: H01-c has **0 trades** in validation (estimates never exceed 25 bps); a zero-trade wallet vs a losing one. Not an edge |
+| H04 H02 c − common | +0.068, 0.88 | +0.046, 1.00 | n.s. |
+| H04 H03 c − common | −0.001, 1.00 | −0.013, 1.00 | n.s. |
+
+### Gate verdicts (Spec §7; per version, not per strategy class)
+* **Gate 1 (QA / leakage / reproducibility):** passed. Details below.
+* **G01-X (cross-asset residual lead-lag):** rejected for this version. There is no forecast gain, and X has higher OOS
+  MSE than B1 in both splits. Per spec, X features are not to be used further.
+* **H01 (hourly reversal, 2h):** rejected. Net is negative in both splits. Validation has a positive gross
+  conditional mean (BTC +5.0 bps, SOL +11.2 bps at 2h, HAC t ≈ 3.3–3.7, above-unconditional t ≈ 2.3–2.8), but the net
+  expectancy is −14 to −23 bps per signal. The OLS on the prior 1h return is not significant in either split.
+* **H02 (4h/24h momentum, 12h):** rejected. Net is negative in both splits (dev −79.0, val −21.5 USDT diag).
+* **H03 (7d/28d momentum, 3d):** inconclusive, leaning negative. Dev is −17.5 USDT. Val is +35.1 USDT (diag) and
+  +20.3 constrained, but:
+  - it is not significant;
+  - it is **below the median of frequency-matched random entries** (+50.1; 78 % of seeds ≥ strategy);
+  - it is far below exposure-matched EW buy-and-hold (+196, analytic);
+  - signal vs unconditional HAC t is only 0.4 for BTC/ETH (2.4 SOL).
+  The validation gain is consistent with market beta in the 2023–2024 bull market, not timing skill.
+* **H04:** no confirmatory benefit beyond trading less. Gate 3 is not reached by any primary variant; the historical
+  test is therefore not requested.
+
+Secondary/exploratory (not grounds for claims): some secondary holds or thresholds are positive in one split and
+negative in the other. Examples: G01-B1-H60-thrc dev −48.6 / val +23.7; H03-H10080 dev −35.0 / val +65.2;
+H02-H1440 dev −67.5 / val +36.6. A winning secondary hold is not a primary result.
+
+### Constrained replay (daily 1.5 / total 10 USDT)
+Every primary variant hits the total stop in development. In validation, all except H03-3d hit it. H03-3d ends at
++20.3 after 74 daily-limit exits. Buy-and-hold under the same overlay exits after its first daily breach
+(no re-entry) and ends at +11.4 to +12.2 USDT in both splits. That is an artefact of the overlay, not a strategy.
+
+## QA
+* Data: 477/477 archives SHA256-verified and read-only; 9 assets × 2020-08 … 2024-12; all files in ms.
+  There are 0 duplicate/OHLC/taker violations. 10–11 exchange-wide gaps per symbol total 1423–1425 minutes; the
+  largest are 2021-04-25 (284 min), 2021-08-13 (270 min) and 2023-03-24 (80 min). 5–6 truncated pre-outage candles
+  were dropped per symbol. SOL first minute: 2020-08-11 06:00 UTC. `reports/v02/data_qa_validation.md`.
+* Tests: `pytest -q` passes 71 tests: 42 v0.1, 20 research (17 unit + 3 real-data integration), 9 collector. They cover
+  UTC/µs boundary alignment, 9-asset sync, missing rows, entry delay vs close, split purge, label maturity, train-only
+  scaling, prefix and future mutation (synthetic and **real-data end-to-end across all four families**), identical
+  B1/X sample, a factor that excludes the target, synthetic null (no consistent gain), planted lag of either sign
+  recovered, deterministic ties, time exits, no overlap, gap handling, risk exit at the next known minute, MTM equity,
+  total stop, passive no-re-entry, funding as-of join, and recorder dedup/stale/backoff/clock skew/schema/quota/gate.
+* Independent ledger reconciliation (the v0.1 checker reused) over every scenario of every variant: **0 failures** in
+  development and validation. Manual trade checks (raw 1m opens printed, recomputed by hand) are in `qa_report.md`.
+  Executions use the T + 1 min open, never the decision bar's close.
+* Reproducibility: two development runs with identical code gave byte-identical outputs (12/12 files,
+  `runs_superseded/` vs `runs/`).
+
+## Problems found and fixed (no rule changes)
+1. v0.1 handoff: `src/data` had never been committed (`.gitignore` matched it); another session fixed this
+   (`a9d28b0`, `789683e`). v0.2 builds on that state.
+2. The rebuilt v0.1 `check_1m` lacks the `taker_buy_quote ≤ quote_volume` check; v0.2 adds it (0 violations).
+3. Smoke run: `asof` crashed on duplicate decision times (fixed with `searchsorted`). The float rounding
+   artefact `floor(x/0.01)·0.01 = 50220.950000000004` made the ledger checker flag zero-slippage fills (fixed by
+   snapping to 10 decimals in the v0.2 engine; v0.1 untouched).
+4. Commit `0ad6beb` says "report formatting", but that edit had not been applied: the command containing it was
+   blocked. It was applied afterwards, and the reports were re-rendered from unchanged metrics.
+5. A glob deletion of earlier run folders was blocked by a safety check. The pre-fix runs were moved to
+   `reports/v02/runs_superseded/` instead. You may delete that folder if you don't need it.
+
+## Limitations
+1. Exchange filters are **assumed** (tick 0.01; steps 1e-5/1e-4/1e-3; minNotional 10); historical exchangeInfo is
+   unavailable here.
+2. Costs are working assumptions. The real spread and slippage are unknown from candles; Binance deducts buy fees
+   in base currency (here charged in quote).
+3. Diag wallets deplete: notional = min(50, cash), so losing variants trade down to about −90 USDT, after which cash is
+   below minNotional. The daily-PnL tests therefore cover the period until depletion. Per-signal expectancies
+   (event study) are not truncated.
+4. Risk-matched sizing for long holds usually gives notional < 10 USDT (σ√72 h): few or no trades for H03.
+   σ is invalid for 30 days after any hourly gap (strict window), which suppresses entries, e.g. Oct 2021.
+5. Overlapping labels: HAC lags = ceil(H/grid); pooled event-study rows are not independent. The day-block bootstrap
+   is preliminary. Development OOS is 15 months and validation 24, with few blocks for 28-day sensitivity in development.
+6. The 9-asset set and the dates are fixed and retrospectively known (survivorship/selection). Validation is dominated by
+   the 2023–2024 bull market, and development by the 2022 bear market; regime breakdowns are in metrics.json.
+7. Training-data knowledge: the assistant knows public market history of 2021–2025, so no period is "unknown".
+   The historical test is not a clean holdout in that sense either.
+8. Random baselines match frequency only approximately (train frequencies). Actual exposure differences are reported.
+9. Futures archive inventory: schema only (fundingRate monthly: `calc_time, funding_interval_hours,
+   last_funding_rate`; metrics daily: 5-min `sum_open_interest` (units) and `sum_open_interest_value` (USD);
+   mark/premium 1m klines). Not integrated into any hypothesis.
+
+## NOT RUN (explicit)
+* Historical test 2025-01-01 → 2025-11-01: not downloaded, not run. The gate (`historical-test`) is fail-closed.
+* Any use of the v0.1 period 2025-11-01 → 2026-11-01: never read.
+* Track C: no smoke, no 24 h pilot, no live connection, so no measured availability, rows/s, bytes/day, CPU or
+  network figures. `api.binance.com` answered "restricted location" from this host in v0.1; fapi/stream hosts were
+  not tried.
+* Tardis L2 samples: not downloaded (host not allowed; optional C2). L2 sequence handling is not implemented.
+* Liquidation stream: not implemented (optional).
+* Freqtrade adapter for v0.2 and a cross-engine comparison: not done. The v0.1 engine's execution semantics
+  (stop/target) differ, and only its rounding, checker and statistics were reused.
+* Power analysis: not done (no economically meaningful effect size was pre-specified).
+* Docker build: not available in this session.
