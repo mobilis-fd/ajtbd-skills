@@ -1,6 +1,6 @@
 # Freqtrade vs reference replay — development
 
-Reference: `reports/runs/development_acfbf419a7_792e0459` scenario `signal_only_no_portfolio_stop` (Freqtrade has no equity-based daily/total limit). Freqtrade: offline markets (assumed filters), fee 0.00125/side, timeframe-detail 1m, stake 50, wallet 100; Freqtrade stops opening trades once free balance < stake (≈ −50 USDT).
+Reference: `reports/runs/development_2bff6fcca7_792e0459` scenario `signal_only_no_portfolio_stop` (Freqtrade has no equity-based daily/total limit). Freqtrade: offline markets (assumed filters), fee 0.00125/side, timeframe-detail 1m, stake 50, wallet 100; Freqtrade stops opening trades once free balance < stake (≈ −50 USDT).
 
 | strategy | FT trades | ref trades | matched entries | only FT | only ref | entry px diff (median bps) | same exit time | FT net | ref net (signal-only) | matched FT net | matched ref net |
 |---|---|---|---|---|---|---|---|---|---|---|---|

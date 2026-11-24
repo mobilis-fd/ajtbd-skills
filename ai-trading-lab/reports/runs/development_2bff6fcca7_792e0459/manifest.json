@@ -1,5 +1,5 @@
 {
-  "code_sha256": "acfbf419a708f10681b92d1f32f79c8381aed093380d20e2d67d8d9e8546dbd7",
+  "code_sha256": "2bff6fcca75416ed978a2de5d52953431d33896c9fc125d967a59b8bcb64e953",
   "config_file": "/home/user/ajtbd-skills/ai-trading-lab/configs/mvp.yaml",
   "config_sha256": "792e04593f9a8de8084dcc948b73c5651055bdc2d70b0b2e16c413a35eaba8e8",
   "data_manifest_sha256": "4031c50d06c1662fe2e1a76d8508b1a685db1cd21331f2e4b166ddb46142c678",
@@ -10,7 +10,7 @@
   },
   "experiment_id": "MVP-v0.1-E01E02",
   "freqtrade_sample_strategy_sha256": "18d48d64b955dc9bd1b43f59115c16f2002a881c62c2851ceca64569a6f8651c",
-  "git_commit": "2036eb977e4c7a61ecb25844d8e55bd90b5fee49",
+  "git_commit": "803db3afbbf8b5dd428e3e629a35564460bea331",
   "label": "development",
   "outputs_sha256": {
     "equity_hourly.csv": "943628aabb8d91f34308226b67d6907d4bbe395fe79e1e53e7d02e2540a6ad5a",

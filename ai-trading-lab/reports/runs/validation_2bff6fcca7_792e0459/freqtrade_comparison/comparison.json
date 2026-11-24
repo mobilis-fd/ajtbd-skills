@@ -32,7 +32,7 @@
     }
   },
   "freqtrade_results": "user_data/backtest_results/validation",
-  "reference_run": "reports/runs/validation_acfbf419a7_792e0459",
+  "reference_run": "reports/runs/validation_2bff6fcca7_792e0459",
   "strategies": {
     "E01-F": {
       "entry_price_abs_diff_bps_median": 0.0,
