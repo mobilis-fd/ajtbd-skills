@@ -23,7 +23,17 @@ from dataclasses import dataclass, field
 import numpy as np
 import pandas as pd
 
-from src.evaluation.engine import Filters, round_down, round_up
+from src.evaluation.engine import Filters
+from src.evaluation.engine import round_down as _rd, round_up as _ru
+
+
+def round_up(x: float, tick: float) -> float:
+    """v0.1 rounding, snapped to 10 decimals to remove float artefacts such as 50220.950000000004."""
+    return round(_ru(x, tick), 10)
+
+
+def round_down(x: float, tick: float) -> float:
+    return round(_rd(x, tick), 10)
 
 MIN = pd.Timedelta(minutes=1)
 

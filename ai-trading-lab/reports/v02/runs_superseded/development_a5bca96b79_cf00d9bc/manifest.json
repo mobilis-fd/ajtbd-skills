@@ -1,0 +1,49 @@
+{
+  "code_sha256": "a5bca96b79cea7559c0103a30e62de1e169f8ac6ec4047accd395dd3ddc6b37e",
+  "config_sha256": "cf00d9bc7d0e193524acf7bfa2ad1612090c3f9568f4852c5c8a3d7ec007454a",
+  "data_manifest_sha256": "9d6548863d1a4835b9c05a8206413dd7afc93eb117151eea4635f5849ee7ef89",
+  "eval_window": [
+    "2021-10-01 00:00:00+00:00",
+    "2023-01-01 00:00:00+00:00"
+  ],
+  "experiment_id": "MH-v0.2",
+  "fits": [
+    "2021-10-01 00:00:00+00:00",
+    "2021-11-01 00:00:00+00:00",
+    "2021-12-01 00:00:00+00:00",
+    "2022-01-01 00:00:00+00:00",
+    "2022-02-01 00:00:00+00:00",
+    "2022-03-01 00:00:00+00:00",
+    "2022-04-01 00:00:00+00:00",
+    "2022-05-01 00:00:00+00:00",
+    "2022-06-01 00:00:00+00:00",
+    "2022-07-01 00:00:00+00:00",
+    "2022-08-01 00:00:00+00:00",
+    "2022-09-01 00:00:00+00:00",
+    "2022-10-01 00:00:00+00:00",
+    "2022-11-01 00:00:00+00:00",
+    "2022-12-01 00:00:00+00:00"
+  ],
+  "git_commit": "a5b47c7e771a445fb4cdf338e947a950235dd8b7-dirty",
+  "label": "development",
+  "outputs_sha256": {
+    "equity_daily_pnl.csv": "b1d7d2955bbaddb68c48c358d19d67ebe0154a5ce3ad03330fbedaa1e2465ec7",
+    "equity_hourly_primary.csv": "d45e8060467ced4ee3cdb196c9dacf2481f79b392fdeaea1863d67a1f92b37e8",
+    "g01_calibration_oos.csv": "055419fd8440ee409c2d56a0492430da7b43833db41de15a2f74bcff44df6dbb",
+    "g01_coefficients.csv": "b56b04b83578a95a49f96199521f787389472cd3815e7c1a90ff153d018444d8",
+    "g01_predictions_H60.csv": "fd3d595cf9befe25e5ea0fe142c7e225136ee4b455977866f6f03df2f06a78a6",
+    "h01_fits.csv": "2f1d9355a2b2fe983ea36fb6bffec542e12b3a115b8b94adbea292c97aaee7d7",
+    "h02_fits.csv": "e3cfae81ac717d04e30ce1a536b687428b4e0d556648cbacf9ae9bd7dcf91dce",
+    "h03_fits.csv": "9a39d9babf92ff7f0a90124fbb01d761f4ca4f000f2b526ee7a0adddb26b49c7",
+    "metrics.json": "68bc98954b15c5b5c6d64521447c0bc7c4131ba5e3d637a9f723dbeb3e8e21ae",
+    "random_benchmark.csv": "fd51622e700b2e986384ce60ae0529f5a56d9da5089756f3bcf2c5952a997fec",
+    "rejections_summary.csv": "e120534bbec774406ad6ad306031b71f29180709f892d0f363a93d4f1ee3038c",
+    "trades.csv": "25601b5b919b9aee973760f4243702905faf706ede8f1c5bcdc27566bc045942"
+  },
+  "px_sha256": {
+    "BTCUSDT": "4a82a42629a7f4ee004dd40e7d2f355d89694f3d16d0336408546f3ec3b09222",
+    "ETHUSDT": "ac057d3b92a2005aaa1b028bc1e9df40f6c3809d41516ec7d57cfab23ac54f23",
+    "SOLUSDT": "2dd6442c992d7c75e6de3caf36289b8f80594b22b2b90eb7bc23fe902d8b9e49"
+  },
+  "split": "development"
+}

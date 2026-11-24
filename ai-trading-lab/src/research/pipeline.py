@@ -12,6 +12,7 @@ from scipy.stats import spearmanr
 
 from src.config import ROOT, code_hash, dumps, file_sha256, git_commit, ts
 from src.evaluation.engine import Filters
+from src.evaluation.ledger import reconcile
 from src.research import stats as S
 from src.research.data import load_1m, load_bars
 from src.research.features import (crosses_boundary, g01_asset_features, g01_design, grid, hourly_sigma, labels,
@@ -57,7 +58,12 @@ def load_ctx(cfg: dict, split: str, unlocked: bool = False) -> dict:
 
 
 def asof(series: pd.Series, T: pd.DatetimeIndex) -> np.ndarray:
-    return series.reindex(series.index.union(T)).ffill().reindex(T).to_numpy()
+    """Value of `series` at the last index <= T (series index = bar END, so only closed bars). NaN-preserving:
+    a missing (NaN) latest bar yields NaN, never an older value."""
+    pos = np.searchsorted(series.index.asi8, pd.DatetimeIndex(T).asi8, side="right") - 1
+    vals = series.to_numpy()
+    out = np.where(pos >= 0, vals[np.clip(pos, 0, len(vals) - 1)], np.nan)
+    return out
 
 
 def eval_mask(ctx, T: pd.DatetimeIndex, fam: str) -> np.ndarray:
@@ -470,7 +476,7 @@ def run_split(cfg: dict, split: str, out_root: Path | None = None, n_seeds: int 
     c = cfg["costs"]["hurdle_c"]
     specs = variant_specs(cfg)
     metrics = {"variants": {}, "controls": {}, "random": {}, "primary_tests": {}, "event_study": {}}
-    trades_all, rej_all, daily = [], [], {}
+    trades_all, rej_all, daily, manual = [], [], {}, []
     hourly = {}
     primary_daily = {}
     for sp in specs:
@@ -491,8 +497,17 @@ def run_split(cfg: dict, split: str, out_root: Path | None = None, n_seeds: int 
                 its = its.copy()
                 its["stake"] = stake_risk_matched(its, cfg["execution"]["risk_matched_budget"],
                                                   cfg["execution"]["stake_usdt"])
-            r = replay_variant(cfg, ctx, its, params(cfg, sc, risk_on, delay))
+            pr = params(cfg, sc, risk_on, delay)
+            r = replay_variant(cfg, ctx, its, pr)
             m = r["metrics"]
+            if len(r["trades"]):
+                rec = reconcile(r["trades"], pr.initial, pr.costs.fee, pr.filters)
+                m["ledger_reconciliation"] = {"ok": rec["ok"], "issues": rec["issues"][:5],
+                                              "recomputed_final_cash": rec["recomputed_final_cash"]}
+                if not rec["ok"]:
+                    metrics.setdefault("reconciliation_failures", []).append(f"{sp['name']}|{lab}")
+                if sp["primary"] and lab == "diag_main":
+                    manual.append((sp["name"], r["trades"].iloc[0].to_dict(), pr))
             if lab == "diag_main":
                 m["static_cost_sensitivity_net"] = static_costs(r["trades"], cfg)
             vm["scenarios"][lab] = m
@@ -596,7 +611,32 @@ def run_split(cfg: dict, split: str, out_root: Path | None = None, n_seeds: int 
                                 "primary_block_days": B}
     # ---------------- outputs
     out = _write(cfg, ctx, label, metrics, panels, trades_all, rej_all, daily, hourly, rnd, out_root)
+    write_manual_checks(ctx, manual, out / "qa_report.md", metrics)
     return out
+
+
+def write_manual_checks(ctx, manual, path: Path, metrics) -> None:
+    """Hand-verifiable recomputation of the first trade of each primary variant from raw 1m opens."""
+    L = ["# MH-v0.2 run QA", "",
+         f"Ledger reconciliation failures: {metrics.get('reconciliation_failures', 'none')}", "",
+         "## Manual trade checks (raw 1m data printed; recompute by hand)", ""]
+    for name, t, p in manual:
+        b = ctx["px"][t["symbol"]]
+        ie, kx = int(t["entry_minute"]), int(t["exit_minute"])
+        fee, slip = p.costs.fee, p.costs.slip
+        L += ["```", f"{name}: {t['symbol']} decision T={t['T']} (bar end)",
+              f"  entry minute {b.g0 + ie * pd.Timedelta(minutes=1)} open={b.o[ie]!r} (decision T + {p.delay_min} min)",
+              f"  close of the decision bar's last minute (NOT used for execution) = {b.c[ie - p.delay_min - 1]!r}",
+              f"  fill_entry = ceil_tick(open*(1+{slip})) = {t['fill_entry']!r}; qty = floor_step(min(50, cash/(1+fee))/fill)"
+              f" = {t['qty']!r}",
+              f"  exit minute {b.g0 + kx * pd.Timedelta(minutes=1)} open={b.o[kx]!r} ({t['exit_reason']}, hold "
+              f"{kx - ie} min vs H={t['hold_min']})",
+              f"  fill_exit = floor_tick(open*(1-{slip})) = {t['fill_exit']!r}",
+              f"  net = qty*fill_exit*(1-{fee}) - qty*fill_entry*(1+{fee}) = "
+              f"{t['qty'] * t['fill_exit'] * (1 - fee) - t['qty'] * t['fill_entry'] * (1 + fee):.10f}; ledger "
+              f"{t['net_pnl']:.10f}",
+              f"  gross label from opens = {b.o[kx] / b.o[ie] - 1:.8f}", "```", ""]
+    path.write_text("\n".join(L))
 
 
 def event_study(cfg, ctx, panels) -> dict:
