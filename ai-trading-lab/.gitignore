@@ -4,7 +4,7 @@ __pycache__/
 *.pyc
 .pytest_cache/
 # data (raw/processed market data is never committed)
-data/
+/data/
 user_data/data/
 user_data/backtest_results/
 user_data/logs/
