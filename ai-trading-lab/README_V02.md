@@ -15,6 +15,7 @@ python -m src.research.cli run --split validation           # ~3 min
 python -m src.research.cli report --split validation [--rerender]
 python -m audit.qa_addendum_v02                             # QA addendum measurements (read-only)
 python -m src.research.cli diag-d1 --split development --confirmed  # MH-v0.2-D1, only after owner confirmation
+python -m audit.build_final_audit_v02                       # FINAL_AUDIT_V02.md from committed outputs
 python -m src.research.cli run --split test                 # REFUSED (exit 4)
 python -m src.research.cli historical-test --approval-file F # fail-closed (exit 5); not run
 python -m src.collector.cli smoke --duration 900            # REFUSED without --i-am-authorized; run only on your machine after approval
