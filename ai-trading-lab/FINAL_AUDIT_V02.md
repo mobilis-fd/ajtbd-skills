@@ -19,12 +19,15 @@
 
 | commit | date | message |
 |---|---|---|
+| e0423c2 | 2026-11-25T09:10:23+00:00 | MH-v0.2: final audit package (FINAL_AUDIT_V02.md + generator, data manifest copy) |
 | a83028b | 2026-11-25T08:32:12+00:00 | MH-v0.2-D1: diagnostic results (dev+val) and QA addendum conclusions |
 | 295ba7c | 2026-11-24T21:35:51+00:00 | MH-v0.2: QA addendum after FINAL_AUDIT_V01 and pre-registration of diagnostic D1 (not executed) |
 | 4ee5153 | 2026-11-24T21:23:11+00:00 | MH-v0.2: development and validation results, QA, project state, logs |
 | 0ad6beb | 2026-11-24T21:14:22+00:00 | MH-v0.2: fixes found in smoke (asof duplicates, float-snapped rounding), per-run ledger reconciliation and manual trade checks, real-data prefix-invariance test, report formatting |
 | a5b47c7 | 2026-11-24T21:08:56+00:00 | MH-v0.2: pre-registration (spec, config, data layer, research engine, tests, recorder) |
 | 789683e | 2026-11-25T03:49:59+07:00 | ai-trading-lab: keep ts_unit in processed 1m data, log clean-clone reproduction |
+
+Таблица строится до коммита, содержащего этот документ; сам коммит пакета — голова ветки `release/multi-horizon-v0.2`.
 
 
 * Ветка исследования: `research/multi-horizon-v02`; замороженная копия: `release/multi-horizon-v0.2`.
@@ -860,6 +863,6 @@ cat ./data/recorder/smoke_report.json           # rows/s, bytes_on_disk, cpu_s, 
 
 ## 15. Состав пакета и воспроизведение
 
-Архив `ai-trading-lab-mh-v0.2.zip` создаётся `git archive --format=zip --prefix=ai-trading-lab/ <commit>:ai-trading-lab` из головы ветки `release/multi-horizon-v0.2` (детерминирован для коммита; SHA256 указан в `AUDIT_ARCHIVE_V02.sha256` на исследовательской ветке и в сопроводительном сообщении). Содержит: `src/` (v0.1 + v0.2 + recorder), `tests/`, `configs/`, `user_data/` (v0.1), `audit/`, все отчёты `reports/` (v0.1 и v0.2: прогоны, манифесты, QA-дополнение, D1, таблицы сигналов/прогнозов/сделок в gzip), документацию (`SPEC_MULTI_HORIZON_V02.md`, `SPEC_DIAGNOSTIC_D1.md`, `DECISIONS_V02.md`, `EXPERIMENT_LOG_V02.md`, `PROJECT_STATE_V02.md`, `README_V02.md`, этот файл), `requirements*.lock`. Не включены: архивы котировок и обработанные данные (`data/`), parquet-артефакты прогонов, виртуальные окружения, секреты (в проекте не используются).
+Архив `ai-trading-lab-mh-v0.2.zip` создаётся `git archive --format=zip -o ai-trading-lab-mh-v0.2.zip <commit> ai-trading-lab` из головы ветки `release/multi-horizon-v0.2`. Архивируется коммит (не дерево `<commit>:path`), поэтому время файлов берётся из коммита и архив детерминирован (две сборки дают одинаковый SHA256; вариант с деревом ставит текущее время и не воспроизводим). SHA256 указан в `AUDIT_ARCHIVE_V02.sha256` на исследовательской ветке и в сопроводительном сообщении). Содержит: `src/` (v0.1 + v0.2 + recorder), `tests/`, `configs/`, `user_data/` (v0.1), `audit/`, все отчёты `reports/` (v0.1 и v0.2: прогоны, манифесты, QA-дополнение, D1, таблицы сигналов/прогнозов/сделок в gzip), документацию (`SPEC_MULTI_HORIZON_V02.md`, `SPEC_DIAGNOSTIC_D1.md`, `DECISIONS_V02.md`, `EXPERIMENT_LOG_V02.md`, `PROJECT_STATE_V02.md`, `README_V02.md`, этот файл), `requirements*.lock`. Не включены: архивы котировок и обработанные данные (`data/`), parquet-артефакты прогонов, виртуальные окружения, секреты (в проекте не используются).
 
 Воспроизведение: `README_V02.md` (download → validate-data → pytest → run development/validation → diag-d1 --confirmed → `python -m audit.qa_addendum_v02` → `python -m audit.build_final_audit_v02`). Ожидание: `outputs_sha256` в manifest.json совпадают побайтно.

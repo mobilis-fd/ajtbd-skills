@@ -74,6 +74,8 @@ def sec_versions(L):
     L += ["## 1. Версии, коммиты, хэши, окружение", ""]
     log = git("log", "--format=%h|%cI|%s", "789683e^..HEAD")
     L.append(T([r.split("|", 2) for r in log.splitlines()], ["commit", "date", "message"]))
+    L += ["Таблица строится до коммита, содержащего этот документ; сам коммит пакета — голова ветки "
+          "`release/multi-horizon-v0.2`.", ""]
     L += ["", f"* Ветка исследования: `research/multi-horizon-v02`; замороженная копия: `release/multi-horizon-v0.2`.",
           "* База v0.1: передаточный коммит `789683e` (ветка `ccr-481f4ca9-6sjk8p`; аудит v0.1 `73e6d89`).",
           f"* `configs/multi_horizon_v02.yaml` sha256 `{CFG['_hash']}`.",
@@ -596,8 +598,10 @@ def main():
                sec_stats, sec_leak, sec_reuse, sec_issues, sec_recorder, sec_needs_runs):
         fn(L)
     L += ["## 15. Состав пакета и воспроизведение", "",
-          "Архив `ai-trading-lab-mh-v0.2.zip` создаётся `git archive --format=zip --prefix=ai-trading-lab/ "
-          "<commit>:ai-trading-lab` из головы ветки `release/multi-horizon-v0.2` (детерминирован для коммита; SHA256 "
+          "Архив `ai-trading-lab-mh-v0.2.zip` создаётся `git archive --format=zip -o ai-trading-lab-mh-v0.2.zip <commit> "
+          "ai-trading-lab` из головы ветки `release/multi-horizon-v0.2`. Архивируется коммит (не дерево `<commit>:path`), "
+          "поэтому время файлов берётся из коммита и архив детерминирован (две сборки дают одинаковый SHA256; "
+          "вариант с деревом ставит текущее время и не воспроизводим). SHA256 "
           "указан в `AUDIT_ARCHIVE_V02.sha256` на исследовательской ветке и в сопроводительном сообщении). Содержит: "
           "`src/` (v0.1 + v0.2 + recorder), `tests/`, `configs/`, `user_data/` (v0.1), `audit/`, все отчёты "
           "`reports/` (v0.1 и v0.2: прогоны, манифесты, QA-дополнение, D1, таблицы сигналов/прогнозов/сделок в gzip), "
