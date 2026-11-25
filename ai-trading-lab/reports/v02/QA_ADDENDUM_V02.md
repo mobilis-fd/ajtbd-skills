@@ -113,3 +113,53 @@ the raw opens. The residual comes from exits only:
 
 Cause: `fill = round_down(trigger × (1 − 0), tick)`; stop/target triggers = fill × 0.994 / 1.009 are not on the tick grid.
 This is rounding, not slippage. It was reported in v0.1 inside the `slippage` column. It is not a bug, but it is mislabelled.
+
+## E. MH-v0.2-D1 results (diagnostic only; executed 2026-11-25 after owner confirmation)
+
+Runs: `reports/v02/diagnostics/D1/{development,validation}_8ea5177c03_cf00d9bc/` (git `295ba7c`, code `8ea5177c03`,
+config `cf00d9bc`). The unit-safe fit index equals the v0.2 assignment for all four families (both splits).
+D1 does not replace the v0.2 primary tests or verdicts.
+
+**Layer separation for the primary holds** (L1 gross per signal vs unconditional baseline, day-block 14 d CI;
+L2 net per signal at fixed 50 USDT, main costs; L3 one-position portfolio with constant 50 USDT, no depletion):
+
+| split | family (primary) | L1 gross − baseline, bps [95% CI] | L2 net bps/signal [95% CI] | L2 break-even RT bps | L3 net USDT (trades) | L3 vs random: share seeds ≥ strategy |
+|---|---|---|---|---|---|---|
+| dev | G01-X H60 θ=0 | +0.06 [−1.28, 1.32] | −26.6 [−29.3, −24.4] | −0.8 | −789.7 (5686) | 0.02 |
+| dev | H01 2 h | +0.25 [−4.40, 4.87] | −27.4 [−34.7, −20.8] | −1.5 | −242.6 (1701) | 0.00 |
+| dev | H02 12 h | −12.9 [−28.5, −1.8] | −49.7 [−75.7, −32.7] | −24.1 | −89.4 (456) | 0.16 |
+| dev | H03 3 d | +41.1 [−114.9, 180.0] | −54.3 [−263.0, 100.9] | −29.0 | −17.5 (49) | 0.21 |
+| val | G01-X H60 θ=0 | +0.12 [−0.37, 0.60] | −24.2 [−25.4, −23.1] | +1.5 | −1166.5 (10048) | 0.00 |
+| val | H01 2 h | **+3.44 [1.44, 5.72]** | −19.6 [−22.7, −16.8] | +6.2 | −367.3 (3249) | 0.00 |
+| val | H02 12 h | +4.9 [−3.4, 14.4] | −4.7 [−20.7, 10.5] | +21.1 | −21.5 (805) | 0.11 |
+| val | H03 3 d | +51.8 [−4.4, 112.9] | +125.8 [26.7, 218.3] | +151.8 | +35.1 (118) | 0.78 |
+
+Rows from `report.md`. All L2 decompositions satisfy gross − fees − adverse − rounding = net (asserted per signal);
+rt0 residual = 0.
+
+Interpretation (rules fixed in SPEC_DIAGNOSTIC_D1.md):
+* **G01:** no gross signal beyond the baseline in either split (X: +0.06/+0.12 bps, CIs include 0). Every model and
+  threshold-0 population nets about −24 to −27 bps per signal. L3 X − B1 is −0.04 USDT/day in dev and +0.22 in val
+  (p ≈ 0 in val only). Both wallets lose about 1,170–1,330 USDT in val, so this is "loses less" with a sign flip
+  across splits, not incremental edge. The forecast test (X worse than B1, both splits) is unaffected by wallets.
+* **H01:** validation has a real gross conditional effect (+3.4 bps vs baseline at 2 h, CI excludes 0; dev ≈ 0). It is an
+  order of magnitude below the 25 bps cost: "no executable edge". Its timing beats frequency-matched random entries
+  (0 % of seeds ≥ strategy, both splits), but strategy and random both lose heavily.
+* **H02:** dev gross is significantly *below* baseline at 12 h; val is n.s. and net is negative. Rejected, as before.
+* **H03:** the val net per signal is positive with a CI excluding 0, but the gross excess over the unconditional
+  baseline is not significant (CI includes 0). The L3 portfolio is below the median of random entries (78 % of seeds
+  ≥ strategy). Dev is negative. Validation profits are market beta of the 2023–2024 bull market. Inconclusive, as
+  in v0.2.
+* **H04 (c filters):** L3 improvements are significant only where the filtered variant trades very little or not at
+  all: G01-X θ=c with 313/255 trades, still net −39.9/−7.2; H01-c with 233/0 trades. That is abstention (V24), not edge.
+  H02/H03 H04 differences are n.s.
+* **Re-estimated effect sizes without depletion:** G01-X loses about −0.12 to −0.14 USDT per trade at a 50 USDT
+  notional; H01 about −0.11 to −0.14. The v0.2 diag figures (≈ −90) were floors set by depletion, not loss rates.
+
+Secondary/exploratory, no claim: some small-sample populations have CIs excluding 0 in one split but flip sign
+in the other. Examples: G01-B1 θ=c L1 net val +64.8 bps [18.7, 99.5] vs dev −33.8 [−58.9, −2.8]; G01 2c populations
+of 12–78 signals.
+
+**Conclusion of the addendum:** the reliability fixes do not change any v0.2 verdict. G01-X, H01 and H02 are rejected
+for this version. H03 is inconclusive (beta-explained). H04 shows no confirmatory benefit beyond abstention. The
+historical test is not requested.

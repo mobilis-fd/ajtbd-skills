@@ -21,7 +21,10 @@ Reports (all numbers come from code output):
 
 See `reports/v02/QA_ADDENDUM_V02.md`. Main finding: the pre-registered diag wallet depletes, so the G01/H01
 primary-test effect sizes are dominated by forced zero days and are not edge estimates; verdict directions stand.
-The diagnostic MH-v0.2-D1 (`SPEC_DIAGNOSTIC_D1.md`) is pre-registered but **not executed** pending confirmation.
+The diagnostic MH-v0.2-D1 (`SPEC_DIAGNOSTIC_D1.md`) was pre-registered (`295ba7c`) and executed after owner
+confirmation (`reports/v02/diagnostics/D1/`). It separates gross signal, per-signal execution and a non-depleting
+fixed-50 portfolio. **No v0.2 verdict changes** (QA addendum §E). H01 has a small real gross effect in validation
+(+3.4 bps vs baseline), far below costs.
 
 ## Primary results (pre-registered, Holm over 9 tests, 14-day day-blocks, H0 "≤ 0")
 

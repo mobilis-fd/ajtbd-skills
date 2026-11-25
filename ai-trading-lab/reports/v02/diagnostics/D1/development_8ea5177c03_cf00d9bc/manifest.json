@@ -1,0 +1,12 @@
+{
+  "code_sha256": "8ea5177c039cd86a23665bd2b1c2e2d2767931055b96bbbd9070441e0ce8d312",
+  "config_sha256": "cf00d9bc7d0e193524acf7bfa2ad1612090c3f9568f4852c5c8a3d7ec007454a",
+  "created_utc": "2026-11-25T08:28:43.378951+00:00",
+  "eval_window": [
+    "2021-10-01 00:00:00+00:00",
+    "2023-01-01 00:00:00+00:00"
+  ],
+  "experiment_id": "MH-v0.2-D1",
+  "git_commit": "295ba7c7d2b4b29d38bc49f5e3e900021e87016b",
+  "split": "development"
+}
