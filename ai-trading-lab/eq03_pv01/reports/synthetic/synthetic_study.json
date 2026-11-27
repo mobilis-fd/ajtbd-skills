@@ -1,0 +1,40 @@
+{
+  "nsim": 2000,
+  "B": 499,
+  "seed": 20261128,
+  "sizes": [
+    29,
+    79,
+    168
+  ],
+  "effect_sd": 0.3,
+  "size_cap": 0.065,
+  "selected_primary_method": "M4_cbb_studentized_b6",
+  "reason": "no method admissible; smallest maximum size chosen, p-values flagged approximate",
+  "summary": [
+    {
+      "method": "M1_t_iid",
+      "max_size": 0.123,
+      "mean_power": 0.7733571428571429,
+      "min_coverage": 0.839
+    },
+    {
+      "method": "M2_newey_west",
+      "max_size": 0.0985,
+      "mean_power": 0.774952380952381,
+      "min_coverage": 0.8925
+    },
+    {
+      "method": "M3_cbb_percentile_b6",
+      "max_size": 0.1155,
+      "mean_power": 0.7868571428571429,
+      "min_coverage": 0.838
+    },
+    {
+      "method": "M4_cbb_studentized_b6",
+      "max_size": 0.0715,
+      "mean_power": 0.7053095238095238,
+      "min_coverage": 0.919
+    }
+  ]
+}
