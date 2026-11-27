@@ -51,3 +51,9 @@ Severity: **material** = could change a conclusion; **minor** = documentation or
 
 The economic rationale and cited papers were not reviewed. Execution realism (opening auction fills, spreads, fees,
 taxes, FX) is out of scope by design of the README and is deferred to a portfolio stage.
+
+## Post-result entries
+
+| date | entry |
+|---|---|
+| 2026-11-27 (post-result) | Runs executed exactly as in PROTOCOL.md §3; no step added or changed. Reconciliation: independent events identical (max diff 1e-16), summary statistics identical (7e-15), bootstrap CIs with an independent RNG within 2.5 bps. S1 changed no EQ01 choice and no verdict. Post-hoc descriptive diagnostics (Table 4 of the report) were computed uniformly for all 9 cells after results and are not part of the decision rule. No methodological error was found after the results. |

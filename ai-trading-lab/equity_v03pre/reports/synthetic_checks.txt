@@ -1,0 +1,16 @@
+PASS: flat prices/costs; event calendar; future mutation; bootstrap; split summaries (synthetic only)
+PASS A1 EQ01 choice unchanged when IEF falls from entry day (discriminating version)
+PASS A1 EQ01 choice does switch when the signal-day close (entry-1) changes
+PASS Known-answer drift: gross = (1+g)^sessions - 1 for all events — max err 2.2e-16
+PASS Known-answer drift: control equals event under constant drift — max err 2.2e-16
+PASS Break-even RT cost formula (net at break-even = 0)
+PASS Independent event implementation == script (random walk) — 858 rows
+PASS EQ01 picks both assets on random data (not degenerate) — {'IEF': 148, 'SPY': 138}
+INFO A3 bootstrap (block 6) iid N(0,1), n=28, 300 sims: one-sided rejection rate at 5% / CI coverage — 0.083 / 0.857 (nominal 0.050 / 0.950)
+INFO A3 bootstrap (block 6) iid N(0,1), n=60, 300 sims: one-sided rejection rate at 5% / CI coverage — 0.083 / 0.883 (nominal 0.050 / 0.950)
+INFO A3 bootstrap (block 6) iid N(0,1), n=160, 300 sims: one-sided rejection rate at 5% / CI coverage — 0.057 / 0.927 (nominal 0.050 / 0.950)
+PASS A3 p-value is one-sided: clearly negative mean gives p close to 1 — p=1.000
+PASS Inference cutoff max(24, 2*block)
+PASS Holm step-down values
+PASS A2 truncated final month produces no event (guard b+3 < len)
+PASS Cost: net = g - f(2+g) equals (1+g)(1-f) - (1+f) per unit cash? (README convention)
