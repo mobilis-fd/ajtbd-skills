@@ -77,17 +77,21 @@ def run(m: Market, start: int, end: int, trades: list[tuple[int, int, str]], sc:
             for x in due:
                 settled += x[1]
                 lst.remove(x)
+            assert settled >= -1e-9, 'negative cash'
         # 2. interest
         if sc.idle_rf and k > start:
             days = (m.sessions[k] - m.sessions[k - 1]).days
             settled += settled * m.rf[k - 1] * days / 365.0
         # 3. open: buy
         if k in entries and shares == 0.0:
-            budget = min(sc.max_position, settled)
+            # reserve the exit commission so that a cash account can never go negative (fix after run01)
+            budget = min(sc.max_position, settled - sc.fee)
             if budget < sc.max_position - 1e-12:
                 res.cash_shortfalls += 1
             px = m.open[k] * (1 + h)
             q = np.floor(max(budget - sc.fee, 0.0) / px / sc.share_step + 1e-9) * sc.share_step
+            if q > 0 and q * px + 2 * sc.fee > settled + 1e-12:
+                q = 0.0
             if q <= 0:
                 res.skipped.append((str(m.sessions[k].date()), 'below one share step', budget))
             else:

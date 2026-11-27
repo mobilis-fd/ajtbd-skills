@@ -194,3 +194,11 @@ def test_studentized_bootstrap_sane():
     x = np.random.default_rng(1).normal(1.0, 1, 100)
     p, lo, hi = pv_stats.cbb_studentized(x, B=999, seed=1)
     assert p < 0.01 and lo < x.mean() < hi
+
+
+def test_fixed_fees_cannot_drive_cash_negative():
+    m = market(n=400, price=40.0)
+    tl = [(k, k + 4, str(k)) for k in range(5, 390, 10)]
+    r = run(m, 0, 399, tl, replace(FR, fee=5.0, bps_rt=40))
+    assert (r.equity >= -1e-9).all() and len(r.skipped) > 0
+    assert r.equity[-1] < 10.0          # fees consume the account; trading stops instead of borrowing

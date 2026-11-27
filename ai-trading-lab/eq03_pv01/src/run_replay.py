@@ -61,9 +61,9 @@ def metrics(res, cash_rf, sc_capital=100.0):
     final = float(eq[-1])
     return {
         'final_equity': final, 'net_pnl': final - sc_capital,
-        'cagr_pct': ((final / sc_capital) ** (1 / years) - 1) * 100,
+        'cagr_pct': ((max(final, 0.0) / sc_capital) ** (1 / years) - 1) * 100,
         'excess_pnl_vs_cash_rf': final - float(cash_rf.equity[-1]),
-        'excess_cagr_vs_cash_rf_pct': (((final / sc_capital) ** (1 / years)) -
+        'excess_cagr_vs_cash_rf_pct': (((max(final, 0.0) / sc_capital) ** (1 / years)) -
                                        ((cash_rf.equity[-1] / sc_capital) ** (1 / years))) * 100,
         'max_drawdown_pct': dd * 100,
         'sharpe_excess_ann': float(ex.mean() / sd * np.sqrt(252)) if sd > 0 else None,

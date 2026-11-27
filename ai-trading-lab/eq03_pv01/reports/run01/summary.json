@@ -1,0 +1,614 @@
+{
+  "status": "EQ03-PV01 historical portfolio replay: DIAGNOSTIC on already-explored data; not independent validation; no trading approval",
+  "primary_method": "M4_cbb_studentized_b6",
+  "base_scenario": {
+    "bps_rt": 10.0,
+    "fee": 0.0,
+    "share_step": 0.0001,
+    "idle_rf": true,
+    "capital": 100.0,
+    "max_position": 50.0,
+    "pay_lag": 3
+  },
+  "data_qa": {
+    "irx_sessions_missing": 6,
+    "irx_missing_dates": [
+      "2003-11-11",
+      "2005-10-10",
+      "2005-11-11",
+      "2006-10-09",
+      "2010-10-11",
+      "2016-11-11"
+    ],
+    "irx_min_pct": -0.10499999672174454,
+    "irx_max_pct": 5.3480000495910645,
+    "sessions": 6022,
+    "first": "2002-12-02",
+    "last": "2026-11-06",
+    "dividend_events": 287,
+    "variant": "primary"
+  },
+  "env": {
+    "python": "3.13.18",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5"
+  },
+  "input_sha256": {
+    "sessions.csv": "246d18d7a72db3088311935af7681de2ade75f9a33c28d11500d128b84f57017",
+    "TLT_raw_parsed.csv": "2239e2a81b42ab4d4b7b349be4e62dc4c43f11ba4ff616da6ef6112e6d10820b",
+    "TLT_dividends.csv": "ffc142669dfa00ec336e52d8b3b6a085af99234650c292273f14776df89d575f",
+    "TLT.csv": "42b88a7134ec81fbab47e98295b090c5d0892ccfd4a47a799c987fcfdac5e50e",
+    "yahoo_IRX.json": "86751c25d2c0db968c13477dd22d6ca9f53005483fc0cccf85ad9b6a4f70f0b9"
+  },
+  "code_sha256": {
+    "prospective.py": "51cbad872076ce264eb262ee6733413e6b21d9ee5f208a7f4dde6535adfaf24a",
+    "pv_data.py": "258d9e38e04a187b9f67b8ff33565bf910f83c5b523d5500d17e87dc431d1939",
+    "pv_engine.py": "b4b307903ab5035ec412ae39fb2783d470af2cba7e8fd16b25fea8092d159e51",
+    "pv_stats.py": "806c2b3496c1c7384be5589ff6eb42663b3d08aaad111db15ec3d80626c9c395",
+    "run_replay.py": "ebcb7bc3dfa60097ff0a4a9da0cb3f820de388bff15faff9eb93ccbe3fd8e084",
+    "synthetic_study.py": "edb27630d10ad88ec3787f046a66419826d8495d74b7993e9ea5d752801a4697"
+  },
+  "calendar_check": {
+    "months": 287,
+    "months_differing": [
+      {
+        "month": "2012-10",
+        "pit_entry": "2012-10-25",
+        "pit_exit": "2012-10-31",
+        "realised_entry": "2012-10-23",
+        "realised_exit": "2012-10-31"
+      }
+    ]
+  },
+  "reconciliation": {
+    "events": 286,
+    "max_abs_diff_no_div": 1.252915660072268e-06,
+    "events_with_div": 11,
+    "max_abs_diff_with_div": 0.00013031706664377168
+  },
+  "tlt_price_range": {
+    "T3": [
+      80.88999938964844,
+      143.0500030517578
+    ],
+    "T2": [
+      82.80999755859375,
+      179.10000610351562
+    ],
+    "T1": [
+      76.45999908447266,
+      101.47000122070312
+    ],
+    "FULL": [
+      76.45999908447266,
+      179.10000610351562
+    ]
+  },
+  "primary_test": {
+    "T3": {
+      "months": 168,
+      "mean_bps_per_month": 11.412931777430263,
+      "sd_bps": 65.50684025611771,
+      "share_positive_months": 0.6309523809523809,
+      "lag1_autocorr": -0.03831379458579194,
+      "M1_t_iid": {
+        "p_one_sided": 0.012613445725315364,
+        "ci95": [
+          1.4350404974950948,
+          21.39082305736543
+        ]
+      },
+      "M2_newey_west": {
+        "p_one_sided": 0.009445185419334833,
+        "ci95": [
+          1.9088227608906756,
+          20.91704079396985
+        ]
+      },
+      "M3_cbb_percentile_b6": {
+        "p_one_sided": 0.0085,
+        "ci95": [
+          1.5309623856696575,
+          20.77074779648092
+        ]
+      },
+      "M4_cbb_studentized_b6": {
+        "p_one_sided": 0.015,
+        "ci95": [
+          1.4892564301107818,
+          20.832939381874414
+        ]
+      },
+      "holm_p_primary": 0.045
+    },
+    "T2": {
+      "months": 79,
+      "mean_bps_per_month": 10.439553450986566,
+      "sd_bps": 61.57455173507471,
+      "share_positive_months": 0.5949367088607594,
+      "lag1_autocorr": 0.030826848515081752,
+      "M1_t_iid": {
+        "p_one_sided": 0.06793356009888286,
+        "ci95": [
+          -3.3523946185056577,
+          24.231501520478787
+        ]
+      },
+      "M2_newey_west": {
+        "p_one_sided": 0.05525833201294733,
+        "ci95": [
+          -2.435682887472362,
+          23.31478978944549
+        ]
+      },
+      "M3_cbb_percentile_b6": {
+        "p_one_sided": 0.059,
+        "ci95": [
+          -2.808618654860574,
+          23.548543808193887
+        ]
+      },
+      "M4_cbb_studentized_b6": {
+        "p_one_sided": 0.0735,
+        "ci95": [
+          -4.738679198322693,
+          25.11518572885529
+        ]
+      },
+      "holm_p_primary": 0.147
+    },
+    "T1": {
+      "months": 29,
+      "mean_bps_per_month": 3.8784867768229057,
+      "sd_bps": 82.02426286165431,
+      "share_positive_months": 0.4827586206896552,
+      "lag1_autocorr": -0.06269284330132066,
+      "M1_t_iid": {
+        "p_one_sided": 0.4004327649798434,
+        "ci95": [
+          -27.321874189605477,
+          35.07884774325129
+        ]
+      },
+      "M2_newey_west": {
+        "p_one_sided": 0.40936094615701696,
+        "ci95": [
+          -30.46156521724865,
+          38.21853877089446
+        ]
+      },
+      "M3_cbb_percentile_b6": {
+        "p_one_sided": 0.408,
+        "ci95": [
+          -32.27107451074353,
+          41.03052371213513
+        ]
+      },
+      "M4_cbb_studentized_b6": {
+        "p_one_sided": 0.3965,
+        "ci95": [
+          -38.14103882951974,
+          89.25661873790258
+        ]
+      },
+      "holm_p_primary": 0.3965
+    },
+    "FULL": {
+      "months": 286,
+      "mean_bps_per_month": 8.593032842077433,
+      "sd_bps": 57.783480385147136,
+      "share_positive_months": 0.5979020979020979,
+      "lag1_autocorr": -0.026975046278302262,
+      "M1_t_iid": {
+        "p_one_sided": 0.006228050793541264,
+        "ci95": [
+          1.867650804528762,
+          15.318414879626104
+        ]
+      },
+      "M2_newey_west": {
+        "p_one_sided": 0.00646196044112381,
+        "ci95": [
+          1.8318375640440756,
+          15.35422812011079
+        ]
+      },
+      "M3_cbb_percentile_b6": {
+        "p_one_sided": 0.0075,
+        "ci95": [
+          1.7023764330176254,
+          15.275345025242727
+        ]
+      },
+      "M4_cbb_studentized_b6": {
+        "p_one_sided": 0.0095,
+        "ci95": [
+          1.8484038579137012,
+          15.726033173714097
+        ]
+      }
+    }
+  },
+  "random_windows": {
+    "T3": {
+      "n_sims": 1000,
+      "strategy_final": 142.57303748402302,
+      "random_mean_final": 116.8365535356974,
+      "random_p05": 98.8985655408957,
+      "random_p50": 117.27646997227956,
+      "random_p95": 133.68623641080694,
+      "strategy_percentile": 99.2,
+      "random_mean_excess_vs_cash_rf": -1.3037893075033935
+    },
+    "T2": {
+      "n_sims": 1000,
+      "strategy_final": 123.9150276201099,
+      "random_mean_final": 104.86562096011518,
+      "random_p05": 90.95035416475487,
+      "random_p50": 104.94037267924531,
+      "random_p95": 119.17326027563408,
+      "strategy_percentile": 98.9,
+      "random_mean_excess_vs_cash_rf": -9.434244704685511
+    },
+    "T1": {
+      "n_sims": 1000,
+      "strategy_final": 111.5130143128091,
+      "random_mean_final": 107.34036251815716,
+      "random_p05": 101.0121677263086,
+      "random_p50": 107.21533086383461,
+      "random_p95": 113.87815838178288,
+      "strategy_percentile": 85.39999999999999,
+      "random_mean_excess_vs_cash_rf": -3.0345329872625513
+    },
+    "FULL": {
+      "n_sims": 1000,
+      "strategy_final": 191.72567976459163,
+      "random_mean_final": 136.20966272990896,
+      "random_p05": 109.15557344496139,
+      "random_p50": 135.7964283158786,
+      "random_p95": 164.47807392402405,
+      "strategy_percentile": 100.0,
+      "random_mean_excess_vs_cash_rf": -14.502176555859819
+    }
+  },
+  "sensitivities": [
+    {
+      "sensitivity": "S1_data",
+      "period": "T3",
+      "final_equity": 142.57303753440164,
+      "excess_pnl_vs_cash_rf": 24.432694691200837,
+      "cagr_pct": 2.56709458838269
+    },
+    {
+      "sensitivity": "S1_data",
+      "period": "T2",
+      "final_equity": 123.91502751565208,
+      "excess_pnl_vs_cash_rf": 9.615161850851393,
+      "cagr_pct": 3.3143160394141002
+    },
+    {
+      "sensitivity": "S1_data",
+      "period": "T1",
+      "final_equity": 111.51301430700309,
+      "excess_pnl_vs_cash_rf": 1.1381188015833743,
+      "cagr_pct": 4.632148028323746
+    },
+    {
+      "sensitivity": "S1_data",
+      "period": "FULL",
+      "final_equity": 191.7256797082677,
+      "excess_pnl_vs_cash_rf": 41.01384042249893,
+      "cagr_pct": 2.769672048466476
+    },
+    {
+      "sensitivity": "pay_lag_0",
+      "period": "T3",
+      "final_equity": 142.57329348417488,
+      "excess_pnl_vs_cash_rf": 24.432950640974084,
+      "cagr_pct": 2.567107746973507
+    },
+    {
+      "sensitivity": "pay_lag_0",
+      "period": "T2",
+      "final_equity": 123.9150276201099,
+      "excess_pnl_vs_cash_rf": 9.615161955309205,
+      "cagr_pct": 3.314316052657351
+    },
+    {
+      "sensitivity": "pay_lag_0",
+      "period": "T1",
+      "final_equity": 111.5130143128091,
+      "excess_pnl_vs_cash_rf": 1.1381188073893895,
+      "cagr_pct": 4.6321480305874685
+    },
+    {
+      "sensitivity": "pay_lag_0",
+      "period": "FULL",
+      "final_equity": 191.72600634442693,
+      "excess_pnl_vs_cash_rf": 41.01416705865816,
+      "cagr_pct": 2.7696793973224443
+    },
+    {
+      "sensitivity": "pay_lag_5",
+      "period": "T3",
+      "final_equity": 142.57266459166607,
+      "excess_pnl_vs_cash_rf": 24.43232174846527,
+      "cagr_pct": 2.567075415047082
+    },
+    {
+      "sensitivity": "pay_lag_5",
+      "period": "T2",
+      "final_equity": 123.9150276201099,
+      "excess_pnl_vs_cash_rf": 9.615161955309205,
+      "cagr_pct": 3.314316052657351
+    },
+    {
+      "sensitivity": "pay_lag_5",
+      "period": "T1",
+      "final_equity": 111.5130143128091,
+      "excess_pnl_vs_cash_rf": 1.1381188073893895,
+      "cagr_pct": 4.6321480305874685
+    },
+    {
+      "sensitivity": "pay_lag_5",
+      "period": "FULL",
+      "final_equity": 191.72520406516873,
+      "excess_pnl_vs_cash_rf": 41.01336477939995,
+      "cagr_pct": 2.769661347141672
+    },
+    {
+      "sensitivity": "realised_calendar",
+      "period": "T3",
+      "final_equity": 141.9253663452784,
+      "excess_pnl_vs_cash_rf": 23.785023502077607,
+      "cagr_pct": 2.5337268144921765
+    },
+    {
+      "sensitivity": "realised_calendar",
+      "period": "T2",
+      "final_equity": 123.9150276201099,
+      "excess_pnl_vs_cash_rf": 9.615161955309205,
+      "cagr_pct": 3.314316052657351
+    },
+    {
+      "sensitivity": "realised_calendar",
+      "period": "T1",
+      "final_equity": 111.5130143128091,
+      "excess_pnl_vs_cash_rf": 1.1381188073893895,
+      "cagr_pct": 4.6321480305874685
+    },
+    {
+      "sensitivity": "realised_calendar",
+      "period": "FULL",
+      "final_equity": 190.8994445749579,
+      "excess_pnl_vs_cash_rf": 40.18760528918912,
+      "cagr_pct": 2.7510444186258143
+    }
+  ],
+  "worst_months_base": {
+    "T3|cash_rf": [
+      [
+        "2015-06",
+        0.001
+      ],
+      [
+        "2011-11",
+        0.001
+      ],
+      [
+        "2011-12",
+        0.001
+      ]
+    ],
+    "T3|cash_0": [
+      [
+        "2003-01",
+        0.0
+      ],
+      [
+        "2003-02",
+        0.0
+      ],
+      [
+        "2003-03",
+        0.0
+      ]
+    ],
+    "T3|EQ03": [
+      [
+        "2008-10",
+        -2.104
+      ],
+      [
+        "2003-07",
+        -1.728
+      ],
+      [
+        "2009-01",
+        -1.487
+      ]
+    ],
+    "T3|BH_TLT_50": [
+      [
+        "2009-01",
+        -6.24
+      ],
+      [
+        "2003-07",
+        -4.999
+      ],
+      [
+        "2016-11",
+        -3.699
+      ]
+    ],
+    "T2|cash_rf": [
+      [
+        "2021-05",
+        0.0
+      ],
+      [
+        "2021-04",
+        0.001
+      ],
+      [
+        "2021-03",
+        0.002
+      ]
+    ],
+    "T2|cash_0": [
+      [
+        "2017-10",
+        0.0
+      ],
+      [
+        "2017-11",
+        0.0
+      ],
+      [
+        "2017-12",
+        0.0
+      ]
+    ],
+    "T2|EQ03": [
+      [
+        "2021-09",
+        -1.124
+      ],
+      [
+        "2022-09",
+        -1.029
+      ],
+      [
+        "2022-12",
+        -1.029
+      ]
+    ],
+    "T2|BH_TLT_50": [
+      [
+        "2022-04",
+        -4.487
+      ],
+      [
+        "2022-09",
+        -3.437
+      ],
+      [
+        "2021-02",
+        -2.976
+      ]
+    ],
+    "T1|cash_rf": [
+      [
+        "2026-02",
+        0.276
+      ],
+      [
+        "2026-05",
+        0.285
+      ],
+      [
+        "2025-11",
+        0.289
+      ]
+    ],
+    "T1|cash_0": [
+      [
+        "2024-06",
+        0.0
+      ],
+      [
+        "2024-07",
+        0.0
+      ],
+      [
+        "2024-08",
+        0.0
+      ]
+    ],
+    "T1|EQ03": [
+      [
+        "2026-09",
+        -1.173
+      ],
+      [
+        "2024-06",
+        -0.925
+      ],
+      [
+        "2024-08",
+        -0.764
+      ]
+    ],
+    "T1|BH_TLT_50": [
+      [
+        "2024-12",
+        -2.977
+      ],
+      [
+        "2024-10",
+        -2.602
+      ],
+      [
+        "2026-09",
+        -2.137
+      ]
+    ],
+    "FULL|cash_rf": [
+      [
+        "2021-05",
+        0.0
+      ],
+      [
+        "2015-06",
+        0.001
+      ],
+      [
+        "2011-11",
+        0.001
+      ]
+    ],
+    "FULL|cash_0": [
+      [
+        "2003-01",
+        0.0
+      ],
+      [
+        "2003-02",
+        0.0
+      ],
+      [
+        "2003-03",
+        0.0
+      ]
+    ],
+    "FULL|EQ03": [
+      [
+        "2008-10",
+        -2.104
+      ],
+      [
+        "2003-07",
+        -1.728
+      ],
+      [
+        "2009-01",
+        -1.487
+      ]
+    ],
+    "FULL|BH_TLT_50": [
+      [
+        "2009-01",
+        -6.24
+      ],
+      [
+        "2003-07",
+        -4.999
+      ],
+      [
+        "2022-04",
+        -3.919
+      ]
+    ]
+  }
+}

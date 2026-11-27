@@ -1,0 +1,17 @@
+sensitivity,period,final_equity,excess_pnl_vs_cash_rf,cagr_pct
+S1_data,T3,142.573,24.4327,2.56709
+S1_data,T2,123.915,9.61516,3.31432
+S1_data,T1,111.513,1.13812,4.63215
+S1_data,FULL,191.726,41.0138,2.76967
+pay_lag_0,T3,142.573,24.433,2.56711
+pay_lag_0,T2,123.915,9.61516,3.31432
+pay_lag_0,T1,111.513,1.13812,4.63215
+pay_lag_0,FULL,191.726,41.0142,2.76968
+pay_lag_5,T3,142.573,24.4323,2.56708
+pay_lag_5,T2,123.915,9.61516,3.31432
+pay_lag_5,T1,111.513,1.13812,4.63215
+pay_lag_5,FULL,191.725,41.0134,2.76966
+realised_calendar,T3,141.925,23.785,2.53373
+realised_calendar,T2,123.915,9.61516,3.31432
+realised_calendar,T1,111.513,1.13812,4.63215
+realised_calendar,FULL,190.899,40.1876,2.75104
