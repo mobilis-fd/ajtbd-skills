@@ -1,7 +1,39 @@
-Traceback (most recent call last):
-  File "/home/user/ajtbd-skills/ai-trading-lab/eq04/src/synthetic_study.py", line 18, in <module>
-    from eq04_stats import METHODS, SIMPLICITY_ORDER  # noqa: E402
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/user/ajtbd-skills/ai-trading-lab/eq04/src/eq04_stats.py", line 11, in <module>
-    from scipy import stats
-ModuleNotFoundError: No module named 'scipy'
+D1_iid_normal 59 {'M1_t_iid': 0.053, 'M2_newey_west': 0.062, 'M3_cbb_percentile_b6': 0.071, 'M4_cbb_studentized_b6': 0.056}
+D1_iid_normal 82 {'M1_t_iid': 0.041, 'M2_newey_west': 0.056, 'M3_cbb_percentile_b6': 0.06, 'M4_cbb_studentized_b6': 0.052}
+D1_iid_normal 120 {'M1_t_iid': 0.05, 'M2_newey_west': 0.058, 'M3_cbb_percentile_b6': 0.054, 'M4_cbb_studentized_b6': 0.05}
+D1_iid_normal 261 {'M1_t_iid': 0.058, 'M2_newey_west': 0.058, 'M3_cbb_percentile_b6': 0.056, 'M4_cbb_studentized_b6': 0.056}
+D2_ar1_0.3 59 {'M1_t_iid': 0.113, 'M2_newey_west': 0.079, 'M3_cbb_percentile_b6': 0.082, 'M4_cbb_studentized_b6': 0.062}
+D2_ar1_0.3 82 {'M1_t_iid': 0.12, 'M2_newey_west': 0.087, 'M3_cbb_percentile_b6': 0.09, 'M4_cbb_studentized_b6': 0.079}
+D2_ar1_0.3 120 {'M1_t_iid': 0.111, 'M2_newey_west': 0.071, 'M3_cbb_percentile_b6': 0.068, 'M4_cbb_studentized_b6': 0.059}
+D2_ar1_0.3 261 {'M1_t_iid': 0.12, 'M2_newey_west': 0.071, 'M3_cbb_percentile_b6': 0.068, 'M4_cbb_studentized_b6': 0.066}
+D3_iid_t3 59 {'M1_t_iid': 0.042, 'M2_newey_west': 0.054, 'M3_cbb_percentile_b6': 0.053, 'M4_cbb_studentized_b6': 0.06}
+D3_iid_t3 82 {'M1_t_iid': 0.049, 'M2_newey_west': 0.054, 'M3_cbb_percentile_b6': 0.052, 'M4_cbb_studentized_b6': 0.067}
+D3_iid_t3 120 {'M1_t_iid': 0.041, 'M2_newey_west': 0.05, 'M3_cbb_percentile_b6': 0.05, 'M4_cbb_studentized_b6': 0.057}
+D3_iid_t3 261 {'M1_t_iid': 0.05, 'M2_newey_west': 0.049, 'M3_cbb_percentile_b6': 0.048, 'M4_cbb_studentized_b6': 0.058}
+D4_garch_t5 59 {'M1_t_iid': 0.045, 'M2_newey_west': 0.055, 'M3_cbb_percentile_b6': 0.059, 'M4_cbb_studentized_b6': 0.059}
+D4_garch_t5 82 {'M1_t_iid': 0.043, 'M2_newey_west': 0.051, 'M3_cbb_percentile_b6': 0.056, 'M4_cbb_studentized_b6': 0.052}
+D4_garch_t5 120 {'M1_t_iid': 0.056, 'M2_newey_west': 0.059, 'M3_cbb_percentile_b6': 0.06, 'M4_cbb_studentized_b6': 0.061}
+D4_garch_t5 261 {'M1_t_iid': 0.057, 'M2_newey_west': 0.057, 'M3_cbb_percentile_b6': 0.054, 'M4_cbb_studentized_b6': 0.063}
+D5_vol_break_x3 59 {'M1_t_iid': 0.052, 'M2_newey_west': 0.061, 'M3_cbb_percentile_b6': 0.064, 'M4_cbb_studentized_b6': 0.075}
+D5_vol_break_x3 82 {'M1_t_iid': 0.054, 'M2_newey_west': 0.06, 'M3_cbb_percentile_b6': 0.058, 'M4_cbb_studentized_b6': 0.065}
+D5_vol_break_x3 120 {'M1_t_iid': 0.059, 'M2_newey_west': 0.066, 'M3_cbb_percentile_b6': 0.061, 'M4_cbb_studentized_b6': 0.071}
+D5_vol_break_x3 261 {'M1_t_iid': 0.047, 'M2_newey_west': 0.046, 'M3_cbb_percentile_b6': 0.04, 'M4_cbb_studentized_b6': 0.049}
+D6_neg_skew_jumps 59 {'M1_t_iid': 0.066, 'M2_newey_west': 0.077, 'M3_cbb_percentile_b6': 0.087, 'M4_cbb_studentized_b6': 0.057}
+D6_neg_skew_jumps 82 {'M1_t_iid': 0.069, 'M2_newey_west': 0.077, 'M3_cbb_percentile_b6': 0.084, 'M4_cbb_studentized_b6': 0.059}
+D6_neg_skew_jumps 120 {'M1_t_iid': 0.054, 'M2_newey_west': 0.058, 'M3_cbb_percentile_b6': 0.062, 'M4_cbb_studentized_b6': 0.042}
+D6_neg_skew_jumps 261 {'M1_t_iid': 0.053, 'M2_newey_west': 0.052, 'M3_cbb_percentile_b6': 0.054, 'M4_cbb_studentized_b6': 0.043}
+D7_ar0.2_garch_t5 59 {'M1_t_iid': 0.088, 'M2_newey_west': 0.07, 'M3_cbb_percentile_b6': 0.077, 'M4_cbb_studentized_b6': 0.07}
+D7_ar0.2_garch_t5 82 {'M1_t_iid': 0.085, 'M2_newey_west': 0.062, 'M3_cbb_percentile_b6': 0.064, 'M4_cbb_studentized_b6': 0.064}
+D7_ar0.2_garch_t5 120 {'M1_t_iid': 0.083, 'M2_newey_west': 0.058, 'M3_cbb_percentile_b6': 0.058, 'M4_cbb_studentized_b6': 0.061}
+D7_ar0.2_garch_t5 261 {'M1_t_iid': 0.088, 'M2_newey_west': 0.055, 'M3_cbb_percentile_b6': 0.051, 'M4_cbb_studentized_b6': 0.057}
+D8_persistent_garch_t4 59 {'M1_t_iid': 0.066, 'M2_newey_west': 0.07, 'M3_cbb_percentile_b6': 0.075, 'M4_cbb_studentized_b6': 0.069}
+D8_persistent_garch_t4 82 {'M1_t_iid': 0.045, 'M2_newey_west': 0.047, 'M3_cbb_percentile_b6': 0.052, 'M4_cbb_studentized_b6': 0.049}
+D8_persistent_garch_t4 120 {'M1_t_iid': 0.058, 'M2_newey_west': 0.069, 'M3_cbb_percentile_b6': 0.068, 'M4_cbb_studentized_b6': 0.069}
+D8_persistent_garch_t4 261 {'M1_t_iid': 0.045, 'M2_newey_west': 0.046, 'M3_cbb_percentile_b6': 0.048, 'M4_cbb_studentized_b6': 0.048}
+                       max_size  mean_power  min_coverage
+method                                                   
+M1_t_iid                  0.120       0.804         0.842
+M2_newey_west             0.088       0.795         0.894
+M3_cbb_percentile_b6      0.090       0.798         0.885
+M4_cbb_studentized_b6     0.078       0.758         0.911
+SELECTED: M4_cbb_studentized_b6 - no method admissible; smallest maximum size chosen, p-values flagged approximate
