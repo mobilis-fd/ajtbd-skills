@@ -1,0 +1,39 @@
+{
+  "events_in_list": 261,
+  "events_with_complete_window_h5": 261,
+  "dropped_incomplete_window": [],
+  "data_last_session": "2026-11-06",
+  "auction_date_not_a_session": 0,
+  "entry_gap_sessions_max": null,
+  "by_period": {
+    "P1_2002_2009": 59,
+    "P2_2010_2019": 120,
+    "P3_2020_2026": 82
+  },
+  "entry_weekday": {
+    "Thursday": 180,
+    "Wednesday": 35,
+    "Friday": 31,
+    "Tuesday": 13,
+    "Monday": 2
+  },
+  "controls_per_event": {
+    "2": 55,
+    "3": 155,
+    "4": 51
+  },
+  "events_without_controls": [],
+  "controls_no_tom_per_event": {
+    "0": 59,
+    "1": 196,
+    "2": 6
+  },
+  "events_without_controls_no_tom": 59,
+  "events_overlapping_eq03_window": 0,
+  "events_overlapping_turn_of_month": 0,
+  "events_with_fomc": 63,
+  "events_with_cpi_after_entry_open": 135,
+  "events_with_nfp_after_entry_open": 7,
+  "events_with_any_macro": 170,
+  "overlapping_event_windows": 0
+}

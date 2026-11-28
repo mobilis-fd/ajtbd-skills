@@ -1,0 +1,62 @@
+{
+  "fiscaldata_note_records": 2338,
+  "fiscaldata_first_auction": "1979-10-31",
+  "fiscaldata_last_auction": "2026-10-22",
+  "records_original_term_10y": 502,
+  "exact_duplicates_cusip_auction_date": 0,
+  "decisions": {
+    "included": 261,
+    "excluded_TIPS": 140,
+    "excluded_before_ief_data": 95,
+    "excluded_offcycle_old_issue": 4,
+    "excluded_same_day_announced": 2
+  },
+  "included_checks_failed": {
+    "chk_announce_before_auction": 0,
+    "chk_issue_after_auction": 0,
+    "chk_reopening_flag": 0,
+    "td_found": 0,
+    "td_match_announce": 0,
+    "td_match_issue": 0,
+    "td_match_reopening": 0,
+    "td_match_term": 0,
+    "td_match_offering": 0
+  },
+  "in_treasurydirect_not_in_fiscaldata": [
+    {
+      "cusip": "91282CRX1",
+      "auction_date": "2026-11-10"
+    }
+  ],
+  "included_same_auction_date_pairs": 0,
+  "included_by_year": {
+    "2003": 6,
+    "2004": 8,
+    "2005": 8,
+    "2006": 8,
+    "2007": 8,
+    "2008": 9,
+    "2009": 12,
+    "2010": 12,
+    "2011": 12,
+    "2012": 12,
+    "2013": 12,
+    "2014": 12,
+    "2015": 12,
+    "2016": 12,
+    "2017": 12,
+    "2018": 12,
+    "2019": 12,
+    "2020": 12,
+    "2021": 12,
+    "2022": 12,
+    "2023": 12,
+    "2024": 12,
+    "2025": 12,
+    "2026": 10
+  },
+  "included_by_type": {
+    "original": 95,
+    "reopening": 166
+  }
+}

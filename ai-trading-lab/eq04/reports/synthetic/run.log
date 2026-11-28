@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/user/ajtbd-skills/ai-trading-lab/eq04/src/synthetic_study.py", line 18, in <module>
+    from eq04_stats import METHODS, SIMPLICITY_ORDER  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/ajtbd-skills/ai-trading-lab/eq04/src/eq04_stats.py", line 11, in <module>
+    from scipy import stats
+ModuleNotFoundError: No module named 'scipy'
